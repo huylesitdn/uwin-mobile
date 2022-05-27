@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Home'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main home">
+      @@include('../components/base/navbar.html')
+      <div class="home__content container-fluid">
+
+        Home
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/home/hot-match-modal.html')
+      <!-- MODAL -->
+
+      
+      @@include('../components/base/navbar-bottom.html', {active: 0})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

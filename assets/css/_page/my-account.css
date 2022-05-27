@@ -1,0 +1,303 @@
+.my-account {
+  padding: 0;
+  background-color: #fff; }
+  .my-account__content__topcontent {
+    background-image: url(../images/my-account/my-account-bg-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top; }
+    .my-account__content__topcontent__nav {
+      display: flex;
+      place-content: flex-end;
+      place-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+      padding: 20px;
+      gap: 8px;
+      padding-bottom: 10px; }
+      .my-account__content__topcontent__nav img {
+        max-width: 33px; }
+    .my-account__content__topcontent__top {
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      padding: 20px;
+      padding-top: 0;
+      padding-left: 40px;
+      gap: 15px; }
+      .my-account__content__topcontent__top__avatar {
+        max-width: 65px; }
+      .my-account__content__topcontent__top__user-info {
+        display: flex;
+        place-content: space-between;
+        width: 100%;
+        place-items: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.5); }
+        .my-account__content__topcontent__top__user-info h4 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 14px;
+          color: #FFFFFF;
+          margin-bottom: 10px; }
+    .my-account__content__topcontent__balance {
+      background-image: url(../images/my-account/wallet-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 40px;
+      padding: 12px 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #E7D3A5;
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden; }
+      .my-account__content__topcontent__balance h4 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 14px;
+        margin: 0; }
+    .my-account__content__topcontent__wallet {
+      margin: 0 20px;
+      padding: 10px;
+      background: #FFFFFF;
+      border-radius: 10px; }
+      @media only screen and (max-width: 390px) {
+        .my-account__content__topcontent__wallet {
+          margin: 0 15px !important; } }
+      .my-account__content__topcontent__wallet__top {
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000; }
+        .my-account__content__topcontent__wallet__top a {
+          color: #000000; }
+          .my-account__content__topcontent__wallet__top a img {
+            max-width: 70px; }
+          .my-account__content__topcontent__wallet__top a > span > span {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 14px;
+            color: #94A6B7; }
+        @media only screen and (max-width: 390px) {
+          .my-account__content__topcontent__wallet__top a img {
+            max-width: 60px; }
+          .my-account__content__topcontent__wallet__top a > span > span {
+            font-size: 10px; } }
+        @media only screen and (max-width: 370px) {
+          .my-account__content__topcontent__wallet__top a img {
+            max-width: 55px; } }
+      .my-account__content__topcontent__wallet__bottom {
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000;
+        padding: 20px 0 15px 15px; }
+        .my-account__content__topcontent__wallet__bottom > a {
+          display: flex;
+          flex-direction: column;
+          place-content: center;
+          place-items: center;
+          color: #000000; }
+          .my-account__content__topcontent__wallet__bottom > a img {
+            max-width: 40px; }
+          .my-account__content__topcontent__wallet__bottom > a > div {
+            margin-bottom: 0;
+            margin-top: 5px; }
+  .my-account__content__navbar {
+    list-style: none;
+    border-top: 7px solid #f2f2f2;
+    padding: 0px 20px 20px; }
+    .my-account__content__navbar li a {
+      display: flex;
+      place-items: center;
+      place-content: space-between;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #000000;
+      border-bottom: 1px solid #f1f1f1;
+      padding-bottom: 15px;
+      padding-top: 15px; }
+      .my-account__content__navbar li a > div {
+        display: flex;
+        place-items: center;
+        place-content: space-between;
+        gap: 10px; }
+        .my-account__content__navbar li a > div .icon {
+          min-width: 30px;
+          max-width: 30px;
+          text-align: center; }
+      .my-account__content__navbar li a span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.2); }
+
+@media only screen and (max-width: 425px) {
+  .my-account {
+    padding: 0;
+    background-color: #fff; }
+    .my-account__content__topcontent {
+      background-image: url(../images/my-account/my-account-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top; }
+      .my-account__content__topcontent__nav {
+        display: flex;
+        place-content: flex-end;
+        place-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        color: #FFFFFF;
+        padding: 20px;
+        padding-top: 15px;
+        padding-bottom: 0;
+        gap: 8px; }
+        .my-account__content__topcontent__nav img {
+          max-width: 33px; }
+      .my-account__content__topcontent__top {
+        display: flex;
+        place-content: flex-start;
+        place-items: center;
+        padding: 20px;
+        padding-top: 0;
+        padding-left: 40px;
+        gap: 15px; }
+        .my-account__content__topcontent__top__avatar {
+          max-width: 65px; }
+        .my-account__content__topcontent__top__user-info {
+          display: flex;
+          place-content: space-between;
+          width: 100%;
+          place-items: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+          color: rgba(255, 255, 255, 0.5); }
+          .my-account__content__topcontent__top__user-info h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 14px;
+            color: #FFFFFF;
+            margin-bottom: 10px; }
+      .my-account__content__topcontent__balance {
+        background-image: url(../images/my-account/wallet-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 40px;
+        padding: 12px 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #E7D3A5;
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden; }
+        .my-account__content__topcontent__balance h4 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 14px;
+          margin: 0; }
+      .my-account__content__topcontent__wallet {
+        margin: 0 20px;
+        padding: 10px;
+        background: #FFFFFF;
+        border-radius: 10px; }
+        .my-account__content__topcontent__wallet__top {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: #000000;
+          padding-right: 10px; }
+          .my-account__content__topcontent__wallet__top img {
+            max-width: 60px; }
+        .my-account__content__topcontent__wallet__bottom {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          color: #000000;
+          padding: 20px 0 15px 15px; }
+          .my-account__content__topcontent__wallet__bottom > a {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            place-items: center; }
+            .my-account__content__topcontent__wallet__bottom > a img {
+              max-width: 35px; }
+            .my-account__content__topcontent__wallet__bottom > a > div {
+              margin-bottom: 0; }
+    .my-account__content__navbar {
+      list-style: none;
+      border-top: 7px solid #f2f2f2;
+      padding: 0px 20px 20px; }
+      .my-account__content__navbar li a {
+        display: flex;
+        place-items: center;
+        place-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #000000;
+        border-bottom: 1px solid #f1f1f1;
+        padding-bottom: 5px;
+        padding-top: 30px; }
+        .my-account__content__navbar li a > div {
+          display: flex;
+          place-items: center;
+          place-content: space-between;
+          gap: 8px; }
+          .my-account__content__navbar li a > div .icon {
+            min-width: 30px;
+            max-width: 30px;
+            max-width: 30px;
+            text-align: center; }
+        .my-account__content__navbar li a span {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 14px;
+          text-align: right;
+          color: rgba(0, 0, 0, 0.2); } }

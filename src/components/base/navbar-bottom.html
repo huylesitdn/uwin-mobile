@@ -1,0 +1,39 @@
+<nav class="navbar fixed-bottom navbar-light">
+  <div class="container-fluid content">
+    <a href="/" class="nav-item @@if (context.active === 0) {active}">
+      <div class="img" >
+        <img src="assets/icons/footer-home.svg" alt="" />
+        <img class="active" src="assets/icons/footer-home-active.svg" alt="" />
+      </div>
+      <div class="text" data-i18n="footer.HOME"></div>
+    </a>
+    <a href="/wallet" class="nav-item @@if (context.active === 1) {active}">
+      <div class="img">
+        <img src="assets/icons/footer-wallet.svg" alt="" />
+        <img class="active" src="assets/icons/footer-wallet-active.svg" alt="" />
+      </div>
+      <div class="text" data-i18n="footer.WALLET"></div>
+    </a>
+    <a href="/promotion.html" class="nav-item @@if (context.active === 2) {active}">
+      <div class="img">
+        <img src="assets/icons/footer-promotion.svg" alt="" />
+        <img class="active" src="assets/icons/footer-promotion-active.svg" alt="" />
+      </div>
+      <div class="text" data-i18n="footer.PROMOTION"></div>
+    </a>
+    <a href="/sponsors" class="nav-item @@if (context.active === 3) {active}">
+      <div class="img">
+        <img src="assets/icons/footer-livechat.svg" alt="" />
+        <img class="active" src="assets/icons/footer-livechat-active.svg" alt="" />
+      </div>
+      <div class="text" data-i18n="footer.LIVE_CHAT"></div>
+    </a>
+    <!-- <a href="/my-account.html" class="nav-item @@if (context.active === 4) {active}">
+      <div class="img">
+        <img src="assets/icons/footer-my-account.svg" alt="" />
+        <img class="active" src="assets/icons/footer-my-account-active.svg" alt="" />
+      </div>
+      <div class="text" data-i18n="my_account"></div>
+    </a> -->
+  </div>
+</nav>

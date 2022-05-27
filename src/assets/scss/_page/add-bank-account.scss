@@ -1,0 +1,146 @@
+.add-bank-account {
+  background-color: #f2f2f2;
+
+  &__content {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__input {
+      background: #FFFFFF;
+      padding: 15px;
+
+      &__select-bank {
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        border-bottom: 2px solid #EEEEEE;
+        padding: 10px 0;
+        margin-bottom: 30px;
+        cursor: pointer;
+
+        &__input {
+          &__label {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            color: #000000;
+            padding-bottom: 10px;
+            text-align: left;
+          }
+
+          &__placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 14px;
+            color: #A5A9B3;
+          }
+        }
+
+        img {}
+      }
+
+      .items {
+        padding-bottom: 30px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        .form-label {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000;
+          margin-bottom: 0;
+        }
+
+        .form-control {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 14px;
+          color: #A5A9B3;
+          padding: 10px 0;
+          border: 0;
+          border-bottom: 2px solid #EEEEEE;
+          border-radius: 0;
+
+          &:focus,
+          &:active {
+            box-shadow: none;
+          }
+
+          &:disabled {
+            border-bottom: 0;
+            padding-bottom: 0;
+            background: #fff;
+          }
+
+          &::placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 14px;
+            color: #A5A9B3;
+          }
+        }
+
+        .input-group {
+          border-bottom: 2px solid #EEEEEE;
+
+          .input-group-text {
+            background: transparent;
+            border: 0;
+            height: 30px;
+          }
+
+          .form-control {
+            border-bottom: none;
+          }
+
+          .btn {
+            background-color: #4E7FFF;
+            border: none;
+            border-radius: 5px !important;
+            height: 30px;
+            display: flex;
+            place-items: center;
+
+            &.disabled,
+            &:disabled {
+              background-color: rgba(78, 127, 255, 0.5);
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__description {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 14px;
+      color: #A5A9B3;
+      padding: 15px;
+    }
+
+    &__submit {
+      padding: 15px;
+
+      .btn {
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        place-items: center;
+        place-content: center;
+      }
+    }
+
+    &__help {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      color: #000000;
+      padding: 15px;
+    }
+  }
+}

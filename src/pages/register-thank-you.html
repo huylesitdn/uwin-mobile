@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Register Thank you'})
+  <body>
+    <!-- Content -->
+    <section class="register register-thank-you">
+      <div class="container-fluid">
+        <div>
+          <div class="login__logo" data-i18n="login_logo_img"></div>
+          <div class="login__logo1">
+            <div data-i18n="login_logo1_img"></div>
+            <div data-i18n="login_logo2_img"></div>
+            <!-- <img src="assets//images/login-logo-1.svg" /> -->
+            <!-- <img src="assets//images/login-logo-2.svg" /> -->
+          </div>
+        </div>
+        <div class="register__form">
+          <form class="no-bg ps-0 pe-0">
+            <h1 data-i18n="register_success">Register Successfull</h1>
+            <h4 data-i18n="register_thank_you_shoft">Congratulation and welcome to be part of <br/>OB ENTERTAINMENT family!</h4>
+            <h5 data-i18n="register_thank_you_long">To start your betting experience, we are redirecting you to deposit page. Or you can click the button below if it is not redirecting.</h5>
+            <div>
+              <img src="assets//images/thank-you-bg.png" class="w-100" />
+            </div>
+            <div class="mt-5">
+              <a href="/wallet/deposit.html" class="btn btn-primary btn-login" data-i18n="deposit_now">DEPOSIT NOW</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

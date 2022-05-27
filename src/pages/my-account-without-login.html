@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'My Account'})
+  <body>
+    <!-- Content -->
+    <section class="main my-account">
+      <div class="my-account__content">
+        <div class="my-account__content__topcontent">
+          <div class="my-account__content__topcontent__nav">
+            <img src="assets/images/my-account/service.png" alt="" width="25px" />
+            <span data-i18n="my_account_page.Customer_Service">Customer <br /> Service</span>
+          </div>
+  
+          <div class="my-account__content__topcontent__top">
+            <img class="my-account__content__topcontent__top__avatar" src="assets/icons/defaultProfile.png" alt="" />
+            <a class="my-account__content__topcontent__top__user-info" href="/login.html">
+              <div>
+                <h4 data-i18n="Login_Register"></h4>
+              </div>
+              <img src="assets/images/my-account/right-white.png" />
+            </a>
+          </div>
+  
+          <div class="my-account__content__topcontent__balance">
+            <div>
+              <img src="assets/images/my-account/wallet-1.png"  width="20px" />
+              <span class="mx-1" data-i18n="Total_Balance">Total Balance</span>
+              <!-- <img src="assets/images/my-account/refresh.png" /> -->
+            </div>
+            <h4 data-i18n="Login_to_view"></h4>
+          </div>
+  
+          <div class="my-account__content__topcontent__wallet">
+            <div class="my-account__content__topcontent__wallet__top">
+              <a href="/login.html" class="d-flex align-items-center">
+                <img src="assets/images/my-account/vipnew.png" />
+                <span data-i18n="VIP_PRIVILEGE">VIP <br/>PRIVILEGE</span>
+              </a>
+              <a href="/login.html" class="d-flex align-items-center">
+                <img src="assets/images/my-account/giftnew.png" />
+                <span data-i18n="CAMPAIGN_BONANZA">CAMPAIGN<br/>BONANZA</span>
+              </a>
+            </div>
+            <div class="my-account__content__topcontent__wallet__bottom">
+              <a href="/login.html">
+                <img src="assets/images/my-account/walletnew.png" />
+                <div data-i18n="My_Wallet">My Wallet</div>
+              </a>
+              <a href="/login.html">
+                <img src="assets/images/my-account/transactionnew.png" />
+                <div data-i18n="Transaction_History">Transaction History</div>
+              </a>
+              <a href="/login.html">
+                <img src="assets/images/my-account/betnew.png" />
+                <div data-i18n="Betting_Record">Betting Record</div>
+              </a>
+              <a href="/login.html">
+                <img src="assets/images/my-account/settingnew.png" />
+                <div data-i18n="Account_Setting">Account Setting</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="my-account__content__navbar">
+          <li>
+            <a href="/referral-program.html">
+              <div>
+                <div class="icon"><img src="assets/images/my-account/friend.png" /></div>
+                <div data-i18n="my_account_page.Referral_Program">Referral Program</div>
+              </div>
+              <div>
+                <span data-i18n="my_account_page.Refer_your_friends_get_rewards">Refer your friends & get rewards</span>
+              <img src="assets/images/my-account/right.png" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/login.html">
+              <div>
+                <div class="icon"><img src="assets/images/my-account/bonus.png" /></div>
+                <div data-i18n="my_account_page.Bonus_Center">Bonus Center</div>
+              </div>
+              <img src="assets/images/my-account/right.png" />
+            </a>
+          </li>
+          <li>
+            <a href="/help/">
+              <div>
+                <div class="icon"><img src="assets/images/my-account/help.png" /></div>
+                <div data-i18n="my_account_page.Help">Help</div>
+              </div>
+              <img src="assets/images/my-account/right.png" />
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      @@include('../components/base/navbar-bottom-without-login.html', {active: 4})
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

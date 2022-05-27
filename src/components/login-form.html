@@ -1,0 +1,57 @@
+<div class="login__form">
+  <form>
+    <h2 data-i18n="login">LOGIN</h2>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">
+        <img src="assets//icons/user.png" />
+      </span>
+      <input
+        type="text"
+        class="form-control"
+        data-i18n="username"
+        data-i18n-attr="placeholder"
+        placeholder="Username"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">
+        <img src="assets//icons/password.png" />
+      </span>
+      <input
+        type="password"
+        class="form-control"
+        data-i18n="password"
+        data-i18n-attr="placeholder"
+        placeholder="Password"
+      />
+    </div>
+    <div class="d-flex justify-content-between align-items-center mb-5">
+      <div class="form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="exampleCheck1"
+        />
+        <label
+          class="form-check-label"
+          for="exampleCheck1"
+          data-i18n="remember_password"
+          >Remember password</label
+        >
+      </div>
+      <a href="/forget-password.html" class="forget_password" data-i18n="forget_password">Forget password?</a>
+    </div>
+    <div class="">
+      <a class="btn btn-primary btn-login" data-i18n="login" href="/">LOGIN</a>
+      <div class="mt-2">
+        <a href="/home-without-login.html" data-i18n="i_ll_do_this_later">I‘ll do this later</a>
+      </div>
+    </div>
+  </form>
+  <div class="login__form__right-button">
+    <span class="btn btn-primary register_link" role="button" data-bs-target="#carouselLoginRegisterForm" data-bs-slide="next">
+      <span data-i18n="register_new_account"></span>
+      <img src="assets//icons/user-plus.png" />
+    </span>
+  </div>
+</div>

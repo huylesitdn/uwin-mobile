@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Register Second'})
+  <body>
+    <!-- Content -->
+    <section class="register register-second">
+      <div class="container-fluid">
+        <div>
+          <div class="login__logo" data-i18n="login_logo_img"></div>
+          <div class="login__logo1">
+            <div data-i18n="login_logo1_img"></div>
+            <div data-i18n="login_logo2_img"></div>
+            <!-- <img src="assets//images/login-logo-1.svg" /> -->
+            <!-- <img src="assets//images/login-logo-2.svg" /> -->
+          </div>
+        </div>
+        <div class="register__form">
+          <form class="no-bg">
+            <h4 data-i18n="register_second_long_text">You are required to fill in the following informations to protect the security of your account.</h4>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="assets//icons/user.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="full_name"
+                data-i18n-attr="placeholder"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="assets//icons/date.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="date_of_birth"
+                data-i18n-attr="placeholder"
+                placeholder="Date Of Birth"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="assets//icons/phone.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="phone_number"
+                data-i18n-attr="placeholder"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="assets//icons/email.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="email_address"
+                data-i18n-attr="placeholder"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="mt-5">
+              <a href="/register-thank-you.html" class="btn btn-primary btn-login" data-i18n="submit">SUBMIT</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a class="customer-service" href="#">
+        <img src="assets//icons/customer-service.png" alt="" width="32px" /> <span data-i18n="customer_service">Customer Service</span>
+      </a>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

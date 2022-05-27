@@ -1,0 +1,561 @@
+.home__content #carouselHome .carousel-indicators {
+  margin-bottom: 0; }
+  .home__content #carouselHome .carousel-indicators > [data-bs-target] {
+    width: 20px; }
+
+.home__content #carouselHome .carousel-inner {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; }
+
+.home__content .notification {
+  display: flex;
+  place-items: center;
+  gap: 15px;
+  padding: 15px 0; }
+  .home__content .notification__sound {
+    min-width: 20px; }
+    .home__content .notification__sound img {
+      width: 30px; }
+  .home__content .notification__hot-matches {
+    width: 90px;
+    min-width: 80px; }
+  .home__content .notification .text-animated {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+    .home__content .notification .text-animated .text-overflow {
+      word-wrap: none;
+      position: relative; }
+
+.home__content .balance {
+  display: flex;
+  place-items: center;
+  place-content: space-between;
+  padding-bottom: 15px; }
+  .home__content .balance__total {
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000; }
+    .home__content .balance__total > div {
+      display: flex;
+      place-items: center;
+      gap: 5px; }
+    .home__content .balance__total h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 14px;
+      color: #000000;
+      margin-bottom: 0;
+      margin-top: 5px; }
+    .home__content .balance__total .vip0 {
+      width: 30px; }
+  .home__content .balance__icons {
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+    gap: 10px;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000; }
+    .home__content .balance__icons > div {
+      max-width: 40px; }
+      .home__content .balance__icons > div > div {
+        min-height: 36px; }
+      .home__content .balance__icons > div p {
+        margin-bottom: 0; }
+
+.home__content .home-login-now {
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF; }
+  .home__content .home-login-now .btn {
+    height: 25px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #597EF7;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    place-content: center;
+    place-items: center; }
+
+.home__content .home-game__nav {
+  margin-left: -5px;
+  margin-right: -5px; }
+  .home__content .home-game__nav__item {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px; }
+    .home__content .home-game__nav__item__link {
+      display: flex;
+      place-items: center;
+      place-content: space-around;
+      gap: 8px;
+      background: #FFFFFF;
+      border: 1px solid #A5D9FF;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
+      border-radius: 10px;
+      width: 100%;
+      height: 50px;
+      padding-left: 8px;
+      padding-right: 8px;
+      background-image: url(../icons/home/default-bg.png);
+      background-repeat: no-repeat;
+      background-position: top; }
+      .home__content .home-game__nav__item__link__img img {
+        width: 25px;
+        min-width: 25px; }
+        .home__content .home-game__nav__item__link__img img:last-child {
+          display: none; }
+      .home__content .home-game__nav__item__link__text {
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+        text-transform: uppercase; }
+      .home__content .home-game__nav__item__link.active {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.5);
+        background-image: url(../icons/home/active-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+        .home__content .home-game__nav__item__link.active .home-game__nav__item__link__text {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF; }
+        .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
+          width: 25px;
+          min-width: 25px; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
+            display: block;
+            min-width: 35px; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:first-child {
+            display: none; }
+
+.home__content .home-game__content .home-item {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 15px; }
+  .home__content .home-game__content .home-item__bg {
+    width: 100%; }
+  .home__content .home-game__content .home-item__official {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/home/official-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .home__content .home-game__content .home-item__official span {
+      transform: rotate(45deg);
+      margin-top: -11px;
+      margin-right: -11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 8px;
+      line-height: 16px; }
+  .home__content .home-game__content .home-item__title-head {
+    position: absolute;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    right: 0;
+    display: flex;
+    place-content: center; }
+    .home__content .home-game__content .home-item__title-head span {
+      background-image: url(../images/home/title-head-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 3px 45px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); }
+  .home__content .home-game__content .home-item__content {
+    position: absolute;
+    left: 15px;
+    right: 40%;
+    top: 15px;
+    bottom: 15px;
+    display: flex;
+    place-content: center;
+    place-items: flex-start;
+    flex-direction: column; }
+    .home__content .home-game__content .home-item__content__title {
+      font-family: 'Aldo the Apache', sans-serif;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 30px;
+      color: #9FAACA;
+      margin-bottom: 10px; }
+    .home__content .home-game__content .home-item__content__subtitle {
+      font-style: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #9FAACA; }
+    .home__content .home-game__content .home-item__content__highest_return {
+      background: linear-gradient(180deg, #7696FF 0%, #557BF7 100%);
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF; }
+    .home__content .home-game__content .home-item__content__play_now {
+      background: #FFFFFF;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #9FAACA;
+      margin-top: 12px; }
+    @media only screen and (max-width: 410px) {
+      .home__content .home-game__content .home-item__content {
+        left: 10px; }
+        .home__content .home-game__content .home-item__content__title {
+          font-size: 25px;
+          line-height: 25px; }
+        .home__content .home-game__content .home-item__content__play_now {
+          margin-top: 10px; } }
+    @media only screen and (max-width: 390px) {
+      .home__content .home-game__content .home-item__content {
+        left: 10px; }
+        .home__content .home-game__content .home-item__content__title {
+          font-size: 24px;
+          line-height: 24px; }
+        .home__content .home-game__content .home-item__content__play_now {
+          margin-top: 10px; } }
+    @media only screen and (max-width: 350px) {
+      .home__content .home-game__content .home-item__content {
+        left: 10px; }
+        .home__content .home-game__content .home-item__content__title {
+          font-size: 23px;
+          line-height: 23px;
+          margin-bottom: 7px; } }
+
+.home__content .home-game__content .lottery-game #lotteryGame {
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item {
+    padding: 10px 0;
+    height: 55px;
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+    gap: 15px;
+    opacity: 0; }
+    .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.nav .nav-item .nav-link {
+      padding: 0; }
+      .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.nav .nav-item .nav-link img {
+        max-width: 40px;
+        max-height: 30px; }
+      .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.nav .nav-item .nav-link.active {
+        background-color: transparent; }
+    .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.active {
+      opacity: 1; }
+      .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.active div img {
+        max-width: 40px; }
+  .home__content .home-game__content .lottery-game #lotteryGame .carousel-control-prev {
+    width: auto;
+    left: 5px;
+    opacity: 1; }
+  .home__content .home-game__content .lottery-game #lotteryGame .carousel-control-next {
+    width: auto;
+    right: 5px;
+    opacity: 1; }
+
+.home__content .home-game__content .lottery-game .tab-content {
+  margin-top: 15px; }
+  .home__content .home-game__content .lottery-game .tab-content .card {
+    border: none; }
+    .home__content .home-game__content .lottery-game .tab-content .card-header {
+      background: linear-gradient(90deg, #7696FF 0%, #557BF7 100%);
+      border-radius: 10px 10px 0px 0px;
+      color: #fff;
+      padding: 10px 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      border-bottom: none; }
+      .home__content .home-game__content .lottery-game .tab-content .card-header h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px; }
+    .home__content .home-game__content .lottery-game .tab-content .card-body {
+      background: #F5F5F5;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding: 15px; }
+      .home__content .home-game__content .lottery-game .tab-content .card-body__items__title {
+        background: linear-gradient(90deg, #7696FF 0%, #557BF7 100%);
+        padding: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px; }
+      .home__content .home-game__content .lottery-game .tab-content .card-body__items__item {
+        display: flex;
+        place-items: center;
+        place-content: space-around; }
+        .home__content .home-game__content .lottery-game .tab-content .card-body__items__item h4 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 18px;
+          color: #4E7FFF;
+          margin-bottom: 20px; }
+        .home__content .home-game__content .lottery-game .tab-content .card-body__items__item div {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          color: #000000;
+          margin-bottom: 15px; }
+    .home__content .home-game__content .lottery-game .tab-content .card-footer {
+      border-top: none;
+      background-color: #fff;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 20px;
+      margin: 20px 0; }
+      .home__content .home-game__content .lottery-game .tab-content .card-footer .btn {
+        min-width: 140px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        min-height: 40px; }
+
+@media only screen and (max-width: 425px) {
+  .home__content #carouselHome .carousel-indicators {
+    margin-bottom: 0; }
+    .home__content #carouselHome .carousel-indicators > [data-bs-target] {
+      width: 20px; }
+  .home__content #carouselHome .carousel-inner {
+    border-radius: 10px; }
+  .home__content .notification {
+    gap: 5px;
+    padding: 15px 0; }
+    .home__content .notification__sound {
+      min-width: 20px; }
+    .home__content .notification__hot-matches {
+      width: 85px;
+      min-width: 70px; }
+    .home__content .notification .text-animated {
+      font-size: 14px;
+      line-height: 14px; }
+  .home__content .balance {
+    padding-bottom: 15px; }
+    .home__content .balance__total {
+      font-size: 12px;
+      line-height: 14px; }
+      .home__content .balance__total > div {
+        gap: 5px; }
+      .home__content .balance__total h3 {
+        font-size: 18px;
+        line-height: 14px;
+        margin-bottom: 0;
+        margin-top: 5px; }
+    .home__content .balance__icons {
+      gap: 10px; }
+      .home__content .balance__icons > div {
+        max-width: 40px; }
+        .home__content .balance__icons > div > div {
+          min-height: 36px; }
+        .home__content .balance__icons > div p {
+          margin-bottom: 0;
+          font-size: 10px;
+          line-height: 14px;
+          color: #000000; }
+  .home__content .home-game__nav {
+    margin-left: -5px;
+    margin-right: -5px; }
+    .home__content .home-game__nav__item {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 15px; }
+      .home__content .home-game__nav__item__link {
+        place-content: space-between;
+        gap: 0;
+        box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
+        border-radius: 10px;
+        width: 100%;
+        height: 40px;
+        padding-left: 8px;
+        padding-right: 8px; }
+        .home__content .home-game__nav__item__link__img img {
+          width: 25px; }
+          .home__content .home-game__nav__item__link__img img:last-child {
+            display: none; }
+        .home__content .home-game__nav__item__link__text {
+          font-size: 12px;
+          line-height: 16px; }
+        .home__content .home-game__nav__item__link.active .home-game__nav__item__link__text {
+          font-size: 12px;
+          line-height: 16px; }
+        .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
+          width: 30px; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
+            display: block;
+            min-width: 30px;
+            margin-left: 0; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:first-child {
+            display: none; } }
+
+#hotMatchModal .modal-content {
+  background-color: transparent;
+  border: none;
+  padding: 0 40px; }
+  #hotMatchModal .modal-content .modal-body {
+    padding: 0; }
+    #hotMatchModal .modal-content .modal-body .hot-match-close-btn {
+      text-align: right; }
+      #hotMatchModal .modal-content .modal-body .hot-match-close-btn button {
+        padding: 0;
+        border: none;
+        background: transparent; }
+    #hotMatchModal .modal-content .modal-body .hot-match-top {
+      position: relative; }
+      #hotMatchModal .modal-content .modal-body .hot-match-top img {
+        width: 100%; }
+      #hotMatchModal .modal-content .modal-body .hot-match-top__content {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        place-items: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        padding-top: 20px; }
+    #hotMatchModal .modal-content .modal-body .hot-match-content {
+      padding: 0 20px 15px;
+      background: linear-gradient(90deg, #B9C9E6 0%, #7D94E4 100%);
+      border-radius: 0px 0px 12px 12px;
+      display: grid; }
+      #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items {
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 15px;
+        position: relative;
+        margin-bottom: 12px; }
+        #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__label {
+          background-image: url(../images/hot-matcher/label.png);
+          background-repeat: no-repeat;
+          width: 60px;
+          height: 50px;
+          position: absolute;
+          left: -3px;
+          top: -3px; }
+          #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__label div {
+            font-family: 'Aldo the Apache';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 10px;
+            text-align: center;
+            color: #FFFFFF;
+            transform: rotate(-40.39deg);
+            position: absolute;
+            top: 13px;
+            left: 5px; }
+        #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__title {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000; }
+        #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__subtitle {
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000; }
+        #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__vs {
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 10px;
+          text-align: center;
+          color: #000000;
+          place-items: center; }
+          #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__vs img {
+            margin-bottom: 5px;
+            max-width: 32px; }
+          #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__vs .vs {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000; }
+        #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__btn {
+          text-align: center;
+          margin-top: 10px; }
+          #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__btn .btn {
+            background: #597EF7;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            height: 30px;
+            width: 100px; }

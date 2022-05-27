@@ -1,0 +1,33 @@
+<nav class="navbar fixed-top navbar-light">
+  <div class="container-fluid content">
+    <div>
+      <button class="btn" id="navMenu">
+        <img src="assets/icons/menu.svg" alt="" />
+      </button>
+      <img class="content__logo" src="assets/icons/logo.svg" alt="" />
+    </div>
+    <div>
+      <button type="button" class="btn btn-language">中</button>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-secondary btn-currency">
+          <img class="content__logo" src="assets/icons/navbar-wallet.svg" alt="" />
+          <span>SGD 5,000,000</span>
+        </button>
+        <button type="button" class="btn btn-warning btn-add">
+          <img class="content__logo" src="assets/icons/navbar-plus.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-animated">
+    <span class="text-overflow" data-i18n="notification_run">The announcement message will runs here. The announcement message will runs here. The announcement message will runs here</span>
+  </div>
+
+</nav>
+@@if (!!context.without_login) {
+  @@include('./sidebar-without-login.html')
+}
+@@if (!context.without_login) {
+  @@include('./sidebar.html')
+}

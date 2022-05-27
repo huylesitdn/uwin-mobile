@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Register'})
+  <body>
+    <!-- Content -->
+    <section class="register">
+      <div class="container-fluid">
+        <div>
+          <div class="login__logo" data-i18n="login_logo_img"></div>
+          <div class="login__logo1">
+            <div data-i18n="login_logo1_img"></div>
+            <div data-i18n="login_logo2_img"></div>
+            <!-- <img src="assets//images/login-logo-1.svg" /> -->
+            <!-- <img src="assets//images/login-logo-2.svg" /> -->
+          </div>
+        </div>
+        <div id="carouselLoginRegisterForm" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              @@include('../components/login-form.html')
+            </div>
+            <div class="carousel-item active">
+              @@include('../components/register-form.html')
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>
