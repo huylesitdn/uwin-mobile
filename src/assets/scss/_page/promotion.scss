@@ -1,0 +1,33 @@
+.promotion {
+  &__content {
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      color: #FFFFFF;
+      padding: 20px 0;
+    }
+
+    &__container {
+      &__item {
+        background: #131D39;
+        border-radius: 9px;
+        margin-bottom: 20px;
+
+        &__img {
+          width: 100%;
+        }
+
+        &__title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          color: #FDBB2C;
+          padding: 15px 12px;
+        }
+      }
+    }
+  }
+}

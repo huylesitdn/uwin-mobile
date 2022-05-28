@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Promotion'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main promotion">
+      @@include('../components/base/navbar.html')
+      <div class="promotion__content container-fluid">
+
+        @@include('../components/promotion/content.html')
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/promotion/detail-modal.html')
+      <!-- MODAL -->
+
+      
+      @@include('../components/base/navbar-footer.html')
+      
+      @@include('../components/base/navbar-bottom.html', {active: 2})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

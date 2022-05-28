@@ -186,6 +186,15 @@
           place-items: center;
           width: 30px;
           margin: auto;
+          margin-top: 10px;
+
+          img {
+            width: 19px;
+
+            &.active {
+              width: 23px;
+            }
+          }
 
           // filter: grayscale(90%);
           .active {
@@ -199,7 +208,7 @@
           line-height: 14px;
           text-align: center;
           color: rgba(255, 255, 255, 0.4);
-          margin-bottom: 5px;
+          margin-bottom: 7px;
         }
 
         &.active {

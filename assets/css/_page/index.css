@@ -1345,3 +1345,25 @@
       place-content: flex-start;
       place-items: center;
       gap: 10px; }
+
+.promotion__content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 20px 0; }
+
+.promotion__content__container__item {
+  background: #131D39;
+  border-radius: 9px;
+  margin-bottom: 20px; }
+  .promotion__content__container__item__img {
+    width: 100%; }
+  .promotion__content__container__item__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FDBB2C;
+    padding: 15px 12px; }

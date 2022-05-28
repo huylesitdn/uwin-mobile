@@ -135,7 +135,12 @@
           place-content: center;
           place-items: center;
           width: 30px;
-          margin: auto; }
+          margin: auto;
+          margin-top: 10px; }
+          .navbar.fixed-bottom .content .nav-item .img img {
+            width: 19px; }
+            .navbar.fixed-bottom .content .nav-item .img img.active {
+              width: 23px; }
           .navbar.fixed-bottom .content .nav-item .img .active {
             display: none; }
         .navbar.fixed-bottom .content .nav-item .text {
@@ -144,7 +149,7 @@
           line-height: 14px;
           text-align: center;
           color: rgba(255, 255, 255, 0.4);
-          margin-bottom: 5px; }
+          margin-bottom: 7px; }
         .navbar.fixed-bottom .content .nav-item.active .img img {
           display: none; }
           .navbar.fixed-bottom .content .nav-item.active .img img.active {
