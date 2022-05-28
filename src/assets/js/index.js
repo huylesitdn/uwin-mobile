@@ -125,7 +125,7 @@ function changeLanguageColor () {
   $('.choose-language').each(function (){
     const get_attr_lang = $(this).data('language').toLowerCase();
     const get_attr_region = $(this).data('region');
-    const _get_region = localStorage.getItem(PREFERED_REGION);
+    const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
     if(_get_language == get_attr_lang && _get_region == get_attr_region) {
       $(this).addClass('text-primary');
     }
@@ -136,7 +136,7 @@ function changeLanguageColor () {
   
   $('#mySidenav #collapseCountry .collapse__item').each(function (){
     const get_attr_region = $(this).data('region');
-    const _get_region = localStorage.getItem(PREFERED_REGION);
+    const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
     if(_get_region == get_attr_region) {
       $(this).addClass('active');
     } else {
@@ -734,5 +734,28 @@ $('#collapseCountry').on('hide.bs.collapse', function () {
   $('#mySidenav .country-name').removeClass('active');
   $('#mySidenav .current-country').css('opacity', 1);
 });
+
+$(document).ready(function () {
+  $(".top-slider").slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    lazyLoad: 'ondemand',
+    fade: true,
+    // cssEase: "linear",
+  });
+});
+
+$('.home .home__content__hot_games__content__item').on('click', function (e) {
+  e.preventDefault();
+  const hasActive = $(this).hasClass('active');
+  $('.home .home__content__hot_games__content__item').removeClass('active');
+  if (!!hasActive) {
+    $(this).removeClass('active');
+  } else {
+    $(this).addClass('active');
+  }
+})
 
 console.log("--- index.jsaaa");
