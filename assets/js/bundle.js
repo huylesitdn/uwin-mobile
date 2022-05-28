@@ -122,10 +122,10 @@ $('#mySidenav #collapseCountry .collapse__item').on('click', function() {
 })
 
 function changeLanguageColor () {
+  const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
   $('.choose-language').each(function (){
     const get_attr_lang = $(this).data('language').toLowerCase();
     const get_attr_region = $(this).data('region');
-    const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
     if(_get_language == get_attr_lang && _get_region == get_attr_region) {
       $(this).addClass('text-primary');
     }
@@ -136,7 +136,6 @@ function changeLanguageColor () {
   
   $('#mySidenav #collapseCountry .collapse__item').each(function (){
     const get_attr_region = $(this).data('region');
-    const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
     if(_get_region == get_attr_region) {
       $(this).addClass('active');
     } else {
