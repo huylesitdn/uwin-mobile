@@ -34,7 +34,7 @@ var translator = new Translator({
 const PREFERED_REGION = 'preferred_region';
 const _get_translator_config = translator.config.persistKey || "preferred_language";
 const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
-const _get_region = localStorage.getItem(PREFERED_REGION);
+const _get_region = localStorage.getItem(PREFERED_REGION, 'Singapore');
 
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
@@ -109,6 +109,18 @@ $('.universal .play-now a').on("click", function (e) {
   }
 })
 
+
+$('#mySidenav #collapseCountry .collapse__item').on('click', function() {
+  const select_region = $(this).data("region");
+  localStorage.setItem(PREFERED_REGION, select_region);
+  changeLanguageColor();
+  const collapseCountryElm = $("#collapseCountry");
+  if (collapseCountryElm.length > 0) {
+    const collapseCountry = new bootstrap.Collapse(collapseCountryElm, {});
+    collapseCountry.hide()
+  }
+})
+
 function changeLanguageColor () {
   $('.choose-language').each(function (){
     const get_attr_lang = $(this).data('language').toLowerCase();
@@ -116,6 +128,19 @@ function changeLanguageColor () {
     const _get_region = localStorage.getItem(PREFERED_REGION);
     if(_get_language == get_attr_lang && _get_region == get_attr_region) {
       $(this).addClass('text-primary');
+    }
+  })
+
+  const current_country = translator.translateForKey('menu.Uwin33_' + _get_region, _get_language);
+  $('#mySidenav .current-country').text(current_country);
+  
+  $('#mySidenav #collapseCountry .collapse__item').each(function (){
+    const get_attr_region = $(this).data('region');
+    const _get_region = localStorage.getItem(PREFERED_REGION);
+    if(_get_region == get_attr_region) {
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active');
     }
   })
 }
@@ -698,6 +723,16 @@ $('.forget-password-page .btn-next').on('click', function (e) {
   } else {
     window.location.href = '/forget-password-success.html';
   }
+});
+
+$('#mySidenav #collapseCountry').on('show.bs.collapse', function () {
+  $('#mySidenav .country-name').addClass('active');
+  $('#mySidenav .current-country').css('opacity', 0);
+});
+
+$('#collapseCountry').on('hide.bs.collapse', function () {
+  $('#mySidenav .country-name').removeClass('active');
+  $('#mySidenav .current-country').css('opacity', 1);
 });
 
 console.log("--- index.jsaaa");

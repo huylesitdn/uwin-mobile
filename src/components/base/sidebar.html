@@ -2,10 +2,20 @@
   <div class="left-nav">
     <div class="left-nav__container">
       <div class="left-nav__container__menu">
+
         <div class="left-nav__container__menu__nav">
           <div data-i18n="menu.Menu"></div>
           <img class="close-nav" src="assets/icons/close-white.svg" alt="" />
         </div>
+
+        <div class="left-nav__container__menu__welcome">
+          <div class="d-flex align-items-center gap-2">
+            <img class="close-nav" src="assets/icons/user-white.svg" alt="" />
+            <span data-i18n="menu.Welcome"></span>
+          </div>
+          <a href="#" data-i18n="menu.View_my_account"></a>
+        </div>
+        
         <div class="left-nav__container__menu__content row">
           <div class="col-6 left-nav__container__menu__content__item">
             <div>
@@ -44,6 +54,49 @@
             </div>
           </div>
         </div>
+
+        <div class="left-nav__container__menu__info">
+          <a href="#">
+            <img src="assets/icons/infomation.svg" alt="" />
+            <span data-i18n="menu.Information"></span>
+          </a>
+        </div>
+
+        <div class="left-nav__container__menu__country">
+          <div>
+            <img src="assets/icons/country.svg" alt="" />
+            <span data-i18n="menu.Country"></span>
+          </div>
+          <div>
+            <a class="country-name" data-bs-toggle="collapse" href="#collapseCountry" role="button" aria-expanded="false" aria-controls="collapseCountry">
+              <span class="current-country" data-i18n="menu.Uwin33_Singapore"></span>
+              <img src="assets/icons/down-white.svg" alt="" />
+            </a>
+            </div>
+        </div>
+
+        <div class="collapse" id="collapseCountry">
+          <div class="collapse__item" data-region="Singapore" role="button">
+            <img src="assets/images/Uwin33_Singapore.svg" alt="" />
+            <span data-i18n="menu.Uwin33_Singapore"></span>
+          </div>
+          <div class="collapse__item" data-region="Malaysia" role="button">
+            <img src="assets/images/Uwin33_Malaysia.svg" alt="" />
+            <span data-i18n="menu.Uwin33_Malaysia"></span>
+          </div>
+        </div>
+
+        <div class="left-nav__container__menu__action">
+          <a href="#" class="btn btn-warning" data-i18n="menu.Logout"></a>
+        </div>
+
+        <div class="left-nav__container__menu__footer">
+          <a href="#" data-i18n="menu.Responsible_Gaming"></a>
+          <a href="#" data-i18n="menu.Privacy_Policy"></a>
+          <a href="#" data-i18n="menu.About_Us"></a>
+          <a href="#" data-i18n="menu.TermsConditions"></a>
+        </div>
+
       </div>
     </div>
   </div>

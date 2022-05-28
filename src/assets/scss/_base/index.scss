@@ -54,7 +54,7 @@ img {
 }
 
 .btn {
-  border-radius: 10px;
+  border-radius: 4px;
   min-width: 80px;
 
   &-primary {
@@ -65,6 +65,16 @@ img {
       background-color: #597EF7;
       border-color: #597EF7;
     }
+  }
+
+  &-warning {
+    background-color: #FDBB2C;
+    border-color: #FDBB2C;
+
+    // &:disabled {
+    //   background-color: #597EF7;
+    //   border-color: #597EF7;
+    // }
   }
 
   &-outline {

@@ -47,7 +47,7 @@ img {
   line-height: 16px; }
 
 .btn {
-  border-radius: 10px;
+  border-radius: 4px;
   min-width: 80px; }
   .btn-primary {
     background-color: #4E7FFF;
@@ -55,6 +55,9 @@ img {
     .btn-primary:disabled {
       background-color: #597EF7;
       border-color: #597EF7; }
+  .btn-warning {
+    background-color: #FDBB2C;
+    border-color: #FDBB2C; }
   .btn-outline-primary {
     color: #4E7FFF;
     border-color: #4E7FFF; }
