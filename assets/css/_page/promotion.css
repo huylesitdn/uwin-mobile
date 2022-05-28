@@ -19,3 +19,58 @@
     line-height: 16px;
     color: #FDBB2C;
     padding: 15px 12px; }
+
+#promotionDetailModal .modal-dialog .modal-content {
+  height: 85vh;
+  padding: 15px; }
+  #promotionDetailModal .modal-dialog .modal-content .close-button {
+    text-align: center;
+    padding-bottom: 5px; }
+  #promotionDetailModal .modal-dialog .modal-content .promotion-content {
+    overflow-x: auto; }
+    #promotionDetailModal .modal-dialog .modal-content .promotion-content table {
+      margin: 15px 0; }
+      #promotionDetailModal .modal-dialog .modal-content .promotion-content table thead tr th {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+        color: #FDBB2C;
+        background: #19264B;
+        text-align: center;
+        vertical-align: middle; }
+      #promotionDetailModal .modal-dialog .modal-content .promotion-content table tbody tr td {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #FFFFFF;
+        background: rgba(255, 255, 255, 0.1);
+        border-color: transparent;
+        text-align: center;
+        vertical-align: middle; }
+    #promotionDetailModal .modal-dialog .modal-content .promotion-content__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      color: #FDBB2C;
+      padding: 15px 0; }
+    #promotionDetailModal .modal-dialog .modal-content .promotion-content__subtitle {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration-line: underline;
+      color: #FFFFFF;
+      padding: 10px 0; }
+    #promotionDetailModal .modal-dialog .modal-content .promotion-content__description {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #FFFFFF; }
+    #promotionDetailModal .modal-dialog .modal-content .promotion-content__subdescription {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #FDBB2C;
+      padding-left: 15px; }
+      #promotionDetailModal .modal-dialog .modal-content .promotion-content__subdescription ul {
+        padding-left: 15px; }
