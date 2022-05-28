@@ -71,6 +71,18 @@
           display: flex;
           place-content: center;
           place-items: center; }
+        .navbar.fixed-top .content .btn.btn-login {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #000000; }
+          .navbar.fixed-top .content .btn.btn-login div {
+            display: flex;
+            place-content: center;
+            place-items: center;
+            height: 100%;
+            gap: 5px; }
       .navbar.fixed-top .content #navMenu {
         min-width: auto;
         padding-left: 0;

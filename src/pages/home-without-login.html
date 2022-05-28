@@ -8,13 +8,14 @@
       @@include('../components/base/navbar.html', {without_login: true})
       <div class="home__content container-fluid">
 
-        home-without-login
+        @@include('../components/home/content.html')
         
       </div>
       <!-- MODAL -->
       <!-- @@include('../components/home/hot-match-modal.html') -->
       <!-- MODAL -->
 
+      @@include('../components/base/navbar-footer.html')
 
       @@include('../components/base/navbar-bottom-without-login.html', {active: 0})
     </section>

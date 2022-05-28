@@ -66,8 +66,9 @@
     "commitment_description1": "We built the website to be user friendly but most importantly we never compromise on securities matter. All the information provided are encrypted to ensure the security and privacy of your data and we will never share it or sell it to any third parties. ",
     "commitment_title2": "Deposit &<br/>Withdrawal",
     "commitment_description2": "We offer a variety of secure, easy and fast payment gateway options for deposit and withdrawal. We have one of the fastest transaction process in payouts and withdrawal as we constantly trying to reduce the transaction period to maximize fun times. ",
-    "": "",
-    "": "",
+    "Congratulation": "Congratulation!",
+    "Congratulation_des": "You are eligible to claim your welcome<br/>credit <span>SGD10</span> now.",
+    "Deposit_Claim": "Deposit & Claim",
     "": "",
     "": ""
   },
@@ -83,7 +84,7 @@
     "": "",
     "": ""
   },
-  "": "",
+  "Login_Register": "Login / Register",
   "": "",
   "": "",
   "": "",

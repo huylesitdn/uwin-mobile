@@ -168,4 +168,5 @@ a {
   max-width: 300px;
   margin: auto; }
   .modal.alert .modal-dialog .modal-content {
-    border-radius: 20px; }
+    background: #19264B;
+    border-radius: 16px; }

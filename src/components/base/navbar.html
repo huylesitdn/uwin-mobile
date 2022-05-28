@@ -8,15 +8,25 @@
     </div>
     <div>
       <button type="button" class="btn btn-language">中</button>
-      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-        <button type="button" class="btn btn-secondary btn-currency">
-          <img class="content__logo" src="assets/icons/navbar-wallet.svg" alt="" />
-          <span>SGD 5,000,000</span>
-        </button>
-        <button type="button" class="btn btn-warning btn-add">
-          <img class="content__logo" src="assets/icons/navbar-plus.svg" alt="" />
-        </button>
-      </div>
+      @@if (!context.without_login) {
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btn btn-secondary btn-currency">
+            <img class="content__logo" src="assets/icons/navbar-wallet.svg" alt="" />
+            <span>SGD 5,000,000</span>
+          </button>
+          <button type="button" class="btn btn-warning btn-add">
+            <img class="content__logo" src="assets/icons/navbar-plus.svg" alt="" />
+          </button>
+        </div>
+      }
+      @@if (!!context.without_login) {
+        <a href="/login.html" class="btn btn-warning btn-login">
+          <div>
+            <img src="assets/icons/user-black.svg" alt="" />
+            <span data-i18n="Login_Register"></span>
+          </div>
+        </a>
+      }
     </div>
   </div>
 
