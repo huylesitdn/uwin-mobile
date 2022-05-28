@@ -1,0 +1,175 @@
+.category-page__content__container__games_lobby__content {
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-top: 30px; }
+  .category-page__content__container__games_lobby__content__item {
+    padding-left: 8px;
+    padding-right: 8px; }
+    .category-page__content__container__games_lobby__content__item__img {
+      margin-bottom: 20px;
+      height: 126px;
+      display: block;
+      text-align: center;
+      background-image: url(../images/games-lobby-1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      place-items: center; }
+      .category-page__content__container__games_lobby__content__item__img__icon {
+        margin-top: -40px;
+        max-width: 95px; }
+      .category-page__content__container__games_lobby__content__item__img__logo {
+        max-width: 90px;
+        max-height: 25px; }
+
+.category-page__content__container__hot_games__content {
+  display: flex;
+  place-content: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+  padding-bottom: 10px; }
+  .category-page__content__container__hot_games__content__item {
+    background: #131D39;
+    border-radius: 8px;
+    padding: 0 15px;
+    min-width: 100px;
+    text-align: center;
+    position: relative; }
+    .category-page__content__container__hot_games__content__item__label {
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      border-radius: 0px 0px 6px 6px;
+      padding: 3px; }
+      .category-page__content__container__hot_games__content__item__label.success {
+        background: rgba(73, 185, 2, 0.3);
+        color: #49B902; }
+      .category-page__content__container__hot_games__content__item__label.danger {
+        background: rgba(203, 19, 47, 0.3);
+        color: #CB132F; }
+    .category-page__content__container__hot_games__content__item__img {
+      margin: 8px 0; }
+    .category-page__content__container__hot_games__content__item__title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 13px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 10px; }
+    .category-page__content__container__hot_games__content__item .action {
+      padding: 10px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #FDBB2C;
+      backdrop-filter: blur(4px);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      place-items: center;
+      gap: 10px;
+      transition: all 0.2s;
+      opacity: 0;
+      z-index: -1; }
+      .category-page__content__container__hot_games__content__item .action .btn {
+        width: 100%;
+        height: 30px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        min-width: auto;
+        padding: 0; }
+    .category-page__content__container__hot_games__content__item.active .action {
+      opacity: 1;
+      z-index: 1; }
+
+.category-page__content__top {
+  background: #131D39;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 26px 26px; }
+  .category-page__content__top__navbar {
+    display: flex;
+    place-content: space-between;
+    place-items: flex-start;
+    margin-top: 33px;
+    text-align: center;
+    padding-bottom: 12px; }
+    .category-page__content__top__navbar__item__img {
+      background: #131D39;
+      border-radius: 18px;
+      width: 60px;
+      height: 60px;
+      border: 2px solid rgba(25, 66, 132, 0.3);
+      box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+      display: flex;
+      place-content: center;
+      place-items: center; }
+      .category-page__content__top__navbar__item__img img.active {
+        display: none; }
+    .category-page__content__top__navbar__item__text {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 5px; }
+    .category-page__content__top__navbar__item.active {
+      pointer-events: none; }
+      .category-page__content__top__navbar__item.active .category-page__content__top__navbar__item__img {
+        background: rgba(252, 162, 13, 0.24);
+        border: 2px solid #FDBB2C; }
+        .category-page__content__top__navbar__item.active .category-page__content__top__navbar__item__img img {
+          display: none; }
+          .category-page__content__top__navbar__item.active .category-page__content__top__navbar__item__img img.active {
+            display: initial; }
+  .category-page__content__top .top-slider {
+    margin-bottom: 30px !important;
+    padding: 20px 15px;
+    min-height: 140px; }
+    .category-page__content__top .top-slider .slick-slide {
+      border-radius: 20px; }
+    .category-page__content__top .top-slider .slick-slide img {
+      width: 100%; }
+    .category-page__content__top .top-slider .slick-dots {
+      width: auto;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      left: 0;
+      right: 0;
+      bottom: -15px; }
+    .category-page__content__top .top-slider .slick-dots li {
+      margin: 0 2px;
+      width: 15px; }
+    .category-page__content__top .top-slider .slick-dots li button {
+      width: 15px; }
+    .category-page__content__top .top-slider .slick-dots li button::before {
+      background-color: #707070;
+      content: '';
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      border-radius: 50%; }
+    .category-page__content__top .top-slider .slick-dots li.slick-active,
+    .category-page__content__top .top-slider .slick-dots li.slick-active button {
+      width: 40px; }
+    .category-page__content__top .top-slider .slick-dots li.slick-active button::before {
+      width: 35px;
+      border-radius: 10px;
+      background-color: #fff; }
+    .category-page__content__top .top-slider .no-overflow {
+      overflow: hidden; }
+    .category-page__content__top .top-slider .slick-slider {
+      overflow: hidden; }
