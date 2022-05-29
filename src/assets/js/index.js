@@ -757,4 +757,18 @@ $('.home .home__content__hot_games__content__item').on('click', function (e) {
   }
 })
 
+$('.category-page .btn-left').on('click', function (e) {
+  e.preventDefault();
+  $('.category-page .nav-tabs').animate({
+    scrollLeft: "-=40px"
+  });
+})
+
+$('.category-page .btn-right').on('click', function (e) {
+  e.preventDefault();
+  $('.category-page .nav-tabs').animate({
+    scrollLeft: "+=40px"
+  });
+})
+
 console.log("--- index.jsaaa");

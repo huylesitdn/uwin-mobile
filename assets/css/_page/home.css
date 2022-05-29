@@ -81,7 +81,11 @@
     place-content: flex-start;
     gap: 10px;
     overflow-y: auto;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    .home__content__hot_games__content::-webkit-scrollbar {
+      display: none; }
     .home__content__hot_games__content__item {
       background: #131D39;
       border-radius: 8px;

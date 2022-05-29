@@ -114,6 +114,13 @@
         overflow-y: auto;
         padding-bottom: 10px;
 
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
         &__item {
           background: #131D39;
           border-radius: 8px;

@@ -128,7 +128,32 @@
     "": ""
   },
   "Games_Lobby": "Games Lobby",
-  "": "",
+  "Sport": "Sport",
+  "E-sport": "E-sport",
+  "Fishing_God": "Fishing<br/>God",
+  "Tokyo_Kombat": "Tokyo<br/>Kombat",
+  "American_Kombat": "American<br/>Kombat",
+  "Lucky_Number_of_the_Day": "Lucky Number of the Day",
+  "Bet_Now": "Bet Now",
+  "Payout_Table": "Payout Table",
+  "Magnum": "Magnum",
+  "1st_Prize": "1st Prize",
+  "2nd_Prize": "2nd Prize",
+  "3rd_Prize": "3rd Prize",
+  "Special": "Special",
+  "Consolation": "Consolation",
+  "payout_table_content": {
+    "title1": "Prize money for Big Forecast",
+    "description1": "For this Forecast, as shown in the table below, with every $1 bet, the 1st Prize pays $2,500, 2nd Prize $1,000, 3rd Prize $500, Special Prize $200 and Consolution Prize $60.",
+    "title2": "Prize money for Small Forecast",
+    "description2": "For this Forecast, as shown in the table below, with every $1 bet, the 1st Prize pays $3,500, 2nd Prize $2,000, 3rd Prize $1,000.",
+    "Big_Forecast": "Big Forecast",
+    "Prize_Amount": "Prize Amount",
+    "": "",
+    "": ""
+  },
+  "Small_Forecast": "Small Forecast",
+  "Prize_Amount": "Prize Amount",
   "": "",
   "": ""
 }
