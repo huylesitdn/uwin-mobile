@@ -17,6 +17,7 @@
       border-bottom: none;
       background: #131D39;
       width: 100%;
+      gap: 2px;
       -ms-overflow-style: none;
       scrollbar-width: none; }
       .category-page__content__container__tab__nav .nav::-webkit-scrollbar {

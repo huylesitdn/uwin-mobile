@@ -1,0 +1,239 @@
+.exclusive-event-page {
+  &__content {
+
+    &__play-now {
+      margin-top: 15px;
+      display: flex;
+      place-content: center;
+
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 4px;
+        min-height: 40px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 135px;
+      }
+    }
+
+    &__winner_list {
+      background: #131D39;
+      border-radius: 18px;
+      padding: 25px 15px;
+      overflow: hidden;
+      margin-top: 50px;
+
+      &__header {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+        &__title {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 35px;
+
+          background: linear-gradient(90deg, #FCA20D 0%, #FFCD0C 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+          margin-bottom: 3px;
+        }
+
+        &__last_update {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: #FFFFFF;
+        }
+
+        &__icon {
+          position: absolute;
+          top: -50px;
+          right: -30px;
+        }
+
+        &__description {
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px;
+          color: #FFFFFF;
+
+          span {
+            color: #FDBB2C;
+          }
+        }
+
+      }
+
+      &__games {
+        &__title {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          color: #FFFFFF;
+          margin-bottom: 15px;
+
+          a {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        &__container {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          flex-wrap: wrap;
+          gap: 15px;
+
+          &__item {
+            img {
+              max-height: 50px;
+            }
+
+            div {
+              font-weight: 400;
+              font-size: 9px;
+              line-height: 12px;
+              text-align: center;
+              color: #FFFFFF;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+
+      &__container {
+        height: 315px;
+        overflow: auto;
+
+        &__item {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          padding: 8px 0;
+
+          .username {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-bottom: 2px;
+          }
+
+          .name {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.3);
+          }
+
+          .price {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: right;
+            background: linear-gradient(89.95deg, #FCA20D 50%, #FFCD0C 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 2px;
+          }
+
+          .date {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+
+  &__top {
+    background-image: url(../images/exclusive-event/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 245px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    position: relative;
+
+    &__title {
+      max-width: 215px;
+    }
+
+    &__prize {
+      position: relative;
+
+      &__text {
+        position: absolute;
+        top: 11px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+
+        color: #FDBB2C;
+      }
+
+      &__img {
+        max-width: 340px;
+      }
+    }
+
+    &__logo {
+      // max-width: 150px;
+    }
+
+    &__action {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 10px;
+
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+
+      .btn {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 4px;
+        min-height: 40px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        min-width: 135px;
+      }
+    }
+  }
+}

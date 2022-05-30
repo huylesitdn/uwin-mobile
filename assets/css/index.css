@@ -128,6 +128,72 @@ a {
           text-align: center;
           color: #000000;
           margin: 0; }
+  .modal.slide-up .modal-dialog .modal-content {
+    height: 80vh;
+    padding: 15px; }
+    .modal.slide-up .modal-dialog .modal-content .close-button {
+      text-align: center;
+      padding-bottom: 5px; }
+    .modal.slide-up .modal-dialog .modal-content .content {
+      overflow-x: auto; }
+      .modal.slide-up .modal-dialog .modal-content .content table {
+        margin: 15px 0;
+        border-radius: 5px;
+        overflow: hidden; }
+        .modal.slide-up .modal-dialog .modal-content .content table thead tr th {
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 14px;
+          color: #FDBB2C;
+          background: #19264B;
+          text-align: center;
+          vertical-align: middle;
+          border-bottom: none;
+          box-shadow: none;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+        .modal.slide-up .modal-dialog .modal-content .content table tbody {
+          border-top: none; }
+          .modal.slide-up .modal-dialog .modal-content .content table tbody tr td {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: #FFFFFF;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: transparent;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 10px;
+            padding-bottom: 10px; }
+          .modal.slide-up .modal-dialog .modal-content .content table tbody tr:nth-child(even) td {
+            background: rgba(255, 255, 255, 0.15); }
+      .modal.slide-up .modal-dialog .modal-content .content__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FDBB2C;
+        padding: 15px 0; }
+      .modal.slide-up .modal-dialog .modal-content .content__subtitle {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        padding: 10px 0; }
+      .modal.slide-up .modal-dialog .modal-content .content__description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF; }
+      .modal.slide-up .modal-dialog .modal-content .content__subdescription {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FDBB2C;
+        padding-left: 15px; }
+        .modal.slide-up .modal-dialog .modal-content .content__subdescription ul {
+          padding-left: 15px; }
 
 .modal.slide-up-notification {
   top: auto;
@@ -178,6 +244,12 @@ a {
   .modal.alert .modal-dialog .modal-content {
     background: #19264B;
     border-radius: 16px; }
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; }
 
 #mySidenav.sidenav {
   width: 100%;
@@ -1779,6 +1851,7 @@ a {
       border-bottom: none;
       background: #131D39;
       width: 100%;
+      gap: 2px;
       -ms-overflow-style: none;
       scrollbar-width: none; }
       .category-page__content__container__tab__nav .nav::-webkit-scrollbar {
@@ -2213,3 +2286,171 @@ a {
       padding-left: 15px; }
       #payoutTableModal .modal-dialog .modal-content .content__subdescription ul {
         padding-left: 15px; }
+
+.exclusive-event-page__content__play-now {
+  margin-top: 15px;
+  display: flex;
+  place-content: center; }
+  .exclusive-event-page__content__play-now a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 4px;
+    min-height: 40px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 135px; }
+
+.exclusive-event-page__content__winner_list {
+  background: #131D39;
+  border-radius: 18px;
+  padding: 25px 15px;
+  overflow: hidden;
+  margin-top: 50px; }
+  .exclusive-event-page__content__winner_list__header {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13); }
+    .exclusive-event-page__content__winner_list__header__title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 35px;
+      background: linear-gradient(90deg, #FCA20D 0%, #FFCD0C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 3px; }
+    .exclusive-event-page__content__winner_list__header__last_update {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #FFFFFF; }
+    .exclusive-event-page__content__winner_list__header__icon {
+      position: absolute;
+      top: -50px;
+      right: -30px; }
+    .exclusive-event-page__content__winner_list__header__description {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+      color: #FFFFFF; }
+      .exclusive-event-page__content__winner_list__header__description span {
+        color: #FDBB2C; }
+  .exclusive-event-page__content__winner_list__games__title {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 15px; }
+    .exclusive-event-page__content__winner_list__games__title a {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: right;
+      color: rgba(255, 255, 255, 0.5); }
+  .exclusive-event-page__content__winner_list__games__container {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: 15px; }
+    .exclusive-event-page__content__winner_list__games__container__item img {
+      max-height: 50px; }
+    .exclusive-event-page__content__winner_list__games__container__item div {
+      font-weight: 400;
+      font-size: 9px;
+      line-height: 12px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 5px; }
+  .exclusive-event-page__content__winner_list__container {
+    height: 315px;
+    overflow: auto; }
+    .exclusive-event-page__content__winner_list__container__item {
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      padding: 8px 0; }
+      .exclusive-event-page__content__winner_list__container__item .username {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 2px; }
+      .exclusive-event-page__content__winner_list__container__item .name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.3); }
+      .exclusive-event-page__content__winner_list__container__item .price {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        background: linear-gradient(89.95deg, #FCA20D 50%, #FFCD0C 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 2px; }
+      .exclusive-event-page__content__winner_list__container__item .date {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.3); }
+
+.exclusive-event-page__top {
+  background-image: url(../images/exclusive-event/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 245px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  position: relative; }
+  .exclusive-event-page__top__title {
+    max-width: 215px; }
+  .exclusive-event-page__top__prize {
+    position: relative; }
+    .exclusive-event-page__top__prize__text {
+      position: absolute;
+      top: 11px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #FDBB2C; }
+    .exclusive-event-page__top__prize__img {
+      max-width: 340px; }
+  .exclusive-event-page__top__action {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0; }
+    .exclusive-event-page__top__action .btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      border-radius: 4px;
+      min-height: 40px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      min-width: 135px; }
