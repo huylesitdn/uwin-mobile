@@ -795,6 +795,8 @@ a {
     min-width: auto; }
     .home__content .btn-newbie:focus {
       box-shadow: none; }
+    .home__content .btn-newbie img {
+      max-width: 50px; }
   .home__content__commitment__content {
     display: flex;
     place-content: center;

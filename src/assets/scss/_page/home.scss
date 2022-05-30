@@ -13,6 +13,10 @@
       &:focus {
         box-shadow: none;
       }
+
+      img {
+        max-width: 50px;
+      }
     }
 
     &__commitment {
