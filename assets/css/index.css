@@ -375,15 +375,16 @@ a {
           padding-bottom: 10px;
           padding-left: 5px;
           padding-right: 5px; }
-          #mySidenav.sidenav .left-nav__container__menu__content__item > div {
+          #mySidenav.sidenav .left-nav__container__menu__content__item .category {
             background: #26314C;
             border-radius: 8px;
             position: relative;
-            overflow: hidden; }
-            #mySidenav.sidenav .left-nav__container__menu__content__item > div img {
+            overflow: hidden;
+            display: block; }
+            #mySidenav.sidenav .left-nav__container__menu__content__item .category img {
               width: 100%;
               margin-top: -2px; }
-            #mySidenav.sidenav .left-nav__container__menu__content__item > div span {
+            #mySidenav.sidenav .left-nav__container__menu__content__item .category span {
               position: absolute;
               left: 15px;
               top: 15px;

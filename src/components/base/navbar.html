@@ -4,9 +4,16 @@
       <button class="btn" id="navMenu">
         <img src="assets/icons/menu.svg" alt="" />
       </button>
-      <a href="/">
-        <img class="content__logo" src="assets/icons/logo.svg" alt="" />
-      </a>
+      @@if (!!context.without_login) {
+        <a href="/home-without-login.html">
+          <img class="content__logo" src="assets/icons/logo.svg" alt="" />
+        </a>
+      }
+      @@if (!context.without_login) {
+        <a href="/">
+          <img class="content__logo" src="assets/icons/logo.svg" alt="" />
+        </a>
+      }
     </div>
     <div>
       <button type="button" class="btn btn-language">中</button>

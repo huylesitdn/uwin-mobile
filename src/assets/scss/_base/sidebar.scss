@@ -176,11 +176,12 @@
               padding-left: 5px;
               padding-right: 5px;
 
-              &>div {
+              .category {
                 background: #26314C;
                 border-radius: 8px;
                 position: relative;
                 overflow: hidden;
+                display: block;
 
                 img {
                   width: 100%;
