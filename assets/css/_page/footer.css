@@ -2,6 +2,8 @@
   background: rgba(19, 29, 57, 0.5);
   padding: 25px 15px 40px;
   margin-top: 40px; }
+  .footer__logo {
+    max-width: 100px; }
   .footer__copy_right {
     font-weight: 400;
     font-size: 10px;

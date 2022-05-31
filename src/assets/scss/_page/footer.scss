@@ -3,6 +3,10 @@
   padding: 25px 15px 40px;
   margin-top: 40px;
 
+  &__logo {
+    max-width: 100px;
+  }
+
   &__copy_right {
     font-weight: 400;
     font-size: 10px;

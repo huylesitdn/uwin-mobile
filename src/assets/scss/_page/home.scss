@@ -96,6 +96,7 @@
 
           &__img {
             margin: 0;
+            max-width: 117px;
           }
 
           &__title {
@@ -154,6 +155,7 @@
 
           &__img {
             margin: 8px 0;
+            max-width: 56px;
           }
 
           &__title {
@@ -269,7 +271,9 @@
           margin-right: -30px;
         }
 
-        &__icon {}
+        &__icon {
+          max-width: 130px;
+        }
 
         &__right {
           padding-top: 30px;
