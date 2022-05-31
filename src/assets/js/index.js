@@ -12,6 +12,22 @@ function getUrlVars() {
   return vars;
 }
 
+
+/**
+ * 
+ * ANIMATION SHOW SECTION
+ * 
+*/
+AOS.init({
+  once: false, // whether animation should happen only once - while scrolling down
+});
+/**
+ * 
+ * END ANIMATION SHOW SECTION
+ * 
+*/
+
+
 // Translator
 
 const LANGUAGES = {
