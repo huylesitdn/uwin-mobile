@@ -1,5 +1,169 @@
 .play-now-page {
   &__content {
-    
+    #brandlogoTab {
+      flex-wrap: nowrap;
+      overflow: auto;
+      gap: 10px;
+      background: #131D39;
+      padding: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &>.nav-item {
+        &>.nav-link {
+          height: 100%;
+          width: 60px;
+          background: #000A25;
+          border-radius: 6px;
+          padding: 3px 0;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 8px;
+          line-height: 11px;
+          text-align: center;
+          color: #FFFFFF;
+
+          div {
+            margin-top: -5px;
+          }
+
+          img {
+            max-width: 55px;
+            height: 55px;
+
+            &.active {
+              display: none;
+            }
+          }
+
+          &.active {
+            border-color: #FDBB2C;
+
+            img {
+              display: none;
+
+              &.active {
+                display: initial;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #brandlogoTabContent {
+      &>.tab-pane {
+
+        .brandlogo-nav-tab {
+          padding: 0 15px;
+          place-content: space-between;
+          background: #131D39;
+          border-bottom: none;
+
+          .nav-item {
+            .nav-link {
+              border-radius: 0;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              text-align: center;
+              color: #FFFFFF;
+              border: none;
+              transition: 0.3;
+
+              &.active {
+                border-bottom: 3px solid #FDBB2C;
+                background: transparent;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+                color: #FDBB2C;
+              }
+            }
+          }
+        }
+
+        .brandlogo-tab-content {
+          padding: 15px;
+
+          .play-now-item {
+            margin-left: -8px;
+            margin-right: -8px;
+
+            &__container {
+              padding-left: 8px;
+              padding-right: 8px;
+
+              &__item {
+                background: #131D39;
+                border-radius: 8px;
+
+                text-align: center;
+                padding: 15px;
+                margin-bottom: 15px;
+
+                position: relative;
+
+                img {
+                  max-width: 75px;
+                }
+
+                .text {
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 19px;
+                  text-align: center;
+                  color: #FFFFFF;
+                  margin-top: 8px;
+                }
+                
+                .action {
+                  padding: 10px;
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  top: 0;
+                  bottom: 0;
+                  background: rgba(0, 0, 0, 0.7);
+                  border: 2px solid #FDBB2C;
+                  backdrop-filter: blur(4px);
+                  border-radius: 8px;
+                  display: flex;
+                  flex-direction: column;
+                  place-content: center;
+                  place-items: center;
+                  gap: 10px;
+                  transition: all 0.2s;
+                  opacity: 0;
+                  z-index: -1;
+      
+                  .btn {
+                    width: 100%;
+                    height: 30px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    display: flex;
+                    place-content: center;
+                    place-items: center;
+                    min-width: auto;
+                    padding: 0;
+                  }
+                }
+
+                &.active {
+                  .action {
+                    opacity: 1;
+                    z-index: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

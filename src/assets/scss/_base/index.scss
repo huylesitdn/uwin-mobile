@@ -173,20 +173,20 @@ a {
       .modal-content {
         height: 80vh;
         padding: 15px;
-  
+
         .close-button {
           text-align: center;
           padding-bottom: 5px;
         }
-  
+
         .content {
           overflow-x: auto;
-  
+
           table {
             margin: 15px 0;
             border-radius: 5px;
             overflow: hidden;
-  
+
             thead {
               tr {
                 th {
@@ -204,10 +204,10 @@ a {
                 }
               }
             }
-  
+
             tbody {
               border-top: none;
-  
+
               tr {
                 td {
                   font-weight: 400;
@@ -221,7 +221,7 @@ a {
                   padding-top: 10px;
                   padding-bottom: 10px;
                 }
-  
+
                 &:nth-child(even) {
                   td {
                     background: rgba(255, 255, 255, 0.15);
@@ -230,7 +230,7 @@ a {
               }
             }
           }
-  
+
           &__title {
             font-weight: 700;
             font-size: 14px;
@@ -238,7 +238,7 @@ a {
             color: #FDBB2C;
             padding: 15px 0;
           }
-  
+
           &__subtitle {
             font-weight: 700;
             font-size: 12px;
@@ -247,14 +247,14 @@ a {
             color: #FFFFFF;
             padding: 10px 0;
           }
-  
+
           &__description {
             font-weight: 400;
             font-size: 12px;
             line-height: 16px;
             color: #FFFFFF;
           }
-  
+
           &__subdescription {
             font-style: normal;
             font-weight: 400;
@@ -262,13 +262,13 @@ a {
             line-height: 16px;
             color: #FDBB2C;
             padding-left: 15px;
-  
+
             ul {
               padding-left: 15px;
             }
           }
         }
-  
+
       }
     }
   }
@@ -340,12 +340,53 @@ a {
 
   &.alert {
     .modal-dialog {
-      max-width: 300px;
+      max-width: 350px;
       margin: auto;
 
       .modal-content {
         background: #19264B;
         border-radius: 16px;
+        padding: 30px;
+
+        .modal-body {
+          padding: 0;
+
+          .text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+
+            span {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 25px;
+              text-align: center;
+              color: #FDBB2C;
+            }
+          }
+
+          .action {
+            margin-top: 30px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            gap: 10px;
+
+            .btn {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 19px;
+              text-align: center;
+
+              height: 40px;
+              display: flex;
+              place-content: center;
+              place-items: center;
+            }
+          }
+        }
       }
     }
   }

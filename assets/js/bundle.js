@@ -32,8 +32,8 @@ AOS.init({
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 0, // offset (in px) from the original trigger point
-  delay: 50, // values from 0 to 3000, with step 50ms
-  duration: 1500, // values from 0 to 3000, with step 50ms
+  delay: 500, // values from 0 to 3000, with step 50ms
+  duration: 2000, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: true, // whether animation should happen only once - while scrolling down
   mirror: true, // whether elements should animate out while scrolling past them
@@ -782,10 +782,10 @@ $(document).ready(function () {
   });
 });
 
-$('.home .home__content__hot_games__content__item').on('click', function (e) {
+$('.show-action').on('click', function (e) {
   e.preventDefault();
   const hasActive = $(this).hasClass('active');
-  $('.home .home__content__hot_games__content__item').removeClass('active');
+  $('.show-action').removeClass('active');
   if (!!hasActive) {
     $(this).removeClass('active');
   } else {

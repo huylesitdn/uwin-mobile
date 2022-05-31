@@ -232,11 +232,41 @@ a {
         width: 100%; }
 
 .modal.alert .modal-dialog {
-  max-width: 300px;
+  max-width: 350px;
   margin: auto; }
   .modal.alert .modal-dialog .modal-content {
     background: #19264B;
-    border-radius: 16px; }
+    border-radius: 16px;
+    padding: 30px; }
+    .modal.alert .modal-dialog .modal-content .modal-body {
+      padding: 0; }
+      .modal.alert .modal-dialog .modal-content .modal-body .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF; }
+        .modal.alert .modal-dialog .modal-content .modal-body .text span {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: #FDBB2C; }
+      .modal.alert .modal-dialog .modal-content .modal-body .action {
+        margin-top: 30px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 10px; }
+        .modal.alert .modal-dialog .modal-content .modal-body .action .btn {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          height: 40px;
+          display: flex;
+          place-content: center;
+          place-items: center; }
 
 .hide-scrollbar {
   -ms-overflow-style: none;
