@@ -1231,49 +1231,51 @@ a {
 
 #newbieModal .modal-dialog {
   max-width: 350px; }
-  #newbieModal .modal-dialog .modal-content .modal-header {
-    border-bottom: none !important; }
-    #newbieModal .modal-dialog .modal-content .modal-header .btn-close {
-      opacity: 1;
-      background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
-  #newbieModal .modal-dialog .modal-content .modal-body img {
-    max-width: 180px; }
-  #newbieModal .modal-dialog .modal-content .modal-body .title {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 15px 0; }
-  #newbieModal .modal-dialog .modal-content .modal-body .subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF; }
-    #newbieModal .modal-dialog .modal-content .modal-body .subtitle span {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 25px;
+  #newbieModal .modal-dialog .modal-content {
+    padding: 0; }
+    #newbieModal .modal-dialog .modal-content .modal-header {
+      border-bottom: none !important; }
+      #newbieModal .modal-dialog .modal-content .modal-header .btn-close {
+        opacity: 1;
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
+    #newbieModal .modal-dialog .modal-content .modal-body img {
+      max-width: 180px; }
+    #newbieModal .modal-dialog .modal-content .modal-body .title {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 27px;
       text-align: center;
-      color: #FDBB2C; }
-  #newbieModal .modal-dialog .modal-content .modal-footer {
-    border-top: none;
-    padding: 0;
-    margin-top: 20px; }
-    #newbieModal .modal-dialog .modal-content .modal-footer .btn {
-      width: 100%;
-      min-height: 50px;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 25px;
+      color: #FFFFFF;
+      margin: 15px 0; }
+    #newbieModal .modal-dialog .modal-content .modal-body .subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
       text-align: center;
-      color: #000000;
-      margin: 0;
-      border-radius: 0;
-      display: flex;
-      place-content: center;
-      place-items: center; }
+      color: #FFFFFF; }
+      #newbieModal .modal-dialog .modal-content .modal-body .subtitle span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FDBB2C; }
+    #newbieModal .modal-dialog .modal-content .modal-footer {
+      border-top: none;
+      padding: 0;
+      margin-top: 20px; }
+      #newbieModal .modal-dialog .modal-content .modal-footer .btn {
+        width: 100%;
+        min-height: 50px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        place-content: center;
+        place-items: center; }
 
 .home-section {
   padding-top: 40px; }
