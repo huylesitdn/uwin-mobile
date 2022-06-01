@@ -2398,7 +2398,8 @@ a {
     .exclusive-event-page__content__winner_list__header__icon {
       position: absolute;
       top: -50px;
-      right: -30px; }
+      right: -30px;
+      max-width: 170px; }
     .exclusive-event-page__content__winner_list__header__description {
       font-weight: 500;
       font-size: 13px;
