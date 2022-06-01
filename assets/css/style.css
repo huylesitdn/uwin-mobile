@@ -138,9 +138,9 @@
           margin: auto;
           margin-top: 10px; }
           .navbar.fixed-bottom .content .nav-item .img img {
-            width: 19px; }
+            height: 15px; }
             .navbar.fixed-bottom .content .nav-item .img img.active {
-              width: 23px; }
+              height: 23px; }
           .navbar.fixed-bottom .content .nav-item .img .active {
             display: none; }
         .navbar.fixed-bottom .content .nav-item .text {
