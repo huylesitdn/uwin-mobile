@@ -209,10 +209,14 @@
       place-content: center;
       place-items: center; }
       .category-page__content__container__games_lobby__content__item__img__icon {
-        margin-top: -40px; }
+        margin-top: -40px;
+        max-width: 95px;
+        max-height: 95px; }
       .category-page__content__container__games_lobby__content__item__img__logo {
         max-width: 90px;
         max-height: 25px; }
+        .category-page__content__container__games_lobby__content__item__img__logo.mh-14px {
+          max-height: 14px; }
     .category-page__content__container__games_lobby__content__item__content {
       display: block;
       text-align: center;
@@ -223,6 +227,9 @@
       background: #131D39;
       border-radius: 8px;
       padding: 15px 12px; }
+      .category-page__content__container__games_lobby__content__item__content__icon {
+        max-width: 95px;
+        max-height: 95px; }
       .category-page__content__container__games_lobby__content__item__content__title {
         font-weight: 600;
         font-size: 14px;
@@ -264,7 +271,8 @@
         background: rgba(203, 19, 47, 0.3);
         color: #CB132F; }
     .category-page__content__container__hot_games__content__item__img {
-      margin: 8px 0; }
+      margin: 8px 0;
+      max-height: 72px; }
     .category-page__content__container__hot_games__content__item__title {
       font-weight: 600;
       font-size: 12px;
@@ -328,8 +336,10 @@
       display: flex;
       place-content: center;
       place-items: center; }
-      .category-page__content__top__navbar__item__img img.active {
-        display: none; }
+      .category-page__content__top__navbar__item__img img {
+        max-height: 34px; }
+        .category-page__content__top__navbar__item__img img.active {
+          display: none; }
     .category-page__content__top__navbar__item__text {
       font-weight: 400;
       font-size: 10px;

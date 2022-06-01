@@ -298,12 +298,16 @@
 
               &__icon {
                 margin-top: -40px;
-                // max-width: 95px;
+                max-width: 95px;
+                max-height: 95px;
               }
 
               &__logo {
                 max-width: 90px;
                 max-height: 25px;
+                &.mh-14px {
+                  max-height: 14px;
+                }
               }
             }
 
@@ -317,6 +321,11 @@
               background: #131D39;
               border-radius: 8px;
               padding: 15px 12px;
+
+              &__icon {
+                max-width: 95px;
+                max-height: 95px;
+              }
 
               &__title {
                 font-weight: 600;
@@ -383,6 +392,7 @@
 
             &__img {
               margin: 8px 0;
+              max-height: 72px;
             }
 
             &__title {
@@ -468,6 +478,8 @@
             place-items: center;
 
             img {
+              max-height: 34px;
+
               &.active {
                 display: none;
               }

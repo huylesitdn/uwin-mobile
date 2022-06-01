@@ -485,6 +485,10 @@
           display: flex;
           place-content: center;
           place-items: center;
+
+          img {
+            max-height: 34px;
+          }
         }
 
         &__text {
