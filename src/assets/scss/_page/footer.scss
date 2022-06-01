@@ -34,6 +34,42 @@
       place-items: center;
       gap: 10px;
 
+      &.social {
+        img {
+          width: 35px;
+        }
+      }
+
+      &.question {
+        img {
+          width: 28px;
+        }
+      }
+
+      &.responsible-gaming {
+        img {
+          max-height: 26px;
+        }
+      }
+
+      &.security-trust {
+        img {
+          max-width: 83px;
+        }
+      }
+
+      &.certification {
+        img {
+          max-width: 70%;
+        }
+      }
+
+      &.payment-method {
+        img {
+          max-width: 80%;
+        }
+      }
+
       a {
         img {}
       }

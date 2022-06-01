@@ -244,7 +244,8 @@
       .home__content__exclusive_event__content__header__icon {
         position: absolute;
         top: -50px;
-        right: -30px; }
+        right: -30px;
+        max-width: 170px; }
     .home__content__exclusive_event__content__item {
       display: flex;
       place-content: space-between;
