@@ -17,6 +17,10 @@
             transform: matrix(-1, 0, 0, 1, 0, 0);
             border: none;
             width: 30px;
+
+            img {
+              max-width: 10px;
+            }
           }
 
           .nav {
@@ -43,7 +47,8 @@
 
                 img {
                   opacity: 0.5;
-                  transform: scale(1.2);
+                  max-width: 50px;
+                  max-height: 24px;
                 }
 
                 &.active {
@@ -305,6 +310,7 @@
               &__logo {
                 max-width: 90px;
                 max-height: 25px;
+
                 &.mh-14px {
                   max-height: 14px;
                 }

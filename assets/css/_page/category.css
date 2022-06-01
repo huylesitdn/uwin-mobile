@@ -10,6 +10,8 @@
       transform: matrix(-1, 0, 0, 1, 0, 0);
       border: none;
       width: 30px; }
+      .category-page__content__container__tab__nav .btn-nav img {
+        max-width: 10px; }
     .category-page__content__container__tab__nav .nav {
       flex-wrap: nowrap;
       overflow: auto;
@@ -28,7 +30,8 @@
         padding: 5px 0; }
         .category-page__content__container__tab__nav .nav-item .nav-link img {
           opacity: 0.5;
-          transform: scale(1.2); }
+          max-width: 50px;
+          max-height: 24px; }
         .category-page__content__container__tab__nav .nav-item .nav-link.active {
           background-color: transparent;
           border-color: transparent; }
