@@ -810,4 +810,13 @@ $('.category-page .btn-right').on('click', function (e) {
   });
 })
 
+const promotionDetailModal = document.getElementById('promotionDetailModal');
+if(promotionDetailModal) {
+  promotionDetailModal.addEventListener('show.bs.modal', (e) => {
+    const bannerimg = e.relatedTarget.dataset.bannerimg;
+    $('#promotionDetailModal .bannerimg').attr('src', 'assets/images/promotion/'+bannerimg+'.png')
+  });
+}
+
+
 console.log("--- index.jsaaa");

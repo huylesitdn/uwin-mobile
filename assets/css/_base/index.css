@@ -27,7 +27,8 @@ body {
   color: var(--bs-body-color); }
 
 * {
-  outline: none; }
+  outline: none;
+  box-sizing: border-box; }
 
 img {
   max-width: 100%; }
@@ -77,8 +78,8 @@ img {
   text-align: center; }
 
 .main {
-  padding-top: 70px;
-  padding-bottom: 55px;
+  margin-top: 70px;
+  margin-bottom: 55px;
   min-height: 100vh; }
 
 a {

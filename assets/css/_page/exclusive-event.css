@@ -1,5 +1,5 @@
 .exclusive-event-page__content__play-now {
-  margin-top: 15px;
+  margin: 20px 0;
   display: flex;
   place-content: center; }
   .exclusive-event-page__content__play-now a {
@@ -35,6 +35,17 @@
       background-clip: text;
       text-fill-color: transparent;
       margin-bottom: 3px; }
+      .exclusive-event-page__content__winner_list__header__title.how-to-win {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 32px;
+        /* or 123% */
+        background: linear-gradient(90deg, #FCA20D 0%, #FFCD0C 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent; }
     .exclusive-event-page__content__winner_list__header__last_update {
       font-weight: 400;
       font-size: 14px;
@@ -52,6 +63,9 @@
       color: #FFFFFF; }
       .exclusive-event-page__content__winner_list__header__description span {
         color: #FDBB2C; }
+      .exclusive-event-page__content__winner_list__header__description a {
+        text-decoration-line: underline;
+        color: #FFFFFF; }
   .exclusive-event-page__content__winner_list__games__title {
     display: flex;
     place-content: space-between;
@@ -72,7 +86,7 @@
     place-content: space-between;
     place-items: center;
     flex-wrap: wrap;
-    gap: 15px; }
+    gap: 7px 15px; }
     .exclusive-event-page__content__winner_list__games__container__item img {
       max-height: 50px; }
     .exclusive-event-page__content__winner_list__games__container__item div {

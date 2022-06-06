@@ -31,6 +31,7 @@ body {
 
 * {
   outline: none;
+  box-sizing: border-box;
 }
 
 img {
@@ -104,8 +105,8 @@ img {
 }
 
 .main {
-  padding-top: 70px;
-  padding-bottom: 55px;
+  margin-top: 70px;
+  margin-bottom: 55px;
   min-height: 100vh;
 }
 

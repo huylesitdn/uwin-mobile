@@ -2,7 +2,7 @@
   &__content {
 
     &__play-now {
-      margin-top: 15px;
+      margin: 20px 0;
       display: flex;
       place-content: center;
 
@@ -44,6 +44,21 @@
           background-clip: text;
           text-fill-color: transparent;
           margin-bottom: 3px;
+
+          &.how-to-win {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 32px;
+            /* or 123% */
+
+
+            background: linear-gradient(90deg, #FCA20D 0%, #FFCD0C 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
         }
 
         &__last_update {
@@ -68,6 +83,11 @@
 
           span {
             color: #FDBB2C;
+          }
+
+          a {
+            text-decoration-line: underline;
+            color: #FFFFFF;
           }
         }
 
@@ -98,7 +118,7 @@
           place-content: space-between;
           place-items: center;
           flex-wrap: wrap;
-          gap: 15px;
+          gap: 7px 15px;
 
           &__item {
             img {

@@ -92,7 +92,7 @@
         .navbar.fixed-top .content #navMenu:focus {
           box-shadow: none; }
         .navbar.fixed-top .content #navMenu img {
-          width: 20px; }
+          width: 26px; }
       .navbar.fixed-top .content__customer_service {
         width: 80px;
         font-style: normal;
@@ -138,9 +138,9 @@
           margin: auto;
           margin-top: 10px; }
           .navbar.fixed-bottom .content .nav-item .img img {
-            height: 15px; }
+            height: 17px; }
             .navbar.fixed-bottom .content .nav-item .img img.active {
-              height: 23px; }
+              height: 25px; }
           .navbar.fixed-bottom .content .nav-item .img .active {
             display: none; }
         .navbar.fixed-bottom .content .nav-item .text {
