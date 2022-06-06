@@ -2369,7 +2369,7 @@ a {
         padding-left: 15px; }
 
 .exclusive-event-page__content__play-now {
-  margin: 20px 0;
+  margin: 20px 0 100px;
   display: flex;
   place-content: center; }
   .exclusive-event-page__content__play-now a {
