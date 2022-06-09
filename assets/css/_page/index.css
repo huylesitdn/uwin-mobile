@@ -411,6 +411,12 @@
       min-height: 230px;
       position: relative;
       padding: 25px 10px; }
+      @media only screen and (max-width: 405px) {
+        .home__content__commitment__content__item {
+          min-height: 250px; } }
+      @media only screen and (max-width: 376px) {
+        .home__content__commitment__content__item {
+          min-height: 255px; } }
       .home__content__commitment__content__item__icon {
         position: absolute;
         top: 15px;
