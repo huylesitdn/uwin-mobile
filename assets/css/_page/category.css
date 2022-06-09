@@ -250,7 +250,8 @@
   overflow-y: auto;
   padding-bottom: 10px;
   -ms-overflow-style: none;
-  scrollbar-width: none; }
+  scrollbar-width: none;
+  padding: 0 15px; }
   .category-page__content__container__hot_games__content::-webkit-scrollbar {
     display: none; }
   .category-page__content__container__hot_games__content__item {
@@ -377,21 +378,21 @@
       bottom: -15px; }
     .category-page__content__top .top-slider .slick-dots li {
       margin: 0 2px;
-      width: 15px; }
+      width: 6px; }
     .category-page__content__top .top-slider .slick-dots li button {
-      width: 15px; }
+      width: 6px; }
     .category-page__content__top .top-slider .slick-dots li button::before {
       background-color: #707070;
       content: '';
-      width: 10px;
-      height: 10px;
+      width: 7px;
+      height: 7px;
       opacity: 1;
       border-radius: 50%; }
     .category-page__content__top .top-slider .slick-dots li.slick-active,
     .category-page__content__top .top-slider .slick-dots li.slick-active button {
-      width: 40px; }
+      width: 27px; }
     .category-page__content__top .top-slider .slick-dots li.slick-active button::before {
-      width: 35px;
+      width: 27px;
       border-radius: 10px;
       background-color: #fff; }
     .category-page__content__top .top-slider .no-overflow {

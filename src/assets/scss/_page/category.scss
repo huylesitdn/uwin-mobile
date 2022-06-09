@@ -365,6 +365,8 @@
           -ms-overflow-style: none;
           scrollbar-width: none;
 
+          padding: 0 15px;
+
           &::-webkit-scrollbar {
             display: none;
           }
@@ -548,30 +550,30 @@
         .slick-dots li {
           margin: 0 2px;
           // transition: 0.2s;
-          width: 15px;
+          width: 6px;
         }
 
         .slick-dots li button {
           // transition: 0.2s;
-          width: 15px;
+          width: 6px;
         }
 
         .slick-dots li button::before {
           background-color: #707070;
           content: '';
-          width: 10px;
-          height: 10px;
+          width: 7px;
+          height: 7px;
           opacity: 1;
           border-radius: 50%;
         }
 
         .slick-dots li.slick-active,
         .slick-dots li.slick-active button {
-          width: 40px;
+          width: 27px;
         }
 
         .slick-dots li.slick-active button::before {
-          width: 35px;
+          width: 27px;
           border-radius: 10px;
           background-color: #fff;
         }

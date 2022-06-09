@@ -1843,17 +1843,17 @@ a {
     color: #FDBB2C;
     padding: 15px 12px; }
 
-#promotionDetailModal .modal-dialog .modal-content {
+.promotionDetailModal .modal-dialog .modal-content {
   height: 80vh;
   padding: 15px; }
-  #promotionDetailModal .modal-dialog .modal-content .close-button {
+  .promotionDetailModal .modal-dialog .modal-content .close-button {
     text-align: center;
     padding-bottom: 5px; }
-  #promotionDetailModal .modal-dialog .modal-content .promotion-content {
+  .promotionDetailModal .modal-dialog .modal-content .promotion-content {
     overflow-x: auto; }
-    #promotionDetailModal .modal-dialog .modal-content .promotion-content table {
+    .promotionDetailModal .modal-dialog .modal-content .promotion-content table {
       margin: 15px 0; }
-      #promotionDetailModal .modal-dialog .modal-content .promotion-content table thead tr th {
+      .promotionDetailModal .modal-dialog .modal-content .promotion-content table thead tr th {
         font-weight: 600;
         font-size: 10px;
         line-height: 14px;
@@ -1861,9 +1861,9 @@ a {
         background: #19264B;
         text-align: center;
         vertical-align: middle; }
-      #promotionDetailModal .modal-dialog .modal-content .promotion-content table tbody {
-        border-top: none; }
-        #promotionDetailModal .modal-dialog .modal-content .promotion-content table tbody tr td {
+      .promotionDetailModal .modal-dialog .modal-content .promotion-content table tbody {
+        border-top-color: transparent; }
+        .promotionDetailModal .modal-dialog .modal-content .promotion-content table tbody tr td {
           font-weight: 400;
           font-size: 10px;
           line-height: 12px;
@@ -1872,33 +1872,64 @@ a {
           border-color: transparent;
           text-align: center;
           vertical-align: middle; }
-    #promotionDetailModal .modal-dialog .modal-content .promotion-content__title {
+    .promotionDetailModal .modal-dialog .modal-content .promotion-content__title {
       font-weight: 700;
       font-size: 14px;
       line-height: 19px;
       color: #FDBB2C;
       padding: 15px 0; }
-    #promotionDetailModal .modal-dialog .modal-content .promotion-content__subtitle {
+    .promotionDetailModal .modal-dialog .modal-content .promotion-content__subtitle {
       font-weight: 700;
       font-size: 12px;
       line-height: 16px;
       text-decoration-line: underline;
       color: #FFFFFF;
       padding: 10px 0; }
-    #promotionDetailModal .modal-dialog .modal-content .promotion-content__description {
+    .promotionDetailModal .modal-dialog .modal-content .promotion-content__description {
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
       color: #FFFFFF; }
-    #promotionDetailModal .modal-dialog .modal-content .promotion-content__subdescription {
+    .promotionDetailModal .modal-dialog .modal-content .promotion-content__subdescription {
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
       color: #FDBB2C;
       padding-left: 15px; }
-      #promotionDetailModal .modal-dialog .modal-content .promotion-content__subdescription ul {
+      .promotionDetailModal .modal-dialog .modal-content .promotion-content__subdescription ul {
         padding-left: 15px; }
+    .promotionDetailModal .modal-dialog .modal-content .promotion-content__step {
+      margin-left: -5px;
+      margin-right: 0; }
+      .promotionDetailModal .modal-dialog .modal-content .promotion-content__step__container {
+        padding-left: 5px;
+        padding-right: 5px; }
+        .promotionDetailModal .modal-dialog .modal-content .promotion-content__step__container__item {
+          border: 2px dashed #194183;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 14px;
+          color: #FFFFFF;
+          height: 100%;
+          padding: 7px;
+          text-align: center; }
+          .promotionDetailModal .modal-dialog .modal-content .promotion-content__step__container__item__count {
+            color: #FDBB2C;
+            border: 2px solid #FDBB2C;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            margin: auto;
+            margin-bottom: 10px;
+            place-content: center;
+            place-items: center;
+            font-weight: bold;
+            font-size: 12px; }
+          .promotionDetailModal .modal-dialog .modal-content .promotion-content__step__container__item__text a {
+            color: #fff;
+            text-decoration: underline; }
 
 .category-page__content__container__tab {
   margin-top: 20px; }
@@ -2152,7 +2183,8 @@ a {
   overflow-y: auto;
   padding-bottom: 10px;
   -ms-overflow-style: none;
-  scrollbar-width: none; }
+  scrollbar-width: none;
+  padding: 0 15px; }
   .category-page__content__container__hot_games__content::-webkit-scrollbar {
     display: none; }
   .category-page__content__container__hot_games__content__item {
@@ -2279,21 +2311,21 @@ a {
       bottom: -15px; }
     .category-page__content__top .top-slider .slick-dots li {
       margin: 0 2px;
-      width: 15px; }
+      width: 6px; }
     .category-page__content__top .top-slider .slick-dots li button {
-      width: 15px; }
+      width: 6px; }
     .category-page__content__top .top-slider .slick-dots li button::before {
       background-color: #707070;
       content: '';
-      width: 10px;
-      height: 10px;
+      width: 7px;
+      height: 7px;
       opacity: 1;
       border-radius: 50%; }
     .category-page__content__top .top-slider .slick-dots li.slick-active,
     .category-page__content__top .top-slider .slick-dots li.slick-active button {
-      width: 40px; }
+      width: 27px; }
     .category-page__content__top .top-slider .slick-dots li.slick-active button::before {
-      width: 35px;
+      width: 27px;
       border-radius: 10px;
       background-color: #fff; }
     .category-page__content__top .top-slider .no-overflow {
