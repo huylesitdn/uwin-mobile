@@ -371,7 +371,7 @@
       color: #FFFFFF;
       margin-top: 5px; }
   .home__content__feature__title {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
@@ -387,7 +387,7 @@
       .home__content__feature__content img.mh-13px {
         max-height: 13px; }
   .home__content .top-slider {
-    margin-bottom: 30px !important;
+    margin-bottom: 20px !important;
     padding: 20px 15px;
     min-height: 140px; }
     .home__content .top-slider .slick-slide {

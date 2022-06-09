@@ -822,5 +822,19 @@ $('.promotionDetailModal').on('shown.bs.modal', function() {
   $('.promotionDetailModal .promotion-content').scrollTop(0);
 }) ;
 
+$('.category-page .refresh-lucky-number').on('click', function(e) {
+  const ramdomLuckyNumber = setInterval(function() {
+    var ranNum1 = Math.floor( 1 + Math.random() * 9 );
+    var ranNum2 = Math.floor( 1 + Math.random() * 9 );
+    var ranNum3 = Math.floor( 1 + Math.random() * 9 );
+    var ranNum4 = Math.floor( 1 + Math.random() * 9 );
+    $('#lucky-number').html(ranNum1 + ' ' + ' ' + ranNum2 + ' ' + ranNum3 + ' ' + ranNum4);
+  }, 50);
+
+  setTimeout(function() {
+    clearInterval(ramdomLuckyNumber);
+  }, 3000)
+})
+
 
 console.log("--- index.jsaaa");
