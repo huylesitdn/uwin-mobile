@@ -2705,7 +2705,8 @@ a {
           z-index: 1; }
 
 .voucher-page {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  min-height: auto; }
   .voucher-page__content {
     padding-top: 20px; }
     .voucher-page__content .container-fluid {
