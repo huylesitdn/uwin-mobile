@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Voucher'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main voucher-page">
+      @@include('../components/base/navbar-top.html', {title: 'voucher_page.Redeem_Voucher', back_url: '/', icon_back_white: true})
+      <div class="voucher-page__content">
+
+        <form class="voucher-page__content__form container-fluid" id="formVoucher" data-modal="successRedeemedModal">
+          <div class="voucher-page__content__form__input">
+            <label data-i18n="voucher_page.Voucher_Code" class="form-label"></label>
+            <input type="text" name="voucher" class="form-control" data-i18n-attr="placeholder" data-i18n="voucher_page.Enter_your_voucher_code"  />
+            <div class="form-text d-none" data-i18n="voucher_page.Please_enter_the_voucher_code"></div>
+          </div>
+          <button type="submit" class="btn btn-warning" data-i18n="voucher_page.Redeem"></button>
+        </form>
+
+        <div class="voucher-page__content__empty container-fluid">
+          <img src="assets/icons/voucher-empty.svg" />
+          <div data-i18n="voucher_page.No_voucher_records_found"></div>
+        </div>
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/voucher/success-redeemed-modal.html')
+      <!-- MODAL -->
+
+      
+      @@include('../components/base/navbar-footer.html')
+      
+      @@include('../components/base/navbar-bottom.html', {active: -1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

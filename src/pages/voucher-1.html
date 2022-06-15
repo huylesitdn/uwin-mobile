@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Voucher'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main voucher-page">
+      @@include('../components/base/navbar-top.html', {title: 'voucher_page.Redeem_Voucher', back_url: '/', icon_back_white: true})
+      <div class="voucher-page__content">
+
+        <form class="voucher-page__content__form container-fluid" id="formVoucher" data-modal="invalidCodeModal">
+          <div class="voucher-page__content__form__input">
+            <label data-i18n="voucher_page.Voucher_Code" class="form-label"></label>
+            <input type="text" name="voucher" class="form-control" data-i18n-attr="placeholder" data-i18n="voucher_page.Enter_your_voucher_code"  />
+            <div class="form-text d-none" data-i18n="voucher_page.Please_enter_the_voucher_code"></div>
+          </div>
+          <button type="submit" class="btn btn-warning" data-i18n="voucher_page.Redeem"></button>
+        </form>
+
+        <div class="voucher-page__content__container container-fluid">
+          <div class="voucher-page__content__container__title" data-i18n="voucher_page.Your_Voucher"></div>
+          <div class="voucher-page__content__container__item">
+            <div  class="d-flex justify-content-between align-items-start">
+              <div>
+                <div class="voucher-page__content__container__item__price">SGD10.00</div>
+                <div class="voucher-page__content__container__item__title" data-i18n="voucher_page.Weekly_Cash_Rebate"></div>
+              </div>
+              <div>
+                <img src="assets/icons/voucher-icon.svg" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="voucher-page__content__container__item__description">
+                  <span data-i18n="voucher_page.Valid_date"></span>: 20 -30 May, 2022
+                </div>
+                <div class="voucher-page__content__container__item__description">
+                  <span data-i18n="voucher_page.Turnover"></span>: x2
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-warning btn-sm" data-i18n="voucher_page.Redeem"></button>
+              </div>
+            </div>
+          </div>
+          <div class="voucher-page__content__container__item">
+            <div  class="d-flex justify-content-between align-items-start">
+              <div>
+                <div class="voucher-page__content__container__item__price">SGD10.00</div>
+                <div class="voucher-page__content__container__item__title" data-i18n="voucher_page.Weekly_Cash_Rebate"></div>
+              </div>
+              <div>
+                <img src="assets/icons/voucher-icon.svg" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="voucher-page__content__container__item__description">
+                  <span data-i18n="voucher_page.Valid_date"></span>: 20 -30 May, 2022
+                </div>
+                <div class="voucher-page__content__container__item__description">
+                  <span data-i18n="voucher_page.Turnover"></span>: x2
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-warning btn-sm" data-i18n="voucher_page.Redeem"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/voucher/invalid-code-modal.html')
+      <!-- MODAL -->
+
+      
+      @@include('../components/base/navbar-footer.html')
+      
+      @@include('../components/base/navbar-bottom.html', {active: -1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

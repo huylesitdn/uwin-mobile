@@ -836,5 +836,32 @@ $('.category-page .refresh-lucky-number').on('click', function(e) {
   }, 3000)
 })
 
+const successRedeemedModalElm = $("#successRedeemedModal");
+if (successRedeemedModalElm.length > 0) {
+  var successRedeemedModal = new bootstrap.Modal(successRedeemedModalElm, {});
+}
+const invalidCodeModalElm = $("#invalidCodeModal");
+if (invalidCodeModalElm.length > 0) {
+  var invalidCodeModal = new bootstrap.Modal(invalidCodeModalElm, {});
+}
+
+$('#formVoucher').on('submit', function(e) {
+  e.preventDefault();
+  const form_data = $(this).serializeArray();
+  const data_modal = $(this).data('modal');
+  console.log('=-=-data_modal', data_modal)
+  if (!form_data[0].value) {
+    $('#formVoucher .form-text').removeClass('d-none');
+    return false;
+  } else {
+    $('#formVoucher .form-text').addClass('d-none');
+    if (data_modal === 'invalidCodeModal' && invalidCodeModal) {
+      invalidCodeModal.show();
+    }
+    if (data_modal === 'successRedeemedModal' && successRedeemedModal) {
+      successRedeemedModal.show();
+    }
+  }
+})
 
 console.log("--- index.jsaaa");

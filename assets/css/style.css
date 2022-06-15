@@ -3,14 +3,13 @@
   .navbar.nav-child {
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-    min-height: 50px; }
+    min-height: 60px !important; }
     .navbar.nav-child .title {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 21px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
       text-align: center;
-      color: #000000;
+      color: #FFFFFF;
       text-transform: uppercase; }
     .navbar.nav-child img {
       max-width: 30px; }

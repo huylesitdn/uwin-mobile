@@ -429,7 +429,22 @@
     "": "",
     "": ""
   },
-  "": "",
+  "voucher_page": {
+    "Redeem": "Redeem",
+    "Voucher_Code": "Voucher Code",
+    "Please_enter_the_voucher_code": "Please enter the voucher code",
+    "Enter_your_voucher_code": "Enter your voucher code",
+    "Redeem_Voucher": "Redeem Voucher",
+    "Your_Voucher": "Your Voucher",
+    "Weekly_Cash_Rebate": "Weekly Cash Rebate",
+    "Valid_date": "Valid date",
+    "Turnover": "Turnover",
+    "Ok": "Ok",
+    "Voucher_successfully_redeemed": "Voucher successfully redeemed",
+    "Invalid_voucher_code": "Invalid voucher code !",
+    "No_voucher_records_found": "No voucher records found",
+    "": ""
+  },
   "": "",
   "": "",
   "": "",
