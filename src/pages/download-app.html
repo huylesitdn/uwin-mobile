@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Download App'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main download-app-page">
+      @@include('../components/base/navbar.html')
+      <div class="download-app-page__content">
+        <div class="download-app-page__content__top container-fluid">
+          <div class="download-app-page__content__top__img">
+            <img src="assets/images/download-app/app-icon.png" alt="" />
+          </div>
+          <div class="download-app-page__content__top__content">
+            <div class="download-app-page__content__top__content__title" data-i18n="Uwin33_App"></div>
+            <div class="download-app-page__content__top__content__description" data-i18n="Secure_Private_Gaming_Environment"></div>
+          </div>
+        </div>
+        <div class="download-app-page__content__action container-fluid">
+          <a href="#" class="btn btn-warning" data-i18n="Android_Install"></a>
+          <div class="coming-soon">
+            <span data-i18n="coming_soon_img"></span>
+            <a href="#" class="btn btn-secondary" data-i18n="Ios_Install"></a>
+          </div>
+        </div>
+
+        <div class="download-app-page__content__preview hide-scrollbar">
+          <img src="assets/images/download-app/uwin-phone-en-1.png" alt="" />
+          <img src="assets/images/download-app/uwin-phone-en-2.png" alt="" />
+          <img src="assets/images/download-app/uwin-phone-en-3.png" alt="" />
+        </div>
+        
+      </div>
+
+      <!-- MODAL -->
+      <!-- MODAL -->
+
+      
+      <!-- @@include('../components/base/navbar-footer.html') -->
+      
+      @@include('../components/base/navbar-bottom.html', {active: -1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

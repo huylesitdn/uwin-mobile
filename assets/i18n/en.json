@@ -445,8 +445,11 @@
     "No_voucher_records_found": "No voucher records found",
     "": ""
   },
-  "": "",
-  "": "",
+  "Uwin33_App": "Uwin33 App",
+  "Secure_Private_Gaming_Environment": "Secure & Private Gaming<br/>Environment",
+  "Android_Install": "Android Install",
+  "Ios_Install": "Ios Install",
+  "coming_soon_img": "<img src=\"assets/images/download-app/comingsoon-en.svg\" />",
   "": "",
   "": ""
 }
