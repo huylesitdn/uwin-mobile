@@ -79,6 +79,7 @@ translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
   translator.translatePageTo(_get_language);
   changeLanguageColor();
+  initialize();
 });
 
 /**
@@ -863,5 +864,82 @@ $('#formVoucher').on('submit', function(e) {
     }
   }
 })
+
+/**
+ * 
+ * INITIAL AFTER HAVE translator
+ * 
+ */
+
+function initialize () {
+
+  const forgetPasswordModalElm = $("#forgetPasswordModal");
+  if (forgetPasswordModalElm.length > 0) {
+    var forgetPasswordModal = new bootstrap.Modal(forgetPasswordModalElm, {});
+  }
+  const forgetPasswordSuccessModalElm = $("#forgetPasswordSuccessModal");
+  if (forgetPasswordSuccessModalElm.length > 0) {
+    var forgetPasswordSuccessModal = new bootstrap.Modal(forgetPasswordSuccessModalElm, {});
+  }
+
+
+  $("#loginForm").validate({
+    rules: {
+      username: "required",
+      password: "required",
+    },
+    messages: {
+      username: translator.translateForKey('login_page.Please_insert_your_username', _get_language),
+      password: translator.translateForKey('login_page.Please_insert_your_password', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      window.location.href = '/'
+    }
+  });
+
+  $("#forgotPasswordModalForm").validate({
+    rules: {
+      username: "required",
+      email: "required",
+    },
+    messages: {
+      username: translator.translateForKey('login_page.Please_insert_your_username', _get_language),
+      email: translator.translateForKey('login_page.Please_insert_your_email_address', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      forgetPasswordModal.hide();
+      forgetPasswordSuccessModal.show();
+    }
+  });
+
+  $("#signUpForm").validate({
+    rules: {
+      username: "required",
+      full_name: "required",
+      password: "required",
+      confirm_password: "required",
+      contact_number: "required",
+      email: "required",
+    },
+    messages: {
+      username: translator.translateForKey('login_page.Please_insert_your_username', _get_language),
+      full_name: translator.translateForKey('login_page.Please_insert_your_full_name', _get_language),
+      password: translator.translateForKey('login_page.Please_insert_your_password', _get_language),
+      confirm_password: translator.translateForKey('login_page.Please_insert_same_password_as_above', _get_language),
+      contact_number: translator.translateForKey('login_page.Please_insert_your_contact_number', _get_language),
+      email: translator.translateForKey('login_page.Please_insert_your_email_address', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      window.location.href = '/thank-you.html'
+    }
+  });
+
+
+
+}
+
 
 console.log("--- index.jsaaa");

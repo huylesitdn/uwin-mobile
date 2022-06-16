@@ -3,27 +3,50 @@
   @@include('../components/base/header.html', {title: 'Login'})
   <body>
     <!-- Content -->
-    <section class="login">
-      <div class="container-fluid">
-        <div>
-          <div class="login__logo" data-i18n="login_logo_img"></div>
-          <div class="login__logo1">
-            <div data-i18n="login_logo1_img"></div>
-            <div data-i18n="login_logo2_img"></div>
-            <!-- <img src="assets//images/login-logo-1.svg" /> -->
-            <!-- <img src="assets//images/login-logo-2.svg" /> -->
+    <section class="login-page">
+      <nav class="navbar fixed-top navbar-light login-page__navbar">
+        <div class="container-fluid content justify-content-between">
+          <a class="" href="/home-without-login.html">
+            <img src="assets/icons/left-white.svg" alt="" />
+          </a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/login/SG-flag.png" alt="" /> SG
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="assets/images/login/MY-flag.png" alt="" /> MY
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div id="carouselLoginRegisterForm" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+      </nav>
+      <div class="container-fluid">
+        <div class="login-page__logo">
+          <img src="assets/icons/logo.png" alt="" />
+        </div>
+        
+        <div class="login-page__content">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="login-content-tab" data-bs-toggle="tab" data-bs-target="#login-content" type="button" role="tab" aria-controls="login-content" aria-selected="true" data-i18n="login_page.LOGIN"></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="sign-up-content-tab" data-bs-toggle="tab" data-bs-target="#sign-up-content" type="button" role="tab" aria-controls="sign-up-content" aria-selected="false" data-i18n="login_page.SIGN_UP"></button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="login-content" role="tabpanel" aria-labelledby="login-content-tab">
               @@include('../components/login-form.html')
             </div>
-            <div class="carousel-item">
+            <div class="tab-pane fade" id="sign-up-content" role="tabpanel" aria-labelledby="sign-up-content-tab">
               @@include('../components/register-form.html')
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
