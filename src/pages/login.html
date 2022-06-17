@@ -24,24 +24,24 @@
         </div>
       </nav>
       <div class="container-fluid">
-        <div class="login-page__logo">
+        <div class="login-page__logo" data-aos="fade-in">
           <img src="assets/icons/logo.png" alt="" />
         </div>
         
         <div class="login-page__content">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="login-content-tab" data-bs-toggle="tab" data-bs-target="#login-content" type="button" role="tab" aria-controls="login-content" aria-selected="true" data-i18n="login_page.LOGIN"></button>
+              <button class="nav-link active" id="login-content-tab" data-bs-toggle="tab" data-bs-target="#login-content" type="button" role="tab" aria-controls="login-content" aria-selected="true" data-i18n="login_page.LOGIN" data-aos="fade-up"></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="sign-up-content-tab" data-bs-toggle="tab" data-bs-target="#sign-up-content" type="button" role="tab" aria-controls="sign-up-content" aria-selected="false" data-i18n="login_page.SIGN_UP"></button>
+              <button class="nav-link" id="sign-up-content-tab" data-bs-toggle="tab" data-bs-target="#sign-up-content" type="button" role="tab" aria-controls="sign-up-content" aria-selected="false" data-i18n="login_page.SIGN_UP" data-aos="fade-up"></button>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="login-content" role="tabpanel" aria-labelledby="login-content-tab">
+            <div class="tab-pane fade show active" id="login-content" role="tabpanel" aria-labelledby="login-content-tab" data-aos="fade-up">
               @@include('../components/login-form.html')
             </div>
-            <div class="tab-pane fade" id="sign-up-content" role="tabpanel" aria-labelledby="sign-up-content-tab">
+            <div class="tab-pane fade" id="sign-up-content" role="tabpanel" aria-labelledby="sign-up-content-tab" data-aos="fade-up">
               @@include('../components/register-form.html')
             </div>
           </div>
