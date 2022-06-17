@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'Promotion'})
+  @@include('../components/base/header.html', {title: 'Thank You'})
   <body>
     
     <!-- Content -->
-    <section class="main xxx">
+    <section class="main thank-you-page">
       @@include('../components/base/navbar.html')
-      <div class="xxx__content container-fluid">
+      <div class="thank-you-page__content container-fluid">
 
-        thank-you.html
+        <div class="thank-you-page__content__title" data-i18n="thank_you_page.Welcome_to_Uwin33"></div>
+        <div class="thank-you-page__content__description" data-i18n="thank_you_page.description1"></div>
         
+        <div class="thank-you-page__content__username">Aaron  Lee</div>
+        <div class="thank-you-page__content__username">sms9ussd9d8d9sd</div>
+
+        <div class="thank-you-page__content__description mt-2" data-i18n="thank_you_page.description2"></div>
+        <div class="thank-you-page__content__description" data-i18n="thank_you_page.description3"></div>
+        
+        <div class="thank-you-page__content__action">
+          <a href="/deposit.html" class="btn btn-warning" data-i18n="thank_you_page.Deposit_Now"></a>
+        </div>
+
+        <div class="thank-you-page__content__action">
+          <a href="/" class="btn btn-link" data-i18n="thank_you_page.Homepage"></a>
+        </div>
+
+        <div class="thank-you-page__content__help" data-i18n="thank_you_page.help"></div>
+
       </div>
 
       <!-- MODAL -->
       <!-- MODAL -->
-
-      
-      @@include('../components/base/navbar-footer.html')
       
       @@include('../components/base/navbar-bottom.html', {active: -1})
     </section>

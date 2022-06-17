@@ -480,7 +480,16 @@
     "": "",
     "": ""  
   },
-  "": "",
+  "thank_you_page": {
+    "Welcome_to_Uwin33": "Welcome to Uwin33",
+    "description1": "Your account has been succesfully registered,<br/>the following is your username & password.",
+    "description2": "Only the last step of deposit, you can start the<br/> game.",
+    "description3": "Depositing is quick and easy, we have a huge<br/>range of deposit options available, Good Luck!",
+    "Deposit_Now": "Deposit Now",
+    "Homepage": "Homepage",
+    "help": "If you have any questions, please contact <a href=\"#\">LiveChat</a>.",
+    "": ""
+  },
   "": "",
   "": "",
   "": "",
