@@ -1041,6 +1041,19 @@ function initialize () {
     }
   })
 
+  $('.select_network .btn-check').on('change', function(e) {
+    const _value = $('.select_network .btn-check:checked').val()
+    if(_value) {
+      const form__container = $(this).parents('.form__container');
+      if(form__container.length > 0) {
+        const form__container__network_content = $(form__container[0]).children('.form__container__network_content');
+        if(form__container__network_content.length > 0) {
+          $(form__container__network_content[0]).removeClass('d-none')
+        }
+      }
+    }
+  })
+
   $("#depositOnlineBankingForm").validate({
     rules: {
       amount_SGD: {
@@ -1055,6 +1068,29 @@ function initialize () {
         min: translator.translateForKey('deposit_page.Amount_SGD_required_min', _get_language)
       },
       select_bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      depositSuccessModal.show()
+    }
+  });
+
+  $("#depositCryptoForm").validate({
+    rules: {
+      // amount_SGD: {
+      //   required: true,
+      //   min: 30
+      // },
+      // select_bank: "required",
+    },
+    messages: {
+      // amount_SGD: {
+      //   required: translator.translateForKey('deposit_page.Amount_SGD_required', _get_language),
+      //   min: translator.translateForKey('deposit_page.Amount_SGD_required_min', _get_language)
+      // },
+      // select_bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
     },
     submitHandler: function(form) {
       console.log(form)

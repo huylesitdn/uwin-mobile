@@ -55,6 +55,28 @@
 
         .form {
 
+          &__reminder {
+            border-top: 1px solid rgba(255, 255, 255, 0.13);
+            padding: 6px 0;
+            margin-top: 40px;
+
+            &__title {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 19px;
+              color: #FFFFFF;
+              margin-bottom: 15px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              color: rgba(255, 255, 255, 0.6);
+              margin-bottom: 15px;
+            }
+          }
+
           &__action {
             .btn {
               width: 100%;
@@ -103,6 +125,119 @@
               // }
             }
 
+            &__network_content {
+              margin-top: 17px;
+
+              &__help {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #FFFFFF;
+                margin-bottom: 17px;
+              }
+
+              &__address {
+                background: #222C43;
+                border-radius: 4px;
+                padding: 10px 13px;
+
+                &__title {
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 19px;
+                  color: #FFFFFF;
+
+                }
+
+                .input-group {
+                  background: #000B26;
+                  border-radius: 3px !important;
+                  margin-top: 10px;
+
+                  .form-control {
+                    min-height: 40px;
+                  }
+
+                  .input-group-text {}
+                }
+
+                .qr-code-img {
+                  text-align: center;
+
+                  img {
+                    max-width: 140px;
+                  }
+                }
+
+                .btn-save-qr-code {
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 19px;
+                  text-align: center;
+                  color: #000000;
+
+                  background: #FDBB2C;
+                  border-radius: 4px;
+                  min-height: 40px;
+                  margin-top: 5px;
+                }
+
+                .description {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 16px;
+                  text-align: center;
+                  color: #FFFFFF;
+                  margin-top: 15px;
+                }
+              }
+            }
+
+            .form-radio {
+              place-content: flex-start;
+              place-items: center;
+              gap: 10px !important;
+
+              .btn-check {
+                &:checked {
+                  &+.form-radio__label {
+                    .btn {
+                      border: 1px solid #FDBB2C;
+                      border-radius: 4px;
+                      background-color: rgba(255, 255, 255, 0.13);
+                      box-shadow: none;
+
+                      img {
+                        opacity: 1;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &__label {
+                .btn {
+                  padding: 5px;
+                  min-height: 35px !important;
+
+                  img {
+                    max-height: 25px;
+                    opacity: 0.3;
+                    transition: 0.3s;
+                  }
+                }
+
+                .title {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 16px;
+                  text-align: center;
+                  color: #FFFFFF;
+                  margin-top: 5px;
+                }
+              }
+            }
+
             .select_bank_content {
               border: 1px solid rgba(255, 255, 255, 0.13);
               border-radius: 4px;
@@ -140,6 +275,7 @@
               text-align: center;
               color: #FFFFFF;
               display: block;
+
               img {
                 margin-bottom: 10px;
               }

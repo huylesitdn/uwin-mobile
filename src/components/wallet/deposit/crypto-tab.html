@@ -1,1 +1,95 @@
-crypto-tab.html
+<form id="depositCryptoForm" class="form">
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Crypto_Option"></label>
+    <div class="btn-group form-radio" role="group">
+      <input type="radio" class="btn-check" name="crypto_option" id="CryptoOption1" autocomplete="off">
+      <label class="form-radio__label" for="CryptoOption1">
+        <div class="btn btn-outline-secondary">
+          <img class="" src="assets/images/crypto/usdt-white.png" alt="" />
+        </div>
+        <div class="title">USDT</div>
+      </label>
+    
+      <input type="radio" class="btn-check" name="crypto_option" id="CryptoOption2" autocomplete="off">
+      <label class="form-radio__label" for="CryptoOption2">
+        <div class="btn btn-outline-secondary">
+          <img class="" src="assets/images/crypto/busd-white.png" alt="" />
+        </div>
+        <div class="title">BUSD</div>
+      </label>
+    
+      <input type="radio" class="btn-check" name="crypto_option" id="CryptoOption3" autocomplete="off">
+      <label class="form-radio__label" for="CryptoOption3">
+        <div class="btn btn-outline-secondary">
+          <img class="" src="assets/images/crypto/eth-white.png" alt="" />
+        </div>
+        <div class="title">ETH</div>
+      </label>
+
+      <input type="radio" class="btn-check" name="crypto_option" id="CryptoOption4" autocomplete="off">
+      <label class="form-radio__label" for="CryptoOption4">
+        <div class="btn btn-outline-secondary">
+          <img class="" src="assets/images/crypto/btc-white.png" alt="" />
+        </div>
+        <div class="title">BTC</div>
+      </label>
+    </div>
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Network"></label>
+    <div class="btn-group form-radio select_network" role="group">
+      <input type="radio" class="btn-check" name="network" id="NetWork1" value="ERC 20" autocomplete="off">
+      <label class="form-radio__label" for="NetWork1">
+        <div class="btn btn-outline-secondary">ERC 20</div>
+      </label>
+    
+      <input type="radio" class="btn-check" name="network" id="NetWork2" value="BEP 2" autocomplete="off">
+      <label class="form-radio__label" for="NetWork2">
+        <div class="btn btn-outline-secondary">BEP 2</div>
+      </label>
+    
+      <input type="radio" class="btn-check" name="network" id="NetWork3" value="TRC 20" autocomplete="off">
+      <label class="form-radio__label" for="NetWork3">
+        <div class="btn btn-outline-secondary">TRC 20</div>
+      </label>
+    </div>
+
+    <div class="form__container__network_content d-none">
+      <div class="form__container__network_content__help" data-i18n="deposit_page.Network_help"></div>
+      <div class="form__container__network_content__address">
+        <div class="form__container__network_content__address__title" data-i18n="deposit_page.Address"></div>
+        <div class="input-group">
+          <input type="text" class="form-control" value="46347634g3h5h5j3h5hh35" disabled />
+          <span class="input-group-text">
+            <img class="" src="assets/icons/copy-yellow.svg" alt=""/>
+          </span>
+        </div>
+        <div class="qr-code-img">
+          <img src="assets/images/crypto/qr-code.png" alt=""/>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-warning btn-save-qr-code" data-i18n="deposit_page.Save_QR_Code"></button>
+        </div>
+        <div class="description" data-i18n="deposit_page.Save_QR_Code_help"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form__action">
+    <button type="submit" class="btn btn-warning" data-i18n="deposit_page.Complete_Transfer"></button>
+    <button type="button" class="btn btn-link" data-i18n="Reset" data-bs-toggle="modal" data-bs-target="#depositFailModal"></button>
+  </div>
+
+  <div class="form__reminder">
+    <div class="form__reminder__title" data-i18n="deposit_page.Reminder"></div>
+    <p data-i18n="deposit_page.Reminder1"></p>
+    <p data-i18n="deposit_page.Reminder2"></p>
+    <p data-i18n="deposit_page.Reminder3"></p>
+    <p data-i18n="deposit_page.Reminder4"></p>
+    <p data-i18n="deposit_page.Reminder5"></p>
+    <p data-i18n="deposit_page.Reminder6"></p>
+    <p data-i18n="deposit_page.Reminder7"></p>
+    <p data-i18n="deposit_page.Reminder8"></p>
+  </div>
+
+</form>

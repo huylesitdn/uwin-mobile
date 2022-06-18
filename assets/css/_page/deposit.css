@@ -38,6 +38,22 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain; }
+    .deposit-page__content #mainContent > .tab-pane .form__reminder {
+      border-top: 1px solid rgba(255, 255, 255, 0.13);
+      padding: 6px 0;
+      margin-top: 40px; }
+      .deposit-page__content #mainContent > .tab-pane .form__reminder__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-bottom: 15px; }
+      .deposit-page__content #mainContent > .tab-pane .form__reminder p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 15px; }
     .deposit-page__content #mainContent > .tab-pane .form__action .btn {
       width: 100%;
       font-weight: 700;
@@ -67,6 +83,75 @@
         color: #FF1A1A;
         margin-bottom: 5px;
         display: block; }
+      .deposit-page__content #mainContent > .tab-pane .form__container__network_content {
+        margin-top: 17px; }
+        .deposit-page__content #mainContent > .tab-pane .form__container__network_content__help {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #FFFFFF;
+          margin-bottom: 17px; }
+        .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address {
+          background: #222C43;
+          border-radius: 4px;
+          padding: 10px 13px; }
+          .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF; }
+          .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .input-group {
+            background: #000B26;
+            border-radius: 3px !important;
+            margin-top: 10px; }
+            .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .input-group .form-control {
+              min-height: 40px; }
+          .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .qr-code-img {
+            text-align: center; }
+            .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .qr-code-img img {
+              max-width: 140px; }
+          .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .btn-save-qr-code {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #000000;
+            background: #FDBB2C;
+            border-radius: 4px;
+            min-height: 40px;
+            margin-top: 5px; }
+          .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .description {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 15px; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .form-radio {
+        place-content: flex-start;
+        place-items: center;
+        gap: 10px !important; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-radio .btn-check:checked + .form-radio__label .btn {
+          border: 1px solid #FDBB2C;
+          border-radius: 4px;
+          background-color: rgba(255, 255, 255, 0.13);
+          box-shadow: none; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .form-radio .btn-check:checked + .form-radio__label .btn img {
+            opacity: 1; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-radio__label .btn {
+          padding: 5px;
+          min-height: 35px !important; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .form-radio__label .btn img {
+            max-height: 25px;
+            opacity: 0.3;
+            transition: 0.3s; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-radio__label .title {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-top: 5px; }
       .deposit-page__content #mainContent > .tab-pane .form__container .select_bank_content {
         border: 1px solid rgba(255, 255, 255, 0.13);
         border-radius: 4px;
