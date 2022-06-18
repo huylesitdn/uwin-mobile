@@ -1,26 +1,28 @@
 @@include('../main-wallet.html')
 
-<div class="deposit-content">
-  <ul class="nav nav-tabs" id="depositMainTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="payment-gateway-tab" data-bs-toggle="tab" data-bs-target="#payment-gateway" type="button" role="tab" aria-controls="payment-gateway" aria-selected="true" data-i18n="deposit_page.Payment_Gateway"></button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="online-banking-tab" data-bs-toggle="tab" data-bs-target="#online-banking" type="button" role="tab" aria-controls="online-banking" aria-selected="false" data-i18n="deposit_page.Online_Banking_ATM"></button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="crypto-tab" data-bs-toggle="tab" data-bs-target="#crypto" type="button" role="tab" aria-controls="crypto" aria-selected="false" data-i18n="deposit_page.Crypto"></button>
-    </li>
-  </ul>
-  <div class="tab-content" id="depositMainContent">
-    <div class="tab-pane fade show active" id="payment-gateway" role="tabpanel" aria-labelledby="payment-gateway-tab">
-      @@include('./payment-gateway-tab.html')
-    </div>
-    <div class="tab-pane fade" id="online-banking" role="tabpanel" aria-labelledby="online-banking-tab">
-      @@include('./online-banking-tab.html')
-    </div>
-    <div class="tab-pane fade" id="crypto" role="tabpanel" aria-labelledby="crypto-tab">
-      @@include('./crypto-tab.html')
+<div data-aos="fade-up">
+  <div class="deposit-content">
+    <ul class="nav nav-tabs" id="depositMainTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="payment-gateway-tab" data-bs-toggle="tab" data-bs-target="#payment-gateway" type="button" role="tab" aria-controls="payment-gateway" aria-selected="true" data-i18n="deposit_page.Payment_Gateway"></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="online-banking-tab" data-bs-toggle="tab" data-bs-target="#online-banking" type="button" role="tab" aria-controls="online-banking" aria-selected="false" data-i18n="deposit_page.Online_Banking_ATM"></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="crypto-tab" data-bs-toggle="tab" data-bs-target="#crypto" type="button" role="tab" aria-controls="crypto" aria-selected="false" data-i18n="deposit_page.Crypto"></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="depositMainContent">
+      <div class="tab-pane fade" id="payment-gateway" role="tabpanel" aria-labelledby="payment-gateway-tab">
+        @@include('./payment-gateway-tab.html')
+      </div>
+      <div class="tab-pane fade" id="online-banking" role="tabpanel" aria-labelledby="online-banking-tab">
+        @@include('./online-banking-tab.html')
+      </div>
+      <div class="tab-pane fade show active" id="crypto" role="tabpanel" aria-labelledby="crypto-tab">
+        @@include('./crypto-tab.html')
+      </div>
     </div>
   </div>
 </div>

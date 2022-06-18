@@ -103,6 +103,48 @@
               // }
             }
 
+            .select_bank_content {
+              border: 1px solid rgba(255, 255, 255, 0.13);
+              border-radius: 4px;
+
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              color: #FFFFFF;
+
+              &__title {
+                background: #222C43;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+
+                color: #FFFFFF;
+                padding: 10px;
+              }
+
+              &__content {
+                padding: 0 15px;
+                margin: 12px 0;
+                place-items: flex-start;
+              }
+            }
+
+            .form-choose {
+              border: 1px dashed #FFFFFF;
+              border-radius: 4px;
+              padding: 20px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              text-align: center;
+              color: #FFFFFF;
+              display: block;
+              img {
+                margin-bottom: 10px;
+              }
+            }
+
             .btn-group {
               width: 100%;
               display: flex;

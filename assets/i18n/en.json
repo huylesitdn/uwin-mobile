@@ -524,6 +524,13 @@
     "deposit_success_3": "HISTORY PAGE",
     "deposit_fail_1": "Deposit request has failed.",
     "deposit_fail_2": "Insufficient balance in main wallet for deposit. ",
+    "Maybank_Singapore_Limited": "Maybank Singapore Limited",
+    "Bank_Account_Name": "Bank Account<br/>Name",
+    "Bank_Account_Number": "Bank Account<br/>Number",
+    "Min_Amount": "Min Amount",
+    "Please_upload_bank_deposit_slip": "Please upload bank deposit slip.",
+    "": "",
+    "": "",
     "": "",
     "": ""  
   },
