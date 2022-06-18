@@ -110,7 +110,10 @@ a {
     .modal.slide-up.fade .modal-dialog .modal-content {
       background: #131D39;
       border-radius: 12px 12px 0px 0px;
-      height: 80vh; }
+      height: 80vh;
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto; }
       .modal.slide-up.fade .modal-dialog .modal-content .modal-header {
         border-bottom: 10px solid #f2f2f2;
         display: flex;
@@ -2959,3 +2962,358 @@ a {
         text-align: center;
         text-decoration-line: underline;
         color: #0089FF; }
+
+.deposit-page__content #mainTab {
+  border: none !important;
+  padding-top: 20px;
+  place-items: baseline;
+  gap: 25px; }
+  .deposit-page__content #mainTab > .nav-item > .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    padding: 0;
+    padding-bottom: 11px;
+    position: relative; }
+    .deposit-page__content #mainTab > .nav-item > .nav-link.active {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      color: #FFFFFF;
+      background: transparent;
+      border-color: transparent;
+      pointer-events: none; }
+      .deposit-page__content #mainTab > .nav-item > .nav-link.active::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 4px;
+        background: #FDBB2C;
+        border-radius: 3px; }
+
+.deposit-page__content #mainContent {
+  min-height: 300px;
+  padding-top: 17px; }
+  .deposit-page__content #mainContent > .tab-pane {
+    background-image: url(../images/deposit-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain; }
+    .deposit-page__content #mainContent > .tab-pane .form__action .btn {
+      width: 100%;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      min-height: 50px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      margin-bottom: 5px; }
+      .deposit-page__content #mainContent > .tab-pane .form__action .btn-warning {
+        background: #FDBB2C;
+        border-radius: 4px; }
+      .deposit-page__content #mainContent > .tab-pane .form__action .btn-link {
+        color: #FFFFFF;
+        text-decoration: none; }
+      .deposit-page__content #mainContent > .tab-pane .form__action .btn:focus {
+        box-shadow: none; }
+    .deposit-page__content #mainContent > .tab-pane .form__container {
+      margin-bottom: 25px;
+      position: relative; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .error {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FF1A1A;
+        margin-bottom: 5px;
+        display: block; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .btn-group {
+        width: 100%;
+        display: flex;
+        gap: 8px; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .btn-group .btn-check:checked + .btn {
+          border: 1px solid #FDBB2C;
+          border-radius: 4px;
+          background-color: rgba(255, 255, 255, 0.13);
+          box-shadow: none; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .btn-group .btn {
+          border: 1px solid rgba(255, 255, 255, 0.13);
+          border-radius: 4px;
+          min-height: 40px;
+          display: flex;
+          place-content: center;
+          place-items: center; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .form-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .select2-container {
+        position: initial !important;
+        display: block;
+        width: 100% !important; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown {
+          background: #222C43;
+          border-radius: 4px;
+          width: 100% !important;
+          z-index: 1;
+          position: initial;
+          border: none; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options {
+            max-height: 250px;
+            padding: 12px; }
+            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--highlighted {
+              background: transparent !important;
+              color: #FDBB2C; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection {
+          margin-bottom: 10px; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection .select2-selection {
+            border: 1px solid rgba(255, 255, 255, 0.13);
+            background-color: transparent;
+            border-radius: 4px;
+            min-height: 50px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FDBB2C;
+            position: relative; }
+            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection .select2-selection__rendered {
+              height: 100%;
+              display: flex;
+              place-content: flex-start;
+              place-items: center;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              color: #FDBB2C; }
+            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection .select2-selection__placeholder {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              color: rgba(255, 255, 255, 0.4); }
+            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection .select2-selection__arrow {
+              display: flex;
+              place-items: center;
+              height: 100%;
+              width: 40px; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .form-select,
+      .deposit-page__content #mainContent > .tab-pane .form__container .form-control {
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        background-color: transparent;
+        border-radius: 4px;
+        min-height: 50px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FDBB2C;
+        margin-bottom: 10px; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-select::placeholder,
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-control::placeholder {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: rgba(255, 255, 255, 0.4); }
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-select:disabled,
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-control:disabled {
+          background: rgba(255, 255, 255, 0.13);
+          border-color: transparent; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .input-group {
+        margin-bottom: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 4px; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control {
+          margin-bottom: 0; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control:disabled {
+            background: transparent;
+            border-color: transparent; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group-text {
+          background: transparent;
+          border: none;
+          padding-right: 20px; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .input-group-text img {
+            width: 10px; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .form-select:invalid {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: rgba(255, 255, 255, 0.4); }
+      .deposit-page__content #mainContent > .tab-pane .form__container .form-suggest {
+        display: flex;
+        gap: 6px;
+        place-content: flex-start;
+        place-items: center;
+        flex-wrap: wrap; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .form-suggest .btn {
+          min-width: 50px;
+          min-height: 30px;
+          background: rgba(255, 255, 255, 0.13);
+          border-radius: 5px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #FFFFFF;
+          border: none; }
+          .deposit-page__content #mainContent > .tab-pane .form__container .form-suggest .btn:focus {
+            box-shadow: none;
+            background: #FDBB2C;
+            color: #000000; }
+    .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab {
+      background: rgba(255, 255, 255, 0.13);
+      border-radius: 4px;
+      border-bottom: none;
+      place-content: space-between;
+      place-items: center;
+      padding: 5px; }
+      .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item {
+        flex: 1 0 0%; }
+        .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link {
+          width: 100%;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.5);
+          padding: 0px 1px;
+          min-height: 35px; }
+          .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link.active {
+            background: #FDBB2C;
+            border-radius: 2px;
+            color: #000000;
+            border-color: transparent; }
+    .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainContent {
+      padding: 20px 0; }
+    .deposit-page__content #mainContent > .tab-pane .main-wallet {
+      background-image: url(../images/main-wallet-bg-1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 12px;
+      position: relative;
+      margin-bottom: 20px; }
+      .deposit-page__content #mainContent > .tab-pane .main-wallet__top {
+        padding: 20px 15px;
+        display: flex;
+        place-content: space-between;
+        place-items: center; }
+        .deposit-page__content #mainContent > .tab-pane .main-wallet__top__title {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: rgba(255, 255, 255, 0.6); }
+        .deposit-page__content #mainContent > .tab-pane .main-wallet__top__currency {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 27px;
+          color: #FFFFFF; }
+        .deposit-page__content #mainContent > .tab-pane .main-wallet__top__action .btn {
+          background: rgba(255, 255, 255, 0.3);
+          border: none;
+          border-radius: 4px;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          min-height: 30px;
+          text-align: center;
+          color: #FFFFFF; }
+      .deposit-page__content #mainContent > .tab-pane .main-wallet__footer {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 8px 15px;
+        display: flex;
+        place-content: space-between;
+        place-items: center; }
+        .deposit-page__content #mainContent > .tab-pane .main-wallet__footer__currency {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #FFFFFF; }
+        .deposit-page__content #mainContent > .tab-pane .main-wallet__footer__description {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #FFFFFF; }
+
+#selectPromotionModal .modal-dialog .modal-content .modal-title {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FDBB2C; }
+
+#selectPromotionModal .modal-dialog .modal-content .modal-body {
+  padding: 0; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action {
+    margin-top: 20px; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action .btn {
+      min-height: 50px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      width: 100%;
+      background: #FDBB2C;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item {
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 4px;
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    padding: 10px 13px;
+    margin-bottom: 15px;
+    position: relative; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark {
+      height: 17px;
+      width: 17px;
+      min-height: 17px;
+      min-width: 17px;
+      background-color: transparent;
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      position: relative; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark::after {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        width: 9px;
+        height: 9px;
+        background: #FDBB2C;
+        border-radius: 50%;
+        display: none; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .checkmark:after {
+      display: block; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .selected-bg {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.13); }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #FDBB2C; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .description {
+        margin-top: 12px; }

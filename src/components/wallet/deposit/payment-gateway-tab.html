@@ -1,0 +1,68 @@
+<form id="depositPaymentGatewayForm" class="form">
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Amount_SGD"></label>
+    <input type="number" class="form-control" name="amount_SGD" data-i18n="deposit_page.Enter_amount" data-i18n-attr="placeholder" />
+    <div class="form-suggest">
+      <button type="button" class="btn btn-secondary" data-value="50">50</button>
+      <button type="button" class="btn btn-secondary" data-value="100">100</button>
+      <button type="button" class="btn btn-secondary" data-value="300">300</button>
+      <button type="button" class="btn btn-secondary" data-value="500">500</button>
+      <button type="button" class="btn btn-secondary" data-value="1000">1000</button>
+    </div>
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Payment_Gateway_label"></label>
+    <div class="btn-group" role="group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+      <label class="btn btn-outline-secondary" for="btnradio1" data-i18n="deposit_page.TruePay_ll"></label>
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="btnradio2" data-i18n="deposit_page.Fast_Pay"></label>
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="btnradio3" data-i18n="deposit_page.Fast_Pay"></label>
+    </div>
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Select_Bank"></label>
+    <!-- <select class="form-select select-bank" name="select_bank">
+      <option selected></option>
+      <option value="POSB">POSB</option>
+      <option value="DBS">DBS</option>
+      <option value="UOB">UOB</option>
+      <option value="CIMB SG">CIMB SG</option>
+      <option value="OCBC">OCBC</option>
+      <option value="Maybank Singapore Limited">Maybank Singapore Limited</option>
+      <option value="HSBC">HSBC</option>
+    </select> -->
+    <select class="form-select" name="select_bank" required>
+      <option value="" selected data-i18n="deposit_page.Please_select"></option>
+      <option value="POSB">POSB</option>
+      <option value="DBS">DBS</option>
+      <option value="UOB">UOB</option>
+      <option value="CIMB SG">CIMB SG</option>
+      <option value="OCBC">OCBC</option>
+      <option value="Maybank Singapore Limited">Maybank Singapore Limited</option>
+      <option value="HSBC">HSBC</option>
+    </select>
+    <div id="selectBankDropdown"></div>
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Welcome_Credit"></label>
+    <input type="text" class="form-control" data-i18n="deposit_page.Enter_Welcome_Credit" data-i18n-attr="placeholder" value="Free SGD100" disabled />
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Promotion"></label>
+    <div class="input-group">
+      <input id="PromotionSelectValue" type="text" class="form-control" data-i18n="deposit_page.Please_select" data-i18n-attr="placeholder" data-bs-toggle="modal" data-bs-target="#selectPromotionModal" disabled />
+      <span class="input-group-text">
+        <img class="" src="assets/icons/down-white1.svg" alt="" data-bs-dismiss="modal" aria-label="Close"/>
+      </span>
+    </div>
+  </div>
+
+  <div class="form__action">
+    <button type="submit" class="btn btn-warning" data-i18n="Submit"></button>
+    <button type="button" class="btn btn-link" data-i18n="Reset" data-bs-toggle="modal" data-bs-target="#depositFailModal"></button>
+  </div>
+</form>

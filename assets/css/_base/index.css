@@ -103,7 +103,10 @@ a {
     .modal.slide-up.fade .modal-dialog .modal-content {
       background: #131D39;
       border-radius: 12px 12px 0px 0px;
-      height: 80vh; }
+      height: 80vh;
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto; }
       .modal.slide-up.fade .modal-dialog .modal-content .modal-header {
         border-bottom: 10px solid #f2f2f2;
         display: flex;

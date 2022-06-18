@@ -865,6 +865,18 @@ $('#formVoucher').on('submit', function(e) {
   }
 })
 
+
+
+var restoreModalEl = document.getElementById('restoreModal')
+if(restoreModalEl) {
+  var restoreModal = new bootstrap.Modal(restoreModalEl, {});
+  restoreModalEl.addEventListener('shown.bs.modal', function (event) {
+    setTimeout(() => {
+      restoreModal.hide();
+    }, 3000);
+  })
+}
+
 /**
  * 
  * INITIAL AFTER HAVE translator
@@ -938,6 +950,82 @@ function initialize () {
   });
 
 
+  /**
+   * 
+   * START SELECT 2 OPTION SECTION
+   * 
+  */
+
+  $(document).ready(function() {
+    $('.select-bank').select2({
+      minimumResultsForSearch: -1,
+      placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+      dropdownParent: $('#selectBankDropdown')
+    });
+  });
+
+  /**
+   * 
+   * END SELECT 2 OPTION SECTION
+   * 
+  */
+
+  const selectPromotionModalElm = $("#selectPromotionModal");
+  if (selectPromotionModalElm.length > 0) {
+    var selectPromotionModal = new bootstrap.Modal(selectPromotionModalElm, {});
+  }
+  $('.promotion-modal').on('submit', function(e) {
+    e.preventDefault();
+    const form_data = $(this).serializeArray();
+    console.log('-=-=-form_data', form_data)
+    var _value = translator.translateForKey(form_data[0].value, _get_language)
+    _value = _value.replace("<br/>", " ");
+    $('#PromotionSelectValue').val(_value)
+    selectPromotionModal.hide()
+  });
+
+
+
+  const depositSuccessModalElm = $("#depositSuccessModal");
+  if (depositSuccessModalElm.length > 0) {
+    var depositSuccessModal = new bootstrap.Modal(depositSuccessModalElm, {});
+  }
+
+  $("#depositPaymentGatewayForm").validate({
+    rules: {
+      amount_SGD: {
+        required: true,
+        min: 30
+      },
+      select_bank: "required",
+    },
+    messages: {
+      amount_SGD: {
+        required: translator.translateForKey('deposit_page.Amount_SGD_required', _get_language),
+        min: translator.translateForKey('deposit_page.Amount_SGD_required_min', _get_language)
+      },
+      select_bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      depositSuccessModal.show()
+    }
+  });
+
+
+  $('.form__container .form-suggest .btn').on('click', function(e) {
+    e.preventDefault();
+    const _value = $(this).data('value')
+    const form__container = $(this).parents('.form__container');
+    if(form__container.length > 0) {
+      const form__container_input = $(form__container[0]).children('.form-control');
+      if(form__container_input.length > 0) {
+        $(form__container_input[0]).val(_value)
+      }
+    }
+  })
 
 }
 
