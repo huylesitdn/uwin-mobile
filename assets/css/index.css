@@ -610,10 +610,34 @@ a {
     min-height: 40px;
     width: 50%;
     margin: auto;
-    margin-top: 20px; }
-  #forgetPasswordModal .modal-dialog .modal-content .modal-body .form-control {
-    min-height: 45px;
-    padding: 10px 13px; }
+    margin-top: 10px; }
+  #forgetPasswordModal .modal-dialog .modal-content .modal-body .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; }
+    #forgetPasswordModal .modal-dialog .modal-content .modal-body .input-group .error {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 4px;
+      color: #FF1A1A; }
+    #forgetPasswordModal .modal-dialog .modal-content .modal-body .input-group .form-control {
+      background: rgba(255, 255, 255, 0.13);
+      border-radius: 4px;
+      min-height: 45px;
+      padding: 10px 13px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #FFFFFF;
+      border: none;
+      padding: 16px 13px;
+      width: 100%; }
+      #forgetPasswordModal .modal-dialog .modal-content .modal-body .input-group .form-control::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF; }
 
 .register {
   display: flex;
@@ -2829,6 +2853,7 @@ a {
     padding-top: 20px; }
     .download-app-page__content__preview {
       margin-top: 50px;
+      padding-bottom: 30px;
       display: flex;
       overflow: auto;
       gap: 15px;

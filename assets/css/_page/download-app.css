@@ -4,6 +4,7 @@
     padding-top: 20px; }
     .download-app-page__content__preview {
       margin-top: 50px;
+      padding-bottom: 30px;
       display: flex;
       overflow: auto;
       gap: 15px;
