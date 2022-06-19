@@ -158,7 +158,12 @@
                     min-height: 40px;
                   }
 
-                  .input-group-text {}
+                  .input-group-text {
+                    padding-right: 11px;
+                    img {
+                      width: 16px;
+                    }
+                  }
                 }
 
                 .qr-code-img {
