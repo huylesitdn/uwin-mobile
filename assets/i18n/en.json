@@ -477,13 +477,14 @@
     "Please_insert_your_full_name": "Please insert your full name",
     "Please_insert_same_password_as_above": "Please insert same password as above",
     "Please_insert_your_contact_number": "Please insert your contact number",
+    "Enter_at_least_6_characters": "Enter at least 6 characters",
     "": "",
     "": ""  
   },
   "thank_you_page": {
     "Welcome_to_Uwin33": "Welcome to Uwin33",
     "description1": "Your account has been succesfully registered,<br/>the following is your username & password.",
-    "description2": "Only the last step of deposit, you can start the<br/> game.",
+    "description2": "Only the last step of deposit, you can start the game.",
     "description3": "Depositing is quick and easy, we have a huge<br/>range of deposit options available, Good Luck!",
     "Deposit_Now": "Deposit Now",
     "Homepage": "Homepage",

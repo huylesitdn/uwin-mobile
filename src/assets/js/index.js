@@ -877,6 +877,19 @@ if(restoreModalEl) {
   })
 }
 
+
+function copyFunction(id) {
+  /* Get the text field */
+  var copyText = document.getElementById(id);
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+}
+
 /**
  * 
  * INITIAL AFTER HAVE translator
@@ -928,7 +941,10 @@ function initialize () {
 
   $("#signUpForm").validate({
     rules: {
-      username: "required",
+      username: {
+        required: true,
+        minlength: 6
+      },
       full_name: "required",
       password: "required",
       confirm_password: "required",
@@ -936,7 +952,10 @@ function initialize () {
       email: "required",
     },
     messages: {
-      username: translator.translateForKey('login_page.Please_insert_your_username', _get_language),
+      username: {
+        required: translator.translateForKey('login_page.Please_insert_your_username', _get_language),
+        minlength: translator.translateForKey('login_page.Enter_at_least_6_characters', _get_language),
+      },
       full_name: translator.translateForKey('login_page.Please_insert_your_full_name', _get_language),
       password: translator.translateForKey('login_page.Please_insert_your_password', _get_language),
       confirm_password: translator.translateForKey('login_page.Please_insert_same_password_as_above', _get_language),
@@ -944,8 +963,16 @@ function initialize () {
       email: translator.translateForKey('login_page.Please_insert_your_email_address', _get_language),
     },
     submitHandler: function(form) {
-      console.log(form)
-      window.location.href = '/thank-you.html'
+      const form_value = $(form).serializeArray()
+      const letterNumber = /^[A-Za-z0-9]*$/;
+      const username_value = form_value[0].value
+      const is_character_number = letterNumber.test(username_value)
+      if(!is_character_number) {
+        $('#Username__help').removeClass('d-none');
+        return false;
+      } else {
+        window.location.href = '/thank-you.html'
+      }
     }
   });
 
@@ -1012,6 +1039,16 @@ function initialize () {
       depositSuccessModal.show()
     }
   });
+
+  $('.btn-reset-form').on('click', function(e) {
+    e.preventDefault();
+    const _form_id = $(this).data('form');
+    $('#'+_form_id).trigger("reset");
+    form__container__network_content = $('.form__container__network_content');
+    if(form__container__network_content && form__container__network_content.length > 0 && !form__container__network_content.hasClass('d-none')) {
+      form__container__network_content.addClass('d-none');  
+    }
+  })
 
 
   $('.form__container .form-suggest .btn').on('click', function(e) {
@@ -1099,7 +1136,16 @@ function initialize () {
       depositSuccessModal.show()
     }
   });
-  
+
+  $('.Bank_Account_Name_Copy').on('click', function(e) {
+    e.preventDefault();
+    copyFunction('Bank_Account_Name_Value')
+  })
+
+  $('.Bank_Account_Number_Copy').on('click', function(e) {
+    e.preventDefault();
+    copyFunction('Bank_Account_Number_Value')
+  })
 
 }
 

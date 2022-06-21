@@ -5,7 +5,7 @@
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  padding: 70px 0; }
+  padding: 0; }
   .login-page__content .nav-tabs {
     border-bottom: 0;
     margin-bottom: 25px; }
@@ -26,7 +26,8 @@
     gap: 10px;
     place-content: flex-start;
     display: flex;
-    place-items: center; }
+    place-items: center;
+    align-items: stretch; }
     .login-page__content .tab-content .login__form .download-app__logo {
       padding: 7px 0 7px 11px; }
     .login-page__content .tab-content .login__form .download-app__content {
@@ -150,7 +151,8 @@
         line-height: 19px;
         text-align: center;
         color: #FFFFFF;
-        height: 30px; }
+        height: 30px;
+        padding-left: 6px; }
         .login-page__navbar .dropdown .dropdown-menu li .dropdown-item img {
           max-width: 18px; }
 
