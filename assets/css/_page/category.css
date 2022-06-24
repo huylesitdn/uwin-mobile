@@ -347,7 +347,7 @@
         max-height: 34px; }
         .category-page__content__top__navbar__item__img img.active {
           display: none; }
-      @media only screen and (max-width: 350px) {
+      @media only screen and (max-width: 370px) {
         .category-page__content__top__navbar__item__img {
           width: 55px;
           height: 55px; } }
