@@ -36,7 +36,9 @@
         position: relative; }
     .navbar.fixed-top .content {
       display: flex;
-      min-height: 50px; }
+      min-height: 50px;
+      padding-left: 15px;
+      padding-right: 15px; }
       .navbar.fixed-top .content .btn {
         min-width: auto;
         height: 28px;
@@ -50,7 +52,10 @@
           line-height: 16px;
           text-align: center;
           color: #FFFFFF;
-          margin-right: 5px; }
+          margin-right: 5px;
+          width: 32px;
+          padding-left: 3px;
+          padding-right: 3px; }
         .navbar.fixed-top .content .btn.btn-currency {
           background: rgba(255, 255, 255, 0.1);
           border-radius: 5px;
@@ -63,13 +68,16 @@
           pointer-events: none;
           display: flex;
           place-content: center;
-          place-items: center; }
+          place-items: center;
+          padding-left: 8px;
+          padding-right: 8px; }
           .navbar.fixed-top .content .btn.btn-currency img {
             margin-right: 5px; }
         .navbar.fixed-top .content .btn.btn-add {
           display: flex;
           place-content: center;
-          place-items: center; }
+          place-items: center;
+          width: 30px; }
         .navbar.fixed-top .content .btn.btn-login {
           font-weight: 700;
           font-size: 12px;
@@ -87,7 +95,8 @@
         padding-left: 0;
         padding-right: 0;
         text-align: left;
-        margin-right: 10px; }
+        margin-right: 5px;
+        margin-left: -3px; }
         .navbar.fixed-top .content #navMenu:focus {
           box-shadow: none; }
         .navbar.fixed-top .content #navMenu img {
