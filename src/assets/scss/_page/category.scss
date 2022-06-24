@@ -471,10 +471,12 @@
         place-items: flex-start;
         margin-top: 20px;
         text-align: center;
-        padding-bottom: 12px;
         border-bottom: none;
         // flex-wrap: nowrap;
         gap: 1px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
 
         &__item {
           &__img {

@@ -2315,9 +2315,11 @@ a {
     place-items: flex-start;
     margin-top: 20px;
     text-align: center;
-    padding-bottom: 12px;
     border-bottom: none;
-    gap: 1px; }
+    gap: 1px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px; }
     .category-page__content__top__navbar__item__img {
       background: #131D39;
       border-radius: 18px;
