@@ -23,7 +23,7 @@
     margin-top: 33px;
     border: 2px solid #194284;
     border-radius: 4px;
-    gap: 10px;
+    gap: 0;
     place-content: flex-start;
     display: flex;
     place-items: center;
@@ -31,7 +31,7 @@
     .login-page__content .tab-content .login__form .download-app__logo {
       padding: 7px 0 7px 11px; }
     .login-page__content .tab-content .login__form .download-app__content {
-      padding: 7px 11px 7px 0;
+      padding: 7px 0 7px 10px;
       width: 100%; }
       .login-page__content .tab-content .login__form .download-app__content__title {
         font-weight: 600;

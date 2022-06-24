@@ -11,7 +11,8 @@
       border: none;
       width: 30px; }
       .category-page__content__container__tab__nav .btn-nav img {
-        max-width: 10px; }
+        max-width: 10px;
+        margin-top: -3px; }
     .category-page__content__container__tab__nav .nav {
       flex-wrap: nowrap;
       overflow: auto;
@@ -329,7 +330,8 @@
     place-items: flex-start;
     margin-top: 20px;
     text-align: center;
-    padding-bottom: 12px; }
+    padding-bottom: 12px;
+    border-bottom: none; }
     .category-page__content__top__navbar__item__img {
       background: #131D39;
       border-radius: 18px;

@@ -35,7 +35,7 @@
           margin-top: 33px;
           border: 2px solid #194284;
           border-radius: 4px;
-          gap: 10px;
+          gap: 0;
 
           place-content: flex-start;
           display: flex;
@@ -47,7 +47,7 @@
           }
 
           &__content {
-            padding: 7px 11px 7px 0;
+            padding: 7px 0 7px 10px;
             width: 100%;
 
             &__title {

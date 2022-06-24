@@ -888,6 +888,10 @@ function copyFunction(id) {
 
    /* Copy the text inside the text field */
   navigator.clipboard.writeText(copyText.value);
+
+  var toastCopyEl = document.getElementById('copiedToast')
+  var toastCopyList = bootstrap.Toast.getOrCreateInstance(toastCopyEl)
+  toastCopyList.show()
 }
 
 /**
@@ -983,13 +987,39 @@ function initialize () {
    * 
   */
 
-  $(document).ready(function() {
-    $('.select-bank').select2({
-      minimumResultsForSearch: -1,
-      placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
-      dropdownParent: $('#selectBankDropdown')
-    });
+  const select_bank_select = $('.select-bank').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#selectBankDropdown')
   });
+  const select_bank_select1 = $('.select-bank1').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#selectBankDropdown1')
+  });
+  $('.select-bank').on('select2:select', function (e) {
+    var data = e.params.data;
+    const _value = data.text
+    afterSelect (_value, this)
+  });
+  $('.select-bank1').on('select2:select', function (e) {
+    var data = e.params.data;
+    const _value = data.text
+    afterSelect (_value, this)
+  });
+
+  function afterSelect (value, e) {
+    if(value) {
+      const form__container = $(e).parents('.form__container');
+      if(form__container.length > 0) {
+        const select_bank_content = $(form__container[0]).children('.select_bank_content');
+        if(select_bank_content.length > 0) {
+          $(select_bank_content[0]).removeClass('d-none')
+          $(select_bank_content[0]).children('.select_bank_content__title').html(value)
+        }
+      }
+    }
+  }
 
   /**
    * 
@@ -1044,10 +1074,20 @@ function initialize () {
     e.preventDefault();
     const _form_id = $(this).data('form');
     $('#'+_form_id).trigger("reset");
-    form__container__network_content = $('.form__container__network_content');
+    const form__container__network_content = $('.form__container__network_content');
     if(form__container__network_content && form__container__network_content.length > 0 && !form__container__network_content.hasClass('d-none')) {
       form__container__network_content.addClass('d-none');  
     }
+    const select_bank_content = $('.select_bank_content');
+    if(select_bank_content && select_bank_content.length > 0) {
+      select_bank_content.each(index => {
+        if(!$(select_bank_content[index]).hasClass('d-none')) {
+          $(select_bank_content[index]).addClass('d-none');
+        }
+      });
+    }
+    select_bank_select.val(null).trigger("change");
+    select_bank_select1.val(null).trigger("change");
   })
 
 
@@ -1146,6 +1186,26 @@ function initialize () {
     e.preventDefault();
     copyFunction('Bank_Account_Number_Value')
   })
+
+  $('.address-copy').on('click', function(e) {
+    e.preventDefault();
+    copyFunction('address-copy-value')
+  })
+
+
+  $("#depositCryptoForm input[name='crypto_option']").change(
+    function () {
+  
+      const current_value = $("#depositCryptoForm input[name='crypto_option']:checked").val();
+      if(current_value) {
+        const networkFormContainer = $('#networkFormContainer');
+        if(networkFormContainer && networkFormContainer.hasClass('d-none')) {
+          networkFormContainer.removeClass('d-none')
+        }
+      }
+    }
+  );
+  
 
 }
 

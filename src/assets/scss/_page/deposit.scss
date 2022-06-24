@@ -40,6 +40,11 @@
           }
         }
       }
+
+      @media only screen and (max-width: 390px) {
+        gap: 5px;
+        place-content: space-between;
+      }
     }
 
     #mainContent {
@@ -185,6 +190,14 @@
                   background: #FDBB2C;
                   border-radius: 4px;
                   min-height: 40px;
+                  display: flex;
+                  place-content: center;
+                  place-items: center;
+                  display: flex;
+                  place-content: center;
+                  place-items: center;
+                  max-width: 130px;
+                  margin: auto;
                   margin-top: 5px;
                 }
 
@@ -252,6 +265,7 @@
               font-size: 14px;
               line-height: 19px;
               color: #FFFFFF;
+              margin-top: 10px;
 
               &__title {
                 background: #222C43;
@@ -620,6 +634,25 @@
         line-height: 25px;
         text-align: center;
         color: #FDBB2C;
+      }
+
+      .modal-footer {
+        border-top: none;
+
+        .btn {
+          min-height: 50px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          width: 100%;
+          background: #FDBB2C;
+          border-radius: 4px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: center;
+          color: #000000;
+        }
       }
 
       .modal-body {

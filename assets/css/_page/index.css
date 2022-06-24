@@ -23,7 +23,7 @@
     margin-top: 33px;
     border: 2px solid #194284;
     border-radius: 4px;
-    gap: 10px;
+    gap: 0;
     place-content: flex-start;
     display: flex;
     place-items: center;
@@ -31,7 +31,7 @@
     .login-page__content .tab-content .login__form .download-app__logo {
       padding: 7px 0 7px 11px; }
     .login-page__content .tab-content .login__form .download-app__content {
-      padding: 7px 11px 7px 0;
+      padding: 7px 0 7px 10px;
       width: 100%; }
       .login-page__content .tab-content .login__form .download-app__content__title {
         font-weight: 600;
@@ -1551,7 +1551,8 @@
       border: none;
       width: 30px; }
       .category-page__content__container__tab__nav .btn-nav img {
-        max-width: 10px; }
+        max-width: 10px;
+        margin-top: -3px; }
     .category-page__content__container__tab__nav .nav {
       flex-wrap: nowrap;
       overflow: auto;
@@ -1869,7 +1870,8 @@
     place-items: flex-start;
     margin-top: 20px;
     text-align: center;
-    padding-bottom: 12px; }
+    padding-bottom: 12px;
+    border-bottom: none; }
     .category-page__content__top__navbar__item__img {
       background: #131D39;
       border-radius: 18px;
@@ -2585,6 +2587,10 @@
         height: 4px;
         background: #FDBB2C;
         border-radius: 3px; }
+  @media only screen and (max-width: 390px) {
+    .deposit-page__content #mainTab {
+      gap: 5px;
+      place-content: space-between; } }
 
 .deposit-page__content #mainContent {
   min-height: 300px;
@@ -2679,6 +2685,14 @@
             background: #FDBB2C;
             border-radius: 4px;
             min-height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            max-width: 130px;
+            margin: auto;
             margin-top: 5px; }
           .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .description {
             font-weight: 400;
@@ -2718,7 +2732,8 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        margin-top: 10px; }
         .deposit-page__content #mainContent > .tab-pane .form__container .select_bank_content__title {
           background: #222C43;
           font-weight: 600;
@@ -2966,6 +2981,22 @@
   line-height: 25px;
   text-align: center;
   color: #FDBB2C; }
+
+#selectPromotionModal .modal-dialog .modal-content .modal-footer {
+  border-top: none; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-footer .btn {
+    min-height: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    background: #FDBB2C;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000; }
 
 #selectPromotionModal .modal-dialog .modal-content .modal-body {
   padding: 0; }

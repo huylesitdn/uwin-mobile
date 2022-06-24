@@ -29,7 +29,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
   position: relative;
   background: #000B26;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--bs-body-color); }
 
 * {
@@ -46,8 +45,8 @@ img {
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding-right: var(--bs-gutter-x-mobile, 0.75rem);
-  padding-left: var(--bs-gutter-x-mobile, 0.75rem); }
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem); }
 
 .form-control {
   font-size: 14px;
@@ -91,6 +90,16 @@ img {
 a {
   color: #597EF7;
   text-decoration: none; }
+
+.toast#copiedToast {
+  width: 100%;
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85); }
+  .toast#copiedToast .toast-body {
+    text-align: center; }
 
 .modal.slide-up {
   top: auto;
@@ -459,7 +468,7 @@ a {
     margin-top: 33px;
     border: 2px solid #194284;
     border-radius: 4px;
-    gap: 10px;
+    gap: 0;
     place-content: flex-start;
     display: flex;
     place-items: center;
@@ -467,7 +476,7 @@ a {
     .login-page__content .tab-content .login__form .download-app__logo {
       padding: 7px 0 7px 11px; }
     .login-page__content .tab-content .login__form .download-app__content {
-      padding: 7px 11px 7px 0;
+      padding: 7px 0 7px 10px;
       width: 100%; }
       .login-page__content .tab-content .login__form .download-app__content__title {
         font-weight: 600;
@@ -1987,7 +1996,8 @@ a {
       border: none;
       width: 30px; }
       .category-page__content__container__tab__nav .btn-nav img {
-        max-width: 10px; }
+        max-width: 10px;
+        margin-top: -3px; }
     .category-page__content__container__tab__nav .nav {
       flex-wrap: nowrap;
       overflow: auto;
@@ -2305,7 +2315,8 @@ a {
     place-items: flex-start;
     margin-top: 20px;
     text-align: center;
-    padding-bottom: 12px; }
+    padding-bottom: 12px;
+    border-bottom: none; }
     .category-page__content__top__navbar__item__img {
       background: #131D39;
       border-radius: 18px;
@@ -3021,6 +3032,10 @@ a {
         height: 4px;
         background: #FDBB2C;
         border-radius: 3px; }
+  @media only screen and (max-width: 390px) {
+    .deposit-page__content #mainTab {
+      gap: 5px;
+      place-content: space-between; } }
 
 .deposit-page__content #mainContent {
   min-height: 300px;
@@ -3115,6 +3130,14 @@ a {
             background: #FDBB2C;
             border-radius: 4px;
             min-height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            max-width: 130px;
+            margin: auto;
             margin-top: 5px; }
           .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address .description {
             font-weight: 400;
@@ -3154,7 +3177,8 @@ a {
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        margin-top: 10px; }
         .deposit-page__content #mainContent > .tab-pane .form__container .select_bank_content__title {
           background: #222C43;
           font-weight: 600;
@@ -3402,6 +3426,22 @@ a {
   line-height: 25px;
   text-align: center;
   color: #FDBB2C; }
+
+#selectPromotionModal .modal-dialog .modal-content .modal-footer {
+  border-top: none; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-footer .btn {
+    min-height: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    background: #FDBB2C;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000; }
 
 #selectPromotionModal .modal-dialog .modal-content .modal-body {
   padding: 0; }

@@ -139,7 +139,8 @@
           .navbar.fixed-bottom .content .nav-item .img img {
             height: 17px; }
             .navbar.fixed-bottom .content .nav-item .img img.active {
-              height: 25px; }
+              height: 27px;
+              margin-top: -5px; }
           .navbar.fixed-bottom .content .nav-item .img .active {
             display: none; }
         .navbar.fixed-bottom .content .nav-item .text {
