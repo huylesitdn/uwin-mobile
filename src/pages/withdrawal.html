@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'Deposit'})
+  @@include('../components/base/header.html', {title: 'Withdrawal'})
   <body>
     
     <!-- Content -->
@@ -25,10 +25,10 @@
         <div class="container-fluid">
           <ul class="nav nav-tabs" id="mainTab" role="tablist" data-aos="fade-in">
             <li class="nav-item" role="presentation">
-              <a href="/deposit.html" class="nav-link active" id="deposit-section-tab" data-i18n="Deposit"></a>
+              <a href="/deposit.html" class="nav-link" id="deposit-section-tab" data-i18n="Deposit"></a>
             </li>
             <li class="nav-item" role="presentation">
-              <a href="/withdrawal.html" class="nav-link" id="withdrawal-section-tab" data-i18n="Withdrawal"></a>
+              <a href="/withdrawal.html" class="nav-link active" id="withdrawal-section-tab" data-i18n="Withdrawal"></a>
             </li>
             <li class="nav-item" role="presentation">
               <a href="/transfer.html" class="nav-link" id="transfer-section-tab" data-i18n="Transfer"></a>
@@ -41,13 +41,16 @@
 
 
         <div class="tab-content" id="mainContent">
-          <div class="tab-pane fade show active" id="deposit-section" role="tabpanel" aria-labelledby="deposit-section-tab">
+          <div class="tab-pane fade" id="deposit-section" role="tabpanel" aria-labelledby="deposit-section-tab">
             <div class="container-fluid">
-              @@include('../components/wallet/deposit/index.html')
+              deposit-section
+              <!-- @@include('../components/wallet/deposit/index.html') -->
             </div>
           </div>
-          <div class="tab-pane fade" id="withdrawal-section" role="tabpanel" aria-labelledby="withdrawal-section-tab">
-            withdrawal-section
+          <div class="tab-pane fade show active" id="withdrawal-section" role="tabpanel" aria-labelledby="withdrawal-section-tab">
+            <div class="container-fluid">
+              @@include('../components/wallet/withdrawal/index.html')
+            </div>
           </div>
           <div class="tab-pane fade" id="transfer-section" role="tabpanel" aria-labelledby="transfer-section-tab">
             transfer-section

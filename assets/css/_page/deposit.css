@@ -29,6 +29,8 @@
         height: 4px;
         background: #FDBB2C;
         border-radius: 3px; }
+    .deposit-page__content #mainTab > .nav-item > .nav-link:focus, .deposit-page__content #mainTab > .nav-item > .nav-link:hover {
+      border-color: transparent; }
   @media only screen and (max-width: 390px) {
     .deposit-page__content #mainTab {
       gap: 5px;
@@ -87,6 +89,36 @@
         color: #FF1A1A;
         margin-bottom: 5px;
         display: block; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .error#select_bank-error {
+          position: absolute;
+          bottom: -25px;
+          left: 0; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .help-text {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        color: #FDBB2C; }
+      .deposit-page__content #mainContent > .tab-pane .form__container .input-group {
+        padding: 5px 5px 5px 0;
+        min-height: 50px;
+        position: relative; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control {
+          min-height: initial;
+          border: none; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .error#amount_SGD-error {
+          position: absolute;
+          bottom: -25px;
+          left: 0; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .btn-outline-warning {
+          background: rgba(253, 187, 44, 0.3);
+          border-radius: 4px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #FDBB2C;
+          min-width: 50px;
+          border: none; }
       .deposit-page__content #mainContent > .tab-pane .form__container__network_content {
         margin-top: 17px; }
         .deposit-page__content #mainContent > .tab-pane .form__container__network_content__help {
@@ -362,6 +394,8 @@
             background: #FDBB2C;
             border-radius: 2px;
             color: #000000;
+            border-color: transparent; }
+          .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link:focus, .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link:hover {
             border-color: transparent; }
     .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainContent {
       padding: 20px 0; }

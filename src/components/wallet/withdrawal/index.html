@@ -1,0 +1,83 @@
+@@include('../main-wallet.html')
+
+
+<form id="withdrawalPaymentGatewayForm" class="form pb-5" data-aos="fade-up">
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Amount_SGD"></label>
+    <div class="input-group">
+      <input type="text" class="form-control" name="amount_SGD" data-i18n="deposit_page.amount_sgd_placeholder" data-i18n-attr="placeholder" />
+      <button class="btn btn-outline-warning" type="button" data-i18n="deposit_page.all"></button>
+    </div>
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Withdrawal_Bank_Type"></label>
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradioWithdrawalBankType" value="1" id="btnradioExistingBank" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="btnradioExistingBank" data-i18n="deposit_page.Existing_Bank"></label>
+    
+      <input type="radio" class="btn-check" name="btnradioWithdrawalBankType" value="2" id="btnradioNewBank" autocomplete="off" checked>
+      <label class="btn btn-outline-secondary" for="btnradioNewBank" data-i18n="deposit_page.New_Bank"></label>
+    </div>
+  </div>
+
+  <div class="Existing_Bank d-none">
+    <div class="form__container">
+      <label class="form-label" data-i18n="deposit_page.Account_Holder"></label>
+      <input type="text" class="form-control" data-i18n="deposit_page.Enter_Account_Holder" data-i18n-attr="placeholder" value="Aaron Lee" disabled />
+    </div>
+    <div class="form__container">
+      <label class="form-label" data-i18n="deposit_page.Select_Bank"></label>
+      <select class="form-select select-bank2" name="select_bank">
+        <option selected></option>
+        <option value="Maybank_Berhad_848473993287338">Maybank Berhad   848473993287338</option>
+      </select>
+      <div id="selectBankDropdown2"></div>
+    </div>
+    <div class="form__container">
+      <div class="help-text mt-2" data-i18n="deposit_page.withdraw_help_text"></div>
+    </div>
+  </div>
+
+  <div class="New_Bank">
+    <div class="form__container">
+      <label class="form-label" data-i18n="deposit_page.Account_Holder"></label>
+      <input type="text" class="form-control" data-i18n="deposit_page.Enter_Account_Holder" data-i18n-attr="placeholder" value="Aaron Lee" disabled />
+    </div>
+    <div class="form__container">
+      <label class="form-label" data-i18n="deposit_page.Select_Bank"></label>
+      <select class="form-select select-bank3" name="select_bank">
+        <option selected></option>
+        <option value="POSB">POSB</option>
+        <option value="DBS">DBS</option>
+        <option value="UOB">UOB</option>
+        <option value="CIMB SG">CIMB SG</option>
+        <option value="OCBC">OCBC</option>
+        <option value="Maybank Singapore Limited">Maybank Singapore Limited</option>
+        <option value="HSBC">HSBC</option>
+      </select>
+      <div id="selectBankDropdown3"></div>
+    </div>
+    <div class="form__container">
+      <label class="form-label" data-i18n="deposit_page.Bank_Account_Number1"></label>
+      <input type="text" class="form-control" name="bank_account_number" data-i18n="deposit_page.Type_your_account" data-i18n-attr="placeholder" />
+      <div class="help-text" data-i18n="deposit_page.withdraw_help_text"></div>
+    </div>
+  </div>
+
+
+
+  <div class="form__action">
+    <button type="submit" class="btn btn-warning" data-i18n="deposit_page.Add_Bank"></button>
+    <!-- <button type="button" class="btn btn-link" data-i18n="Reset" data-bs-toggle="modal" data-bs-target="#depositFailModal"></button> -->
+    <button type="button" class="btn btn-link btn-reset-form" data-i18n="Reset" data-form="depositPaymentGatewayForm"></button>
+  </div>
+
+</form>
+
+
+
+<!-- MODAL -->
+<!-- @@include('../restore-modal.html') -->
+@@include('./withdrawal-fail-modal.html')
+@@include('./withdrawal-success-modal.html')
+<!-- MODAL -->

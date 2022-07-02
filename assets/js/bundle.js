@@ -997,6 +997,16 @@ function initialize () {
     placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
     dropdownParent: $('#selectBankDropdown1')
   });
+  const select_bank_select2 = $('.select-bank2').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#selectBankDropdown2')
+  });
+  const select_bank_select3 = $('.select-bank3').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#selectBankDropdown3')
+  });
   $('.select-bank').on('select2:select', function (e) {
     var data = e.params.data;
     const _value = data.text
@@ -1047,6 +1057,11 @@ function initialize () {
     var depositSuccessModal = new bootstrap.Modal(depositSuccessModalElm, {});
   }
 
+  const withdrawalSuccessModalElm = $("#withdrawalSuccessModal");
+  if (withdrawalSuccessModalElm.length > 0) {
+    var withdrawalSuccessModal = new bootstrap.Modal(withdrawalSuccessModalElm, {});
+  }
+
   $("#depositPaymentGatewayForm").validate({
     rules: {
       amount_SGD: {
@@ -1088,6 +1103,8 @@ function initialize () {
     }
     select_bank_select.val(null).trigger("change");
     select_bank_select1.val(null).trigger("change");
+    select_bank_select2.val(null).trigger("change");
+    select_bank_select3.val(null).trigger("change");
   })
 
 
@@ -1177,6 +1194,33 @@ function initialize () {
     }
   });
 
+  $("#withdrawalPaymentGatewayForm").validate({
+    rules: {
+      amount_SGD: {
+        required: true,
+        min: 50,
+        max: 25000
+      },
+      select_bank: "required",
+      bank_account_number: "required",
+    },
+    messages: {
+      amount_SGD: {
+        required: translator.translateForKey('deposit_page.Amount_SGD_required', _get_language),
+        min: translator.translateForKey('deposit_page.Amount_SGD_required_min_50', _get_language),
+        max: translator.translateForKey('deposit_page.Amount_SGD_required_max', _get_language)
+      },
+      select_bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+      bank_account_number: translator.translateForKey('deposit_page.Please_enter_your_bank_account_number', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      withdrawalSuccessModal.show()
+    }
+  });
+
   $('.Bank_Account_Name_Copy').on('click', function(e) {
     e.preventDefault();
     copyFunction('Bank_Account_Name_Value')
@@ -1202,6 +1246,17 @@ function initialize () {
         if(networkFormContainer && networkFormContainer.hasClass('d-none')) {
           networkFormContainer.removeClass('d-none')
         }
+      }
+    }
+  );
+
+  $("#withdrawalPaymentGatewayForm input[name='btnradioWithdrawalBankType']").change(
+    function () {
+  
+      const current_value = $("#withdrawalPaymentGatewayForm input[name='btnradioWithdrawalBankType']:checked").val();
+      if(current_value) {
+        $('#withdrawalPaymentGatewayForm .Existing_Bank').toggleClass('d-none')
+        $('#withdrawalPaymentGatewayForm .New_Bank').toggleClass('d-none')
       }
     }
   );
