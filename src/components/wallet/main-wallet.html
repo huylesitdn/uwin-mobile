@@ -12,6 +12,12 @@
   </div>
   <div class="main-wallet__footer">
     <div class="main-wallet__footer__currency">SGD 1000.00</div>
-    <a href="javascript:void(0)"class="main-wallet__footer__description" data-i18n="deposit_page.Show_Game_Balance"></a>
+    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#gameBalanceModal" class="main-wallet__footer__description" data-i18n="deposit_page.Show_Game_Balance"></a>
   </div>
 </div>
+
+<!-- Modal -->
+@@include('./game-balance-modal.html')
+@@include('./transfer-success-modal.html')
+@@include('./transfer-fail-modal.html')
+<!-- Modal -->

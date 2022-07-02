@@ -3367,6 +3367,41 @@
       #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .description {
         margin-top: 12px; }
 
+#gameBalanceModal .close-button {
+  padding-bottom: 10px; }
+
+#gameBalanceModal .game-balance-content {
+  overflow-y: auto; }
+  #gameBalanceModal .game-balance-content__item {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    margin-bottom: 20px; }
+    #gameBalanceModal .game-balance-content__item .title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      color: #FFFFFF;
+      min-width: 40%; }
+    #gameBalanceModal .game-balance-content__item .currency {
+      min-width: 100px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF; }
+    #gameBalanceModal .game-balance-content__item .action {
+      min-width: 80px; }
+      #gameBalanceModal .game-balance-content__item .action .btn {
+        background: #FDBB2C;
+        border-radius: 4px;
+        min-height: 30px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #000000; }
+
 .history-detail-page .navbar.fixed-top .title {
   text-transform: capitalize; }
 

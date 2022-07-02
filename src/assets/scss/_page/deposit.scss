@@ -1203,3 +1203,54 @@
     }
   }
 }
+
+
+#gameBalanceModal {
+  .close-button {
+    padding-bottom: 10px;
+  }
+
+  .game-balance-content {
+    overflow-y: auto;
+
+    &__item {
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      margin-bottom: 20px;
+
+      .title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        min-width: 40%;
+      }
+
+      .currency {
+        min-width: 100px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+
+      .action {
+        min-width: 80px;
+
+        .btn {
+          background: #FDBB2C;
+          border-radius: 4px;
+          min-height: 30px;
+
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
