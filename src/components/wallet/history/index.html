@@ -1,1 +1,16 @@
-history
+<ul class="nav nav-tabs" id="historyTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="history-transaction-tab" data-bs-toggle="tab" data-bs-target="#history-transaction" type="button" role="tab" aria-controls="history-transaction" aria-selected="true" data-i18n="deposit_page.Transaction"></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="history-betting-record-tab" data-bs-toggle="tab" data-bs-target="#history-betting-record" type="button" role="tab" aria-controls="history-betting-record" aria-selected="false" data-i18n="deposit_page.Betting_Record"></button>
+  </li>
+</ul>
+<div class="tab-content" id="historyTabContent">
+  <div class="tab-pane fade" id="history-transaction" role="tabpanel" aria-labelledby="history-transaction-tab">
+    @@include('./history-transaction.html')
+  </div>
+  <div class="tab-pane fade show active" id="history-betting-record" role="tabpanel" aria-labelledby="history-betting-record-tab">
+    @@include('./history-betting-record.html')
+  </div>
+</div>
