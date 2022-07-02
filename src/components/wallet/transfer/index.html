@@ -1,9 +1,57 @@
 @@include('../main-wallet.html')
 
+<form id="transferPaymentGatewayForm" class="form pb-5" data-aos="fade-up">
 
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Transfer_From"></label>
+    <select class="form-select transfer-from" name="transfer_from">
+      <option selected></option>
+      <option value="1">Main Wallet</option>
+      <option value="2">Gamatron, Imperium Games, Dream Gaming, SA Gaming, M8BET, Evolution, Sexy Baccarat, CQ9, WM, Ezugi, Spade Gaming</option>
+      <option value="3">Mega888 Slot</option>
+      <option value="4">918Kaya Slot</option>
+      <option value="5">XE88 Slot</option>
+      <option value="6">Playtech Slot</option>
+      <option value="7">CMD Sports & E-Sports</option>
+      <option value="8">IGK Sports</option>
+      <option value="9">4D Lottery</option>
+    </select>
+    <div id="transferFromDropdown"></div>
+  </div>
+
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Transfer_To"></label>
+    <select class="form-select transfer-to" name="transfer_to">
+      <option selected></option>
+      <option value="1">Main Wallet</option>
+      <option value="2">Gamatron, Imperium Games, Dream Gaming, SA Gaming, M8BET, Evolution, Sexy Baccarat, CQ9, WM, Ezugi, Spade Gaming</option>
+      <option value="3">Mega888 Slot</option>
+      <option value="4">918Kaya Slot</option>
+      <option value="5">XE88 Slot</option>
+      <option value="6">Playtech Slot</option>
+      <option value="7">CMD Sports & E-Sports</option>
+      <option value="8">IGK Sports</option>
+      <option value="9">4D Lottery</option>
+    </select>
+    <div id="transferToDropdown"></div>
+  </div>
+
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Amount_SGD"></label>
+    <div class="input-group">
+      <input type="text" class="form-control" name="amount_SGD" data-i18n="deposit_page.amount_sgd_placeholder" data-i18n-attr="placeholder" />
+      <button class="btn btn-outline-warning" type="button" data-i18n="deposit_page.all"></button>
+    </div>
+  </div>
+
+  <div class="form__action pt-3">
+    <button type="submit" class="btn btn-warning" data-i18n="deposit_page.Transfer"></button>
+    <!-- <button type="button" class="btn btn-link" data-i18n="Reset" data-bs-toggle="modal" data-bs-target="#depositFailModal"></button> -->
+  </div>
+
+</form>
 
 <!-- MODAL -->
-<!-- @@include('../restore-modal.html') -->
-<!-- @@include('./withdrawal-fail-modal.html') -->
-<!-- @@include('./withdrawal-success-modal.html') -->
+@@include('./transfer-fail-modal.html')
+@@include('./transfer-success-modal.html')
 <!-- MODAL -->

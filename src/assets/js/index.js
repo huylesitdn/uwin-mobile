@@ -1007,12 +1007,42 @@ function initialize () {
     placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
     dropdownParent: $('#selectBankDropdown3')
   });
+  const transfer_from = $('.transfer-from').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#transferFromDropdown')
+  });
+  const transfer_to = $('.transfer-to').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#transferToDropdown')
+  });
   $('.select-bank').on('select2:select', function (e) {
     var data = e.params.data;
     const _value = data.text
     afterSelect (_value, this)
   });
   $('.select-bank1').on('select2:select', function (e) {
+    var data = e.params.data;
+    const _value = data.text
+    afterSelect (_value, this)
+  });
+  $('.select-bank2').on('select2:select', function (e) {
+    var data = e.params.data;
+    const _value = data.text
+    afterSelect (_value, this)
+  });
+  $('.select-bank3').on('select2:select', function (e) {
+    var data = e.params.data;
+    const _value = data.text
+    afterSelect (_value, this)
+  });
+  $('.transfer-from').on('select2:select', function (e) {
+    var data = e.params.data;
+    const _value = data.text
+    afterSelect (_value, this)
+  });
+  $('.transfer-to').on('select2:select', function (e) {
     var data = e.params.data;
     const _value = data.text
     afterSelect (_value, this)
@@ -1057,9 +1087,29 @@ function initialize () {
     var depositSuccessModal = new bootstrap.Modal(depositSuccessModalElm, {});
   }
 
+  const depositFailModalElm = $("#depositFailModal");
+  if (depositFailModalElm.length > 0) {
+    var depositFailModal = new bootstrap.Modal(depositFailModalElm, {});
+  }
+
   const withdrawalSuccessModalElm = $("#withdrawalSuccessModal");
   if (withdrawalSuccessModalElm.length > 0) {
     var withdrawalSuccessModal = new bootstrap.Modal(withdrawalSuccessModalElm, {});
+  }
+
+  const withdrawalFailModalElm = $("#withdrawalFailModal");
+  if (withdrawalFailModalElm.length > 0) {
+    var withdrawalFailModal = new bootstrap.Modal(withdrawalFailModalElm, {});
+  }
+
+  const transferSuccessModalElm = $("#transferSuccessModal");
+  if (transferSuccessModalElm.length > 0) {
+    var transferSuccessModal = new bootstrap.Modal(transferSuccessModalElm, {});
+  }
+
+  const transferFailModalElm = $("#transferFailModal");
+  if (transferFailModalElm.length > 0) {
+    var transferFailModal = new bootstrap.Modal(transferFailModalElm, {});
   }
 
   $("#depositPaymentGatewayForm").validate({
@@ -1206,7 +1256,7 @@ function initialize () {
     },
     messages: {
       amount_SGD: {
-        required: translator.translateForKey('deposit_page.Amount_SGD_required', _get_language),
+        required: translator.translateForKey('deposit_page.Please_enter_amount', _get_language),
         min: translator.translateForKey('deposit_page.Amount_SGD_required_min_50', _get_language),
         max: translator.translateForKey('deposit_page.Amount_SGD_required_max', _get_language)
       },
@@ -1218,6 +1268,33 @@ function initialize () {
       // window.location.href = '/thank-you.html'
 
       withdrawalSuccessModal.show()
+    }
+  });
+
+  $("#transferPaymentGatewayForm").validate({
+    rules: {
+      amount_SGD: {
+        required: true,
+        min: 50,
+        max: 25000
+      },
+      transfer_from: "required",
+      transfer_to: "required",
+    },
+    messages: {
+      amount_SGD: {
+        required: translator.translateForKey('deposit_page.Please_enter_amount', _get_language),
+        min: translator.translateForKey('deposit_page.Amount_SGD_required_min_50', _get_language),
+        max: translator.translateForKey('deposit_page.Amount_SGD_required_max', _get_language)
+      },
+      transfer_from: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+      transfer_to: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      transferSuccessModal.show()
     }
   });
 

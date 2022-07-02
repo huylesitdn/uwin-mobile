@@ -89,7 +89,7 @@
         color: #FF1A1A;
         margin-bottom: 5px;
         display: block; }
-        .deposit-page__content #mainContent > .tab-pane .form__container .error#select_bank-error {
+        .deposit-page__content #mainContent > .tab-pane .form__container .error#transfer_to-error, .deposit-page__content #mainContent > .tab-pane .form__container .error#transfer_from-error, .deposit-page__content #mainContent > .tab-pane .form__container .error#select_bank-error {
           position: absolute;
           bottom: -25px;
           left: 0; }

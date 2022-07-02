@@ -563,6 +563,13 @@
     "withdrawal_success_1": "Withdrawal request successfully submitted.",
     "withdrawal_fail_1": "Withdrawal request has failed.",
     "withdrawal_fail_2": "Insufficient balance in main wallet for withdraw. ",
+    "Transfer_From": "Transfer From",
+    "Transfer_To": "Transfer To",
+    "Transfer": "Transfer",
+    "Please_enter_amount": "Please enter amount",
+    "Transfer_Successful": "Transfer Successful !",
+    "Transfer_fail": "Fail ! Insufficient wallet balance !",
+    "": "",
     "": "",
     "": ""  
   },

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'History'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main deposit-page">
+      @@include('../components/base/navbar.html')
+      <div class="deposit-page__content">
+
+        <!-- <ul class="nav nav-tabs" id="mainTab" role="tablist" data-aos="fade-in">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="deposit-section-tab" data-bs-toggle="tab" data-bs-target="#deposit-section" type="button" role="tab" aria-controls="deposit-section" aria-selected="true" data-i18n="Deposit"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="withdrawal-section-tab" data-bs-toggle="tab" data-bs-target="#withdrawal-section" type="button" role="tab" aria-controls="withdrawal-section" aria-selected="false" data-i18n="Withdrawal"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="transfer-section-tab" data-bs-toggle="tab" data-bs-target="#transfer-section" type="button" role="tab" aria-controls="transfer-section" aria-selected="false" data-i18n="Transfer"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="history-section-tab" data-bs-toggle="tab" data-bs-target="#history-section" type="button" role="tab" aria-controls="history-section" aria-selected="false" data-i18n="History"></button>
+          </li>
+        </ul> -->
+        <div class="container-fluid">
+          <ul class="nav nav-tabs" id="mainTab" role="tablist" data-aos="fade-in">
+            <li class="nav-item" role="presentation">
+              <a href="/deposit.html" class="nav-link" id="deposit-section-tab" data-i18n="Deposit"></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="/withdrawal.html" class="nav-link" id="withdrawal-section-tab" data-i18n="Withdrawal"></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="/transfer.html" class="nav-link" id="transfer-section-tab" data-i18n="Transfer"></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="/history.html" class="nav-link active" id="history-section-tab" data-i18n="History"></a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="tab-content" id="mainContent">
+          <div class="tab-pane fade" id="deposit-section" role="tabpanel" aria-labelledby="deposit-section-tab">
+            <div class="container-fluid">
+              deposit-section
+              <!-- @@include('../components/wallet/deposit/index.html') -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="withdrawal-section" role="tabpanel" aria-labelledby="withdrawal-section-tab">
+            <div class="container-fluid">
+              withdrawal-section
+            </div>
+          </div>
+          <div class="tab-pane fade" id="transfer-section" role="tabpanel" aria-labelledby="transfer-section-tab">
+            <div class="container-fluid">
+              transfer-section
+              <!-- @@include('../components/wallet/transfer/index.html') -->
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="history-section" role="tabpanel" aria-labelledby="history-section-tab">
+            <div class="container-fluid">
+              <!-- history-section -->
+              @@include('../components/wallet/history/index.html')
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/copied-toast.html')
+      @@include('../components/wallet/restore-modal.html')
+      <!-- MODAL -->
+
+      
+      @@include('../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
