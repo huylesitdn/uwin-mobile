@@ -1112,6 +1112,11 @@ function initialize () {
     var transferFailModal = new bootstrap.Modal(transferFailModalElm, {});
   }
 
+  const addBankDetailModalElm = $("#addBankDetailModal");
+  if (addBankDetailModalElm.length > 0) {
+    var addBankDetailModal = new bootstrap.Modal(addBankDetailModalElm, {});
+  }
+
   $("#depositPaymentGatewayForm").validate({
     rules: {
       amount_SGD: {
@@ -1295,6 +1300,44 @@ function initialize () {
       // window.location.href = '/thank-you.html'
 
       transferSuccessModal.show()
+    }
+  });
+
+  $("#myAccountChangePasswordForm").validate({
+    rules: {
+      Current_Password: "required",
+      New_Password: "required",
+      Confirm_Password: "required",
+    },
+    messages: {
+      Current_Password: translator.translateForKey('my_account_page.Please_enter_your_Current_Password', _get_language),
+      New_Password: translator.translateForKey('my_account_page.Please_enter_your_New_Password', _get_language),
+      Confirm_Password: translator.translateForKey('my_account_page.Please_enter_your_Confirm_Password', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      // transferSuccessModal.show()
+    }
+  });
+
+  $("#addBankDetailModalForm").validate({
+    rules: {
+      Account_Holder: "required",
+      Select_Bank: "required",
+      Bank_Account_Number: "required",
+    },
+    messages: {
+      Account_Holder: translator.translateForKey('my_account_page.Please_enter_your_Current_Password', _get_language),
+      Select_Bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+      Bank_Account_Number: translator.translateForKey('deposit_page.Please_enter_your_bank_account_number', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      addBankDetailModal.hide()
     }
   });
 

@@ -3,104 +3,44 @@
   @@include('../components/base/header.html', {title: 'My Account'})
   <body>
     <!-- Content -->
-    <section class="main my-account">
-      <div class="my-account__content">
-        <div class="my-account__content__topcontent">
-          <a href="/customer-service.html" class="my-account__content__topcontent__nav">
-            <img src="assets/images/my-account/service.png" alt="" width="25px" />
-            <span data-i18n="my_account_page.Customer_Service">Customer <br /> Service</span>
-          </a>
-  
-          <div class="my-account__content__topcontent__top">
-            <img class="my-account__content__topcontent__top__avatar" src="assets/icons/user-avatar.png" alt="" />
-            <a class="my-account__content__topcontent__top__user-info" href="/profile.html">
-              <div>
-                <h4>
-                  username8080
-                  <img src="assets/icons/vip0.png" class="ms-2" style="width: 30px"/>
-                </h4>
-                <div data-i18n="Join_since"></div>
-              </div>
-              <img src="assets/images/my-account/right-white.png" />
-            </a>
-          </div>
-  
-          <div class="my-account__content__topcontent__balance">
-            <div>
-              <img src="assets/images/my-account/wallet-1.png"  width="20px" />
-              <span class="mx-1" data-i18n="Total_Balance"></span>
-              <img src="assets/images/my-account/refresh.png" width="20px" />
+    <section class="main my-account-page">
+      @@include('../components/base/navbar-top.html', {title: 'my_account_page.My_Account', back_url: '/', icon_back_white: true})
+
+      <div class="my-account-page__content">
+        <div class="container-fluid">
+          <ul class="nav nav-tabs nav-fill" id="myAccountNav" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="my-account-profile-tab" data-bs-toggle="tab" data-bs-target="#my-account-profile" type="button" role="tab" aria-controls="my-account-profile" aria-selected="true" data-i18n="my_account_page.Profile"></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="my-account-change-password-tab" data-bs-toggle="tab" data-bs-target="#my-account-change-password" type="button" role="tab" aria-controls="my-account-change-password" aria-selected="false" data-i18n="my_account_page.Change_Password"></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="my-account-banking-details-tab" data-bs-toggle="tab" data-bs-target="#my-account-banking-details" type="button" role="tab" aria-controls="my-account-banking-details" aria-selected="false" data-i18n="my_account_page.Banking_Details"></button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myAccountContent">
+            <div class="tab-pane fade show active" id="my-account-profile" role="tabpanel" aria-labelledby="my-account-profile-tab">
+              @@include('../components/my-account/profile.html')
             </div>
-            <h4><span data-i18n="CURRENCY_KEY"></span> 5888.20</h4>
-          </div>
-  
-          <div class="my-account__content__topcontent__wallet">
-            <div class="my-account__content__topcontent__wallet__top">
-              <a href="/vip/" class="d-flex align-items-center">
-                <img src="assets/images/my-account/vipnew.png" />
-                <span data-i18n="VIP_PRIVILEGE"></span>
-              </a>
-              <a href="/campaign-bonanza/" class="d-flex align-items-center">
-                <img src="assets/images/my-account/giftnew.png" />
-                <span data-i18n="CAMPAIGN_BONANZA"></span>
-              </a>
+            <div class="tab-pane fade" id="my-account-change-password" role="tabpanel" aria-labelledby="my-account-change-password-tab">
+              @@include('../components/my-account/change-password.html')
+              <!-- my-account-change-password-tab -->
             </div>
-            <div class="my-account__content__topcontent__wallet__bottom">
-              <a href="/wallet/">
-                <img src="assets/images/my-account/walletnew.png" />
-                <div data-i18n="My_Wallet"></div>
-              </a>
-              <a href="/wallet/transaction-history.html">
-                <img src="assets/images/my-account/transactionnew.png" />
-                <div data-i18n="Transaction_History"></div>
-              </a>
-              <a href="/my-account/betting-record.html">
-                <img src="assets/images/my-account/betnew.png" />
-                <div data-i18n="Betting_Record"></div>
-              </a>
-              <a href="/account-setting.html">
-                <img src="assets/images/my-account/settingnew.png" />
-                <div data-i18n="Account_Setting"></div>
-              </a>
+            <div class="tab-pane fade" id="my-account-banking-details" role="tabpanel" aria-labelledby="my-account-banking-details-tab">
+              @@include('../components/my-account/bank-details.html')
+              <!-- my-account-banking-details-tab -->
             </div>
           </div>
         </div>
-
-        <ul class="my-account__content__navbar">
-          <li>
-            <a href="/referral-program.html">
-              <div>
-                <div class="icon"><img src="assets/images/my-account/friend.png" /></div>
-                <div data-i18n="my_account_page.Referral_Program"></div>
-              </div>
-              <div>
-                <span data-i18n="my_account_page.Refer_your_friends_get_rewards"></span>
-              <img src="assets/images/my-account/right.png" />
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/bonus-history/">
-              <div>
-                <div class="icon"><img src="assets/images/my-account/bonus.png" /></div>
-                <div data-i18n="my_account_page.Bonus_Center">Bonus Center</div>
-              </div>
-              <img src="assets/images/my-account/right.png" />
-            </a>
-          </li>
-          <li>
-            <a href="/help/">
-              <div>
-                <div class="icon"><img src="assets/images/my-account/help.png" /></div>
-                <div data-i18n="my_account_page.Help">Help</div>
-              </div>
-              <img src="assets/images/my-account/right.png" />
-            </a>
-          </li>
-        </ul>
-
       </div>
-      @@include('../components/base/navbar-bottom.html', {active: 4})
+      
+      <!-- MODAL -->
+      @@include('../components/my-account/add-bank-detail-modal.html')
+      <!-- MODAL -->
+
+
+      @@include('../components/base/navbar-bottom.html', {active: -1})
     </section>
 
     @@include('../components/base/footer.html')
