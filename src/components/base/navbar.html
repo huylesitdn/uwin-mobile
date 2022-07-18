@@ -1,3 +1,6 @@
+<div id="loadingDiv"><div class="loader">Loading...</div></div>
+
+
 <nav class="navbar fixed-top navbar-light">
   <div class="container-fluid content">
     <div>
@@ -19,10 +22,10 @@
       <button type="button" class="btn btn-language">中</button>
       @@if (!context.without_login) {
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-          <button type="button" class="btn btn-secondary btn-currency">
+          <a href="/deposit.html" class="btn btn-secondary btn-currency">
             <img class="content__logo" src="assets/icons/navbar-wallet.svg" alt="" />
             <span>SGD 5,000,000</span>
-          </button>
+          </a>
           <a href="/deposit.html" class="btn btn-warning btn-add">
             <img class="content__logo" src="assets/icons/navbar-plus.svg" alt="" />
           </a>
@@ -50,3 +53,8 @@
 @@if (!context.without_login) {
   @@include('./sidebar.html')
 }
+
+
+<!-- MODAL -->
+@@include('../please-login-modal.html')
+<!-- MODAL -->

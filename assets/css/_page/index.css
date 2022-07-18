@@ -1542,6 +1542,8 @@
   margin-top: 20px; }
   .category-page__content__container__tab__nav {
     display: flex;
+    place-content: space-between;
+    place-items: center;
     border-radius: 8px;
     overflow: hidden; }
     .category-page__content__container__tab__nav .btn-nav {
@@ -1549,7 +1551,11 @@
       box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
       transform: matrix(-1, 0, 0, 1, 0, 0);
       border: none;
-      width: 30px; }
+      width: 30px;
+      min-height: 40px;
+      display: flex;
+      place-content: center;
+      place-items: center; }
       .category-page__content__container__tab__nav .btn-nav img {
         max-width: 10px;
         margin-top: -3px; }
@@ -1561,6 +1567,7 @@
       background: #131D39;
       width: 100%;
       gap: 2px;
+      min-height: 40px;
       -ms-overflow-style: none;
       scrollbar-width: none; }
       .category-page__content__container__tab__nav .nav::-webkit-scrollbar {
@@ -2257,6 +2264,56 @@
 
 .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content {
   padding: 15px; }
+  .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form {
+    padding: 15px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .title {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #FDBB2C;
+      padding-bottom: 30px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group {
+      background: rgba(255, 255, 255, 0.13);
+      border-radius: 4px;
+      min-height: 45px;
+      margin-bottom: 10px; }
+      .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control {
+        background: transparent;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FDBB2C; }
+        .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control::placeholder {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: #FFFFFF; }
+        .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control:focus {
+          box-shadow: none; }
+      .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .input-group-text {
+        background: transparent;
+        border: none;
+        padding-right: 14px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .form-text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #FDBB2C;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .btn {
+      width: 100%;
+      min-height: 45px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 10px; }
+      .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .btn-link {
+        color: #FFFFFF;
+        text-decoration: none; }
   .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .play-now-item {
     margin-left: -8px;
     margin-right: -8px; }
@@ -3006,12 +3063,14 @@
           border: 1px solid #FDBB2C;
           border-radius: 4px;
           background-color: rgba(255, 255, 255, 0.13);
-          box-shadow: none; }
+          box-shadow: none;
+          color: #FFFFFF; }
           .deposit-page__content #mainContent > .tab-pane .form__container .form-radio .btn-check:checked + .form-radio__label .btn img {
             opacity: 1; }
         .deposit-page__content #mainContent > .tab-pane .form__container .form-radio__label .btn {
           padding: 5px;
-          min-height: 35px !important; }
+          min-height: 35px !important;
+          min-width: 70px; }
           .deposit-page__content #mainContent > .tab-pane .form__container .form-radio__label .btn img {
             max-height: 25px;
             opacity: 0.3;
@@ -3101,7 +3160,10 @@
             padding: 12px; }
             .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--highlighted {
               background: transparent !important;
-              color: #FDBB2C; }
+              color: #fff; }
+            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--selected {
+              background: transparent !important;
+              color: #FDBB2C !important; }
         .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection {
           margin-bottom: 10px; }
           .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection .select2-selection {
@@ -3229,7 +3291,8 @@
       background-size: cover;
       border-radius: 12px;
       position: relative;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      overflow: hidden; }
       .deposit-page__content #mainContent > .tab-pane .main-wallet__top {
         padding: 20px 15px;
         display: flex;
@@ -3272,36 +3335,25 @@
           line-height: 16px;
           color: #FFFFFF; }
 
-#selectPromotionModal .modal-dialog .modal-content .modal-title {
-  padding-top: 10px;
-  padding-bottom: 25px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #FDBB2C; }
-
-#selectPromotionModal .modal-dialog .modal-content .modal-footer {
-  border-top: none; }
-  #selectPromotionModal .modal-dialog .modal-content .modal-footer .btn {
-    min-height: 50px;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    width: 100%;
-    background: #FDBB2C;
-    border-radius: 4px;
+#selectPromotionModal .modal-dialog .modal-content {
+  padding: 0;
+  padding-top: 15px; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-title {
+    padding-top: 10px;
+    padding-bottom: 25px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
-    color: #000000; }
-
-#selectPromotionModal .modal-dialog .modal-content .modal-body {
-  padding: 0; }
-  #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action {
-    margin-top: 20px; }
-    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action .btn {
+    color: #FDBB2C; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-footer {
+    border-top: none;
+    background: rgba(16, 55, 83, 0.9);
+    box-shadow: 0px -7px 34px 10px #103753;
+    -webkit-box-shadow: 0px -7px 34px 10px #103753;
+    -moz-box-shadow: 0px -7px 34px 10px #103753;
+    padding-top: 0; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-footer .btn {
       min-height: 50px;
       display: flex;
       place-content: center;
@@ -3314,58 +3366,76 @@
       line-height: 22px;
       text-align: center;
       color: #000000; }
-  #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item {
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 4px;
-    display: flex;
-    place-content: space-between;
-    place-items: center;
-    padding: 10px 13px;
-    margin-bottom: 15px;
-    position: relative; }
-    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark {
-      height: 17px;
-      width: 17px;
-      min-height: 17px;
-      min-width: 17px;
-      background-color: transparent;
-      border: 2px solid #FFFFFF;
-      border-radius: 50%;
+  #selectPromotionModal .modal-dialog .modal-content .modal-body {
+    padding: 0 15px; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action {
+      margin-top: 20px; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action .btn {
+        min-height: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        background: #FDBB2C;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item {
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 4px;
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      padding: 10px 13px;
+      margin-bottom: 15px;
       position: relative; }
-      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark::after {
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark {
+        height: 17px;
+        width: 17px;
+        min-height: 17px;
+        min-width: 17px;
+        background-color: transparent;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        position: relative; }
+        #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark::after {
+          content: "";
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          right: 0;
+          bottom: 0;
+          width: 9px;
+          height: 9px;
+          background: #FDBB2C;
+          border-radius: 50%;
+          display: none; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .checkmark:after {
+        display: block; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .selected-bg {
         content: "";
         position: absolute;
-        left: 2px;
-        top: 2px;
+        left: 0;
         right: 0;
         bottom: 0;
-        width: 9px;
-        height: 9px;
-        background: #FDBB2C;
-        border-radius: 50%;
-        display: none; }
-    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .checkmark:after {
-      display: block; }
-    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .selected-bg {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      background: rgba(255, 255, 255, 0.13); }
-    #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      color: #FDBB2C; }
-      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .title {
-        font-weight: 700;
+        top: 0;
+        background: rgba(255, 255, 255, 0.13); }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content {
+        font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF; }
-      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .description {
-        margin-top: 12px; }
+        color: #FDBB2C;
+        width: 100%; }
+        #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .title {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          color: #FFFFFF; }
+        #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .description {
+          margin-top: 12px; }
 
 #gameBalanceModal .close-button {
   padding-bottom: 10px; }

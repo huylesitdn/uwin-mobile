@@ -2,6 +2,8 @@
   margin-top: 20px; }
   .category-page__content__container__tab__nav {
     display: flex;
+    place-content: space-between;
+    place-items: center;
     border-radius: 8px;
     overflow: hidden; }
     .category-page__content__container__tab__nav .btn-nav {
@@ -9,7 +11,11 @@
       box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
       transform: matrix(-1, 0, 0, 1, 0, 0);
       border: none;
-      width: 30px; }
+      width: 30px;
+      min-height: 40px;
+      display: flex;
+      place-content: center;
+      place-items: center; }
       .category-page__content__container__tab__nav .btn-nav img {
         max-width: 10px;
         margin-top: -3px; }
@@ -21,6 +27,7 @@
       background: #131D39;
       width: 100%;
       gap: 2px;
+      min-height: 40px;
       -ms-overflow-style: none;
       scrollbar-width: none; }
       .category-page__content__container__tab__nav .nav::-webkit-scrollbar {

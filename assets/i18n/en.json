@@ -426,6 +426,14 @@
     "No_Thanks": "No, Thanks",
     "Deposit": "Deposit",
     "Transfer_All": "Transfer All",
+    "918_KAYA_SLOT": "918 KAYA SLOT",
+    "MEGA888_SLOT": "MEGA888 SLOT",
+    "USERNAME": "USERNAME:",
+    "PASSWORD": "PASSWORD:",
+    "MEGA888_SLOT_help_text": "*Player may login using default password shown or player may create their own password by entering their preffered password & click the “Change Password” button.",
+    "Download": "Download",
+    "Change_Password": "Change Password",
+    "": "",
     "": "",
     "": ""
   },
@@ -510,10 +518,10 @@
     "Select_Promotion": "Select Promotion",
     "select_promotion_content": {
       "title1": "I prefer not to receive any promotion",
-      "title2": "Welcome Bonus 100% ( Turnover x25 )",
-      "title3": "Slots Starter Pack SGD 50 Get SGD 92<br/>( Turnover x15)",
-      "title4": "Slots Starter Pack SGD 100 Get SGD 185<br/>( Turnover x15)",
-      "title5": "Unlimited Deposit Bonus 5%<br/>( Turnover x5)",
+      "title2": "Welcome Bonus 100%",
+      "title3": "Slots Starter Pack SGD 50 Get SGD 92",
+      "title4": "Slots Starter Pack SGD 100 Get SGD 185",
+      "title5": "Unlimited Deposit Bonus 5%",
       "": "",
       "": "" 
     },
@@ -653,6 +661,10 @@
     "": ""
   },
   "Save": "Save",
+  "Please_Login_First_to_Play_Game": "Please Login First to<br/>Play Game",
+  "Please_Login_First_to_Play_Game_description": "If you don’t have account, </br>please register for an account.",
+  "Register": "Register",
+  "Login": "Login",
   "": "",
   "": ""
 }

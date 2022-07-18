@@ -56,6 +56,56 @@
 
 .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content {
   padding: 15px; }
+  .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form {
+    padding: 15px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .title {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #FDBB2C;
+      padding-bottom: 30px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group {
+      background: rgba(255, 255, 255, 0.13);
+      border-radius: 4px;
+      min-height: 45px;
+      margin-bottom: 10px; }
+      .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control {
+        background: transparent;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FDBB2C; }
+        .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control::placeholder {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: #FFFFFF; }
+        .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control:focus {
+          box-shadow: none; }
+      .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .input-group-text {
+        background: transparent;
+        border: none;
+        padding-right: 14px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .form-text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #FDBB2C;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .btn {
+      width: 100%;
+      min-height: 45px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 10px; }
+      .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .btn-link {
+        color: #FFFFFF;
+        text-decoration: none; }
   .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .play-now-item {
     margin-left: -8px;
     margin-right: -8px; }

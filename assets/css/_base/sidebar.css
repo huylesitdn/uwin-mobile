@@ -58,7 +58,7 @@
         color: #FFFFFF;
         border-bottom: 1px solid rgba(255, 255, 255, 0.22);
         padding: 15px 0 13px; }
-        #mySidenav.sidenav .left-nav__container__menu__welcome a {
+        #mySidenav.sidenav .left-nav__container__menu__welcome span {
           font-weight: 400;
           font-size: 12px;
           line-height: 16px;

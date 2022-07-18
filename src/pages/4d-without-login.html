@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: '4D'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main category-page">
+      @@include('../components/base/navbar.html', {without_login: true})
+      <div class="category-page__content">
+
+        @@include('../components/category/top-content.html', {active: 5})
+
+        @@include('../components/category/content.html', {active: 5})
+        
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/category/payout-table-modal.html')
+      <!-- MODAL -->
+
+      
+      @@include('../components/base/navbar-footer.html')
+      
+      @@include('../components/base/navbar-bottom.html', {active: -1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

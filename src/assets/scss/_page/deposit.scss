@@ -671,6 +671,7 @@
                       border-radius: 4px;
                       background-color: rgba(255, 255, 255, 0.13);
                       box-shadow: none;
+                      color: #FFFFFF;
 
                       img {
                         opacity: 1;
@@ -684,6 +685,7 @@
                 .btn {
                   padding: 5px;
                   min-height: 35px !important;
+                  min-width: 70px;
 
                   img {
                     max-height: 25px;
@@ -812,7 +814,11 @@
                     .select2-results__option--selectable {
                       &.select2-results__option--highlighted {
                         background: transparent !important;
-                        color: #FDBB2C;
+                        color: #fff;
+                      }
+                      &.select2-results__option--selected {
+                        background: transparent !important;
+                        color: #FDBB2C !important;
                       }
                     }
                   }
@@ -1004,6 +1010,7 @@
           border-radius: 12px;
           position: relative;
           margin-bottom: 20px;
+          overflow: hidden;
 
           &__top {
             padding: 20px 15px;
@@ -1075,6 +1082,9 @@
 #selectPromotionModal {
   .modal-dialog {
     .modal-content {
+      padding: 0;
+      padding-top: 15px;
+
       .close-button {}
 
       .modal-title {
@@ -1089,6 +1099,11 @@
 
       .modal-footer {
         border-top: none;
+        background: rgba(16,55,83,0.9);
+        box-shadow: 0px -7px 34px 10px rgba(16,55,83,1);
+        -webkit-box-shadow: 0px -7px 34px 10px rgba(16,55,83,1);
+        -moz-box-shadow: 0px -7px 34px 10px rgba(16,55,83,1);
+        padding-top: 0;
 
         .btn {
           min-height: 50px;
@@ -1107,7 +1122,7 @@
       }
 
       .modal-body {
-        padding: 0;
+        padding: 0 15px;
 
         .promotion-modal {
           .action {
@@ -1184,6 +1199,7 @@
                 font-size: 14px;
                 line-height: 19px;
                 color: #FDBB2C;
+                width: 100%;
 
                 .title {
                   font-weight: 700;

@@ -8,6 +8,8 @@
 
         &__nav {
           display: flex;
+          place-content: space-between;
+          place-items: center;
           border-radius: 8px;
           overflow: hidden;
 
@@ -17,6 +19,10 @@
             transform: matrix(-1, 0, 0, 1, 0, 0);
             border: none;
             width: 30px;
+            min-height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center;
 
             img {
               max-width: 10px;
@@ -32,6 +38,7 @@
             background: #131D39;
             width: 100%;
             gap: 2px;
+            min-height: 40px;
 
             -ms-overflow-style: none;
             scrollbar-width: none;

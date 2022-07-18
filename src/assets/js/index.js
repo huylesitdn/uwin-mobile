@@ -50,6 +50,39 @@ $(function() {
  * 
 */
 
+/**
+ * 
+ * SHOW LOADING SECTION
+ * 
+*/
+$(window).on('load', function(){
+  setTimeout(removeLoader, 300); //wait for page load PLUS x second
+});
+function removeLoader(){
+  $( "#loadingDiv" ).fadeOut(500, function() {
+    // fadeOut complete. Remove the loading div
+    $( "#loadingDiv" ).remove(); //makes page more lightweight 
+  });  
+}
+/**
+ * 
+ * END SHOW LOADING SECTION
+ * 
+*/
+
+
+const IS_LOGOUT = 'IS_LOGOUT';
+const IS_LOGOUT_VALUE = {
+  YES: '1',
+  NO: '0'
+}
+// set IS_LOGOUT localstorage when current route is login.html or without-login.html
+const is_without_login_route = location.pathname === "/login.html" || location.pathname.includes('without-login.html');
+if (is_without_login_route) {
+  localStorage.setItem(IS_LOGOUT, IS_LOGOUT_VALUE.YES);
+} else {
+  localStorage.setItem(IS_LOGOUT, IS_LOGOUT_VALUE.NO);
+}
 
 // Translator
 
@@ -922,8 +955,17 @@ function initialize () {
       password: translator.translateForKey('login_page.Please_insert_your_password', _get_language),
     },
     submitHandler: function(form) {
-      console.log(form)
-      window.location.href = '/'
+      const _form_value = $(form).serializeArray();
+      const username_demo = 'testacc';
+      const password_demo = 'testacc';
+      if(
+        _form_value[0].name === 'username' && _form_value[0].value === username_demo && 
+        _form_value[1].name === 'password' && _form_value[1].value === password_demo
+      ) {
+        localStorage.setItem(IS_LOGOUT, IS_LOGOUT_VALUE.NO);
+        window.location.href = '/';
+      }
+      console.log(_form_value)
     }
   });
 
@@ -1380,6 +1422,29 @@ function initialize () {
       }
     }
   );
+
+  
+  const pleaseLoginFirstModalElm = $("#pleaseLoginFirstModal");
+  if (pleaseLoginFirstModalElm.length > 0) {
+    var pleaseLoginFirstModal = new bootstrap.Modal(pleaseLoginFirstModalElm, {});
+  }
+
+  $(`
+    .btn-demo, 
+    .btn-play-real, 
+    .btn-please-login, 
+    .category-page__content__container__games_lobby__content__item__img, 
+    .category-page__content__container__special_odds__content__item,
+    .category-page__content__container__games_lobby__content__item__content,
+    .btn-bet-now,
+    .home__content__special_odds__content__item
+  `).on('click', function(e) {
+    const GET_IS_LOGOUT = localStorage.getItem(IS_LOGOUT);
+    if(GET_IS_LOGOUT === IS_LOGOUT_VALUE.YES) {
+      e.preventDefault();
+      pleaseLoginFirstModal.show()
+    }
+  })
   
 
 }
