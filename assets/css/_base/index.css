@@ -331,10 +331,10 @@ a {
   font-size: 3px;
   position: relative;
   text-indent: -9999em;
-  border-top: 3px solid rgba(255, 255, 255, 0.2);
-  border-right: 3px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-  border-left: 3px solid #ffffff;
+  border-top: 3px solid rgba(25, 66, 132, 0.3);
+  border-right: 3px solid rgba(25, 66, 132, 0.3);
+  border-bottom: 3px solid rgba(25, 66, 132, 0.3);
+  border-left: 3px solid #5a81c4;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
