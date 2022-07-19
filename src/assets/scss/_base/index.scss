@@ -535,3 +535,68 @@ a {
   place-items: center;
   overflow: hidden;
 }
+
+
+
+
+
+.show-action {
+  overflow: hidden;
+  &.active {
+    .btn-demo {
+      animation: pulseDemoBtn 2s infinite;
+      -webkit-animation: pulseDemoBtn 2s infinite;
+      box-shadow: 0 0 0 0 rgba(#FDBB2C, .5);
+    }
+    .btn-play-real {
+      animation: pulsePlayRealBtn 2s infinite;
+      -webkit-animation: pulsePlayRealBtn 2s infinite;
+      box-shadow: 0 0 0 0 rgba(#fff, .5);
+    }
+  }
+}
+
+
+@keyframes pulsePlayRealBtn {
+  0% {
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(#fff, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(#fff, 0);
+  }
+}
+
+@-webkit-keyframes pulsePlayRealBtn {
+  0% {
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(#FDBB2C, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(#FDBB2C, 0);
+  }
+}
+
+@keyframes pulseDemoBtn {
+  0% {
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(#FDBB2C, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(#FDBB2C, 0);
+  }
+}
+
+@-webkit-keyframes pulseDemoBtn {
+  0% {
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(#FDBB2C, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(#FDBB2C, 0);
+  }
+}
