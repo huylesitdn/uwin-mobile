@@ -1418,10 +1418,28 @@ function initialize () {
     function () {
   
       const current_value = $("#withdrawalPaymentGatewayForm input[name='btnradioWithdrawalBankType']:checked").val();
+      console.log(current_value)
       if(current_value) {
         $('#withdrawalPaymentGatewayForm .Existing_Bank').toggleClass('d-none')
         $('#withdrawalPaymentGatewayForm .New_Bank').toggleClass('d-none')
       }
+
+      const withdrawal_submit_btn = $('#withdrawalPaymentGatewayForm .form__action .btn-warning');
+      
+      switch (current_value) {
+        case '1':
+          const deposit_page__Withdraw__label = translator.translateForKey('deposit_page.Withdraw', _get_language)
+          withdrawal_submit_btn.html(deposit_page__Withdraw__label)
+          break;
+        case '2':
+          const deposit_page__Add_Bank__label = translator.translateForKey('deposit_page.Add_Bank', _get_language)
+          withdrawal_submit_btn.html(deposit_page__Add_Bank__label)
+          break;
+      
+        default:
+          break;
+      }
+
     }
   );
 

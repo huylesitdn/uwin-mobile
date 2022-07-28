@@ -1386,7 +1386,8 @@ a {
     .home__content .top-slider .slick-slide {
       border-radius: 20px; }
     .home__content .top-slider .slick-slide img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 9px; }
     .home__content .top-slider .slick-dots {
       width: auto;
       display: flex;
