@@ -537,17 +537,37 @@ a {
 }
 
 
-
-
-
 .show-action {
   overflow: hidden;
+
+  .btn-demo {
+    text-indent: -9999em;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    padding-left: 3px !important;
+
+    &:after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url(../icons/play-button.png);
+      background-size: 20px;
+    }
+  }
+
+  .btn-play-real {
+    background: transparent !important;
+    color: #fff !important;
+  }
+
   &.active {
     .btn-demo {
       animation: pulseDemoBtn 2s infinite;
       -webkit-animation: pulseDemoBtn 2s infinite;
       box-shadow: 0 0 0 0 rgba(#FDBB2C, .5);
     }
+
     .btn-play-real {
       animation: pulsePlayRealBtn 2s infinite;
       -webkit-animation: pulsePlayRealBtn 2s infinite;
@@ -558,44 +578,48 @@ a {
 
 
 @keyframes pulsePlayRealBtn {
-  0% {
-  }
+  0% {}
+
   70% {
     box-shadow: 0 0 0 10px rgba(#fff, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(#fff, 0);
   }
 }
 
 @-webkit-keyframes pulsePlayRealBtn {
-  0% {
-  }
+  0% {}
+
   70% {
     box-shadow: 0 0 0 10px rgba(#FDBB2C, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(#FDBB2C, 0);
   }
 }
 
 @keyframes pulseDemoBtn {
-  0% {
-  }
+  0% {}
+
   70% {
     box-shadow: 0 0 0 10px rgba(#FDBB2C, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(#FDBB2C, 0);
   }
 }
 
 @-webkit-keyframes pulseDemoBtn {
-  0% {
-  }
+  0% {}
+
   70% {
     box-shadow: 0 0 0 10px rgba(#FDBB2C, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(#FDBB2C, 0);
   }

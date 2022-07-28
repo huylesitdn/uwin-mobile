@@ -372,6 +372,21 @@ a {
 
 .show-action {
   overflow: hidden; }
+  .show-action .btn-demo {
+    text-indent: -9999em;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    padding-left: 3px !important; }
+    .show-action .btn-demo:after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url(../icons/play-button.png);
+      background-size: 20px; }
+  .show-action .btn-play-real {
+    background: transparent !important;
+    color: #fff !important; }
   .show-action.active .btn-demo {
     animation: pulseDemoBtn 2s infinite;
     -webkit-animation: pulseDemoBtn 2s infinite;
