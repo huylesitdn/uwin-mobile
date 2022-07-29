@@ -100,7 +100,7 @@ var translator = new Translator({
   persist: true,
   persistKey: "preferred_language",
   filesLocation: "assets/i18n",
-  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/ob9/main/assets/i18n",
+  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-mobile/main/assets/i18n",
 });
 
 const PREFERED_REGION = 'preferred_region';

@@ -542,37 +542,39 @@ a {
 
   .btn-demo {
     text-indent: -9999em;
-    height: 50px !important;
-    width: 50px !important;
+    height: 60px !important;
+    width: 60px !important;
     border-radius: 50% !important;
-    padding-left: 3px !important;
+    padding-left: 5px !important;
 
     &:after {
       content: "";
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       background: url(../icons/play-button.png);
-      background-size: 20px;
+      background-size: 25px;
     }
   }
 
   .btn-play-real {
     background: transparent !important;
     color: #fff !important;
+    height: 25px !important;
+    max-width: 55px !important;
   }
 
   &.active {
     .btn-demo {
-      animation: pulseDemoBtn 2s infinite;
-      -webkit-animation: pulseDemoBtn 2s infinite;
+      animation: pulseDemoBtn 1.5s infinite;
+      -webkit-animation: pulseDemoBtn 1.5s infinite;
       box-shadow: 0 0 0 0 rgba(#FDBB2C, .5);
     }
 
-    .btn-play-real {
-      animation: pulsePlayRealBtn 2s infinite;
-      -webkit-animation: pulsePlayRealBtn 2s infinite;
-      box-shadow: 0 0 0 0 rgba(#fff, .5);
-    }
+    // .btn-play-real {
+    //   animation: pulsePlayRealBtn 2s infinite;
+    //   -webkit-animation: pulsePlayRealBtn 2s infinite;
+    //   box-shadow: 0 0 0 0 rgba(#fff, .5);
+    // }
   }
 }
 

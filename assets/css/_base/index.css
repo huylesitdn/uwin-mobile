@@ -374,27 +374,25 @@ a {
   overflow: hidden; }
   .show-action .btn-demo {
     text-indent: -9999em;
-    height: 50px !important;
-    width: 50px !important;
+    height: 60px !important;
+    width: 60px !important;
     border-radius: 50% !important;
-    padding-left: 3px !important; }
+    padding-left: 5px !important; }
     .show-action .btn-demo:after {
       content: "";
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       background: url(../icons/play-button.png);
-      background-size: 20px; }
+      background-size: 25px; }
   .show-action .btn-play-real {
     background: transparent !important;
-    color: #fff !important; }
+    color: #fff !important;
+    height: 25px !important;
+    max-width: 55px !important; }
   .show-action.active .btn-demo {
-    animation: pulseDemoBtn 2s infinite;
-    -webkit-animation: pulseDemoBtn 2s infinite;
+    animation: pulseDemoBtn 1.5s infinite;
+    -webkit-animation: pulseDemoBtn 1.5s infinite;
     box-shadow: 0 0 0 0 rgba(253, 187, 44, 0.5); }
-  .show-action.active .btn-play-real {
-    animation: pulsePlayRealBtn 2s infinite;
-    -webkit-animation: pulsePlayRealBtn 2s infinite;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
 
 @keyframes pulsePlayRealBtn {
   0% { }

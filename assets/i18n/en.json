@@ -555,6 +555,7 @@
     "Address": "Address",
     "Complete_Transfer": "Complete Transfer",
     "amount_sgd_placeholder": "Min 50.00 / Max 25,000.00",
+    "enter_amount": "Enter Amount",
     "all": "All",
     "Withdrawal_Bank_Type": "Withdrawal Bank Type",
     "Existing_Bank": "Existing Bank",
