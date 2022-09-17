@@ -1,0 +1,27 @@
+.campaign-1_results {
+  font-family: 'Inter', sans-serif;
+  background: #000C26; }
+  .campaign-1_results .navbar.fixed-top {
+    background: #000C26;
+    box-shadow: none; }
+    .campaign-1_results .navbar.fixed-top #back_url img {
+      height: 10px; }
+  .campaign-1_results__content__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 26px; }
+  .campaign-1_results__content__item {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    margin-bottom: 26px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 22px;
+    /* or 92% */
+    color: #FFFFFF; }
+    .campaign-1_results__content__item span {
+      color: #fdba2b; }

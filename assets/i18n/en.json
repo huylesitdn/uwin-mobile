@@ -668,6 +668,51 @@
   "Login": "Login",
   "Sport_E_sport": "Sport/ E-sport",
   "Arcade": "Arcade",
+  "campaign_1": {
+    "megajackpot_page": {
+      "title": "How to increase <span>mega jackpot?</span>",
+      "description": "Every new participant will add MYR 1,000 to the prize pool, invite your friends join the event and win the MEGA JACKPOT together!",
+      "button_label": "Invite friend NOW!",
+      "": ""    
+    },
+    "tickets_page": {
+      "title": "Insufficient <br/><span>ticket</span>",
+      "description": "Minimum Top Up MYR 30 to obtain 1 ticket.",
+      "button_label": " Deposit NOW",
+      "": ""    
+    },
+    "thank_you_page": {
+      "title": "Thank <span>You!</span>",
+      "description": "MYR 30 will be added into your main-wallet within 1 minute",
+      "button_label": "Cool, Thanks!",
+      "": ""    
+    },
+    "results_page": {
+      "title": "Prediction Results",
+      "item1": "Group match - <span>Round 1</span>",
+      "item2": "Group match - <span>Round 2</span>",
+      "item3": "Group match - <span>Round 3</span>",
+      "item4": "Group match - <span>Round 4</span>",
+      "item5": "Group match - <span>Round 5</span>",
+      "item6": "Group match - <span>Round 6</span>",
+      "item7": "Group match - <span>Round 7</span>",
+      "item8": "Group match - <span>Round 8</span>",
+      "item9": "Group match - <span>Round 9</span>",
+      "": "",
+      "": ""    
+    },
+    "results_group_match_page": {
+      "title": "Results of Group match - Round 1",
+      "You_won": "You won",
+      "Claim_Now": "Claim Now",
+      "Correct": "Correct",
+      "Winner": "Winner:",
+      "Correct_Score": "Correct Score:",
+      "wrong": "wrong",
+      "": "",
+      "": ""    
+    }
+  },
   "": "",
   "": "",
   "": ""

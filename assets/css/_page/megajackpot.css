@@ -1,0 +1,47 @@
+.campaign-1_megajackpot {
+  font-family: 'Inter', sans-serif;
+  background: #000C26; }
+  .campaign-1_megajackpot .navbar.fixed-top {
+    background: #000C26;
+    box-shadow: none; }
+    .campaign-1_megajackpot .navbar.fixed-top #back_url img {
+      height: 10px; }
+  .campaign-1_megajackpot__content {
+    padding: 70px 10%; }
+    .campaign-1_megajackpot__content__title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 40px;
+      /* or 111% */
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6); }
+      .campaign-1_megajackpot__content__title span {
+        color: #fdba2b; }
+    .campaign-1_megajackpot__content__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      /* or 175% */
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 40px; }
+    .campaign-1_megajackpot__content__action {
+      margin-top: 40px;
+      text-align: center; }
+      .campaign-1_megajackpot__content__action .btn {
+        background: #FDBA2B;
+        box-shadow: 0px 4px 20px rgba(253, 186, 43, 0.5);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        text-align: center;
+        color: #000C26;
+        min-height: 48px;
+        width: 100%;
+        display: flex;
+        place-content: center;
+        place-items: center; }
