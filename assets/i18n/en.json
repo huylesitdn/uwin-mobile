@@ -751,6 +751,20 @@
       "": "",
       "": "",
       "": ""
+    },
+    "submission_page": {
+      "Group_match_Round_1": "Group match - Round 1",
+      "Predict_and_win": "Predict and win",
+      "free_cash_prizes": "free cash prizes!",
+      "Prediction": "Prediction",
+      "vs": "vs",
+      "Who_will_win_the_match": "Who will win the match?",
+      "What_will_be_the_Correct_Score": "What will be the Correct Score?",
+      "What_will_be_the_first_to_score": "What will be the first to score?",
+      "What_will_be_the_total_goal": "What will be the total goal?",
+      "Submit": "Submit",
+      "": "",
+      "": ""
     }
   },
   "": "",
