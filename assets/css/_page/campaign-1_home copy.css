@@ -1,0 +1,388 @@
+.campaign-1 {
+  font-family: 'Inter', sans-serif;
+  background: #000C26;
+  margin-top: 0;
+  background-image: url(../images/campaign-1/top-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 320px; }
+  .campaign-1 .navbar.fixed-top {
+    background: transparent;
+    box-shadow: none;
+    position: inherit; }
+    .campaign-1 .navbar.fixed-top #back_url img {
+      height: 10px; }
+  .campaign-1__content .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .campaign-1__content .accordion .accordion-item {
+      background: #131C39;
+      border-radius: 10px;
+      overflow: hidden; }
+      .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button {
+        background: #131C39;
+        border-radius: 10px;
+        padding: 15px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF; }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button img.img-open {
+          margin: -8px 0 -10px -10px; }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button img.img-close {
+          display: none;
+          margin-right: 10px; }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button:focus {
+          box-shadow: none; }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button::after {
+          background-size: contain;
+          background-position: center;
+          width: 20px;
+          height: 20px;
+          background-image: url(../images/campaign-1/minus.svg); }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button.collapsed img.img-open {
+          display: none; }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button.collapsed img.img-close {
+          display: initial; }
+        .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+          background-size: contain;
+          background-position: center;
+          width: 20px;
+          height: 20px;
+          background-image: url(../images/campaign-1/plus.svg); }
+      .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body {
+        padding: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #94A3D3; }
+        .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body.prediction-results {
+          padding: 0;
+          padding-top: 15px; }
+          .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body.prediction-results .__see-all {
+            min-height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            border-top: 1px solid #000C26;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 14px;
+            text-align: center;
+            color: #FDBA2B;
+            margin-top: 10px;
+            text-decoration: none; }
+          .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body.prediction-results .__item {
+            display: flex;
+            place-items: center;
+            place-content: space-between;
+            gap: 15px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 22px;
+            color: #FFFFFF;
+            padding: 0 15px 15px; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body.prediction-results .__item span {
+              color: #FDBA2B; }
+        .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes {
+          padding-top: 15px;
+          padding-bottom: 30px; }
+          .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes__item {
+            position: relative; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes__item:nth-child(even):before {
+              content: "";
+              position: absolute;
+              left: 0px;
+              top: 0;
+              bottom: 0;
+              background-image: url(../images/campaign-1/prediction-prizes-line.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+              width: 2px;
+              height: 100%; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes__item:nth-child(even):after {
+              content: "";
+              position: absolute;
+              right: 0px;
+              top: 0;
+              bottom: 0;
+              background-image: url(../images/campaign-1/prediction-prizes-line.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+              width: 2px;
+              height: 100%; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes__item__title {
+              font-style: normal;
+              font-weight: 800;
+              font-size: 24px;
+              line-height: 22px;
+              text-align: center;
+              color: #FFFFFF; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes__item__correct {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 22px;
+              text-align: center;
+              color: #6877A6;
+              margin: 7px 0 10px 0; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body .prediction-prizes__item__subtitle {
+              font-weight: 800;
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+              color: #5B9BFB; }
+        .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body ul {
+          padding-left: 20px;
+          list-style: none; }
+          .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body ul li {
+            margin-bottom: 10px; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body ul li::before {
+              content: "\2022";
+              color: #5B9BFB;
+              font-weight: bold;
+              font-size: 20px;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em; }
+            .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body ul li ul {
+              list-style: decimal;
+              margin-top: 10px; }
+              .campaign-1__content .accordion .accordion-item .accordion-collapse .accordion-body ul li ul li::before {
+                content: none; }
+  .campaign-1__content__Predict_ALL_NOW {
+    margin: 10px 0; }
+    .campaign-1__content__Predict_ALL_NOW .btn {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      min-height: 50px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000C26;
+      background: #FDBA2B;
+      box-shadow: 0px 4px 20px rgba(253, 186, 43, 0.5);
+      border-radius: 5px;
+      width: 100%; }
+  .campaign-1__content__ticket-required {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #5B9BFB;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    place-content: center;
+    place-items: center; }
+    .campaign-1__content__ticket-required > span {
+      padding-right: 5px; }
+      .campaign-1__content__ticket-required > span:last-child {
+        color: #fff; }
+  .campaign-1__content__match {
+    background: rgba(19, 28, 57, 0.5);
+    border-radius: 10px;
+    padding: 15px; }
+    .campaign-1__content__match__item {
+      margin-bottom: 30px; }
+      .campaign-1__content__match__item__vs {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 22px;
+        color: #FFFFFF;
+        text-align: center; }
+      .campaign-1__content__match__item__name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 22px;
+        color: #FFFFFF; }
+        .campaign-1__content__match__item__name img {
+          border-radius: 50%;
+          box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3); }
+      .campaign-1__content__match__item__voted {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #6877A6; }
+      .campaign-1__content__match__item__voited-result {
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        margin-top: 20px; }
+        .campaign-1__content__match__item__voited-result .percent {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 22px;
+          text-align: right;
+          color: #6877A6; }
+          .campaign-1__content__match__item__voited-result .percent.warning {
+            color: #FDBA2B; }
+        .campaign-1__content__match__item__voited-result .progress {
+          width: 80%;
+          background: #405188;
+          box-shadow: 0px 2px 10px rgba(64, 81, 136, 0.5);
+          height: 5px; }
+          .campaign-1__content__match__item__voited-result .progress .progress-bar {
+            background-color: #FDBA2B;
+            box-shadow: 0px 2px 10px rgba(253, 186, 43, 0.5);
+            border-right: solid 3px #131C39; }
+            .campaign-1__content__match__item__voited-result .progress .progress-bar.border-none {
+              border: none !important; }
+          .campaign-1__content__match__item__voited-result .progress.row-reverse {
+            flex-direction: row-reverse; }
+            .campaign-1__content__match__item__voited-result .progress.row-reverse .progress-bar {
+              border-right: none;
+              border-left: solid 3px #131C39; }
+    .campaign-1__content__match > div:last-child {
+      margin-bottom: 0; }
+  .campaign-1__content__group-match__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 5px; }
+  .campaign-1__content__group-match__title {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 22px;
+    color: #FDBA2B; }
+    .campaign-1__content__group-match__title span {
+      color: #FFFFFF; }
+  .campaign-1__content__group-match__time {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF; }
+  .campaign-1__content__group-match img {
+    margin-right: 15px; }
+  .campaign-1__content__balance {
+    margin-bottom: 30px; }
+    .campaign-1__content__balance__item {
+      background: #131C39;
+      border-radius: 10px;
+      padding: 20px 15px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+      color: #FFFFFF; }
+      .campaign-1__content__balance__item p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #6877A6;
+        margin-bottom: 15px; }
+  .campaign-1__content__top__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+    .campaign-1__content__top__title h2 {
+      font-weight: 800;
+      font-size: 33px;
+      line-height: 52px;
+      color: #FDBA2B;
+      text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
+      text-transform: initial; }
+  .campaign-1__content__top__mega-jackpot {
+    background: #131C39;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative; }
+    .campaign-1__content__top__mega-jackpot__icon {
+      position: absolute;
+      right: -20px;
+      top: 10%; }
+    .campaign-1__content__top__mega-jackpot__You_won {
+      background: #FDBA2B;
+      box-shadow: 0px 4px 20px rgba(253, 186, 43, 0.3);
+      padding: 3px 15px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      text-align: center;
+      text-transform: uppercase;
+      color: #000C26;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: flex;
+      width: 80%;
+      place-content: center;
+      place-items: center;
+      min-height: 23px;
+      margin: auto;
+      margin-bottom: 25px; }
+    .campaign-1__content__top__mega-jackpot__currency {
+      margin-bottom: 5px;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 28px;
+      line-height: 36px;
+      color: #FFFFFF;
+      text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6); }
+      .campaign-1__content__top__mega-jackpot__currency span {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 36px;
+        color: #FDBA2B;
+        text-shadow: 0px 2px 15px rgba(253, 186, 43, 0.6); }
+    .campaign-1__content__top__mega-jackpot__currency-1 {
+      margin-bottom: 25px;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 28px;
+      line-height: 36px;
+      color: #FFFFFF;
+      text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6); }
+      .campaign-1__content__top__mega-jackpot__currency-1 span {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 36px;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6); }
+    .campaign-1__content__top__mega-jackpot__action {
+      padding-bottom: 20px; }
+      .campaign-1__content__top__mega-jackpot__action .btn {
+        border: 1px solid #FDBA2B;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        text-align: center;
+        text-transform: uppercase;
+        color: #FDBA2B;
+        width: 100%;
+        min-height: 48px;
+        display: flex;
+        place-content: center;
+        place-items: center; }
