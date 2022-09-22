@@ -1,0 +1,166 @@
+.campaign-1_results-group-match-desktop {
+  font-family: 'Inter', sans-serif;
+  background: #000C26;
+  margin-top: 40px; }
+  .campaign-1_results-group-match-desktop .navbar.fixed-top {
+    background: #000C26;
+    box-shadow: none; }
+    .campaign-1_results-group-match-desktop .navbar.fixed-top #back_url img {
+      height: 10px; }
+  .campaign-1_results-group-match-desktop__content__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+    display: block; }
+    .campaign-1_results-group-match-desktop__content__title .back-img {
+      height: 10px;
+      margin-right: 20px; }
+  .campaign-1_results-group-match-desktop__content__top {
+    background: #131C39;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: center;
+    min-height: 170px;
+    margin-bottom: 36px; }
+    .campaign-1_results-group-match-desktop__content__top__You_won {
+      background: #FDBA2B;
+      box-shadow: 0px 4px 20px rgba(253, 186, 43, 0.3);
+      padding: 3px 15px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      text-align: center;
+      text-transform: uppercase;
+      color: #000C26;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      min-height: 23px;
+      margin: auto;
+      margin-bottom: 25px;
+      width: fit-content;
+      min-width: 210px; }
+    .campaign-1_results-group-match-desktop__content__top__currency {
+      margin-bottom: 25px;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 28px;
+      line-height: 36px;
+      /* identical to box height, or 129% */
+      color: #FFFFFF;
+      text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6); }
+      .campaign-1_results-group-match-desktop__content__top__currency span {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 36px;
+        /* identical to box height, or 129% */
+        color: #FDBA2B;
+        text-shadow: 0px 2px 15px rgba(253, 186, 43, 0.6); }
+    .campaign-1_results-group-match-desktop__content__top__action {
+      padding-bottom: 20px; }
+      .campaign-1_results-group-match-desktop__content__top__action .btn {
+        border: 1px solid #FDBA2B;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        text-align: center;
+        text-transform: uppercase;
+        color: #FDBA2B;
+        width: 100%;
+        min-height: 48px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        min-width: 260px; }
+  .campaign-1_results-group-match-desktop__content .prediction-answers {
+    background: rgba(19, 28, 57, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 0;
+    margin-right: 0; }
+    .campaign-1_results-group-match-desktop__content .prediction-answers > div {
+      padding: 0; }
+      .campaign-1_results-group-match-desktop__content .prediction-answers > div:nth-child(odd) {
+        padding-right: 40px; }
+      .campaign-1_results-group-match-desktop__content .prediction-answers > div:nth-child(even) {
+        padding-left: 40px; }
+  .campaign-1_results-group-match-desktop__content__match {
+    margin-bottom: 15px; }
+    .campaign-1_results-group-match-desktop__content__match__name {
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      margin-bottom: 25px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 22px;
+      /* identical to box height, or 183% */
+      color: #FFFFFF; }
+      .campaign-1_results-group-match-desktop__content__match__name__score {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 22px;
+        /* identical to box height, or 92% */
+        text-align: center;
+        color: #FFFFFF; }
+      .campaign-1_results-group-match-desktop__content__match__name__flag {
+        border-radius: 50%;
+        box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3); }
+    .campaign-1_results-group-match-desktop__content__match__Winner {
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      margin-bottom: 15px;
+      border-bottom: 1px dashed #28304D;
+      padding-bottom: 13px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: #FFFFFF; }
+      .campaign-1_results-group-match-desktop__content__match__Winner span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        /* identical to box height, or 200% */
+        color: #6877A6; }
+    .campaign-1_results-group-match-desktop__content__match .status {
+      min-width: 95px;
+      border-radius: 3px;
+      text-align: center; }
+      .campaign-1_results-group-match-desktop__content__match .status span {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF; }
+      .campaign-1_results-group-match-desktop__content__match .status.success {
+        background: rgba(34, 202, 19, 0.5); }
+      .campaign-1_results-group-match-desktop__content__match .status.error {
+        background: rgba(255, 70, 70, 0.5); }
+    .campaign-1_results-group-match-desktop__content__match__Correct_Score {
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: #FFFFFF; }
+      .campaign-1_results-group-match-desktop__content__match__Correct_Score span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        /* identical to box height, or 200% */
+        color: #6877A6; }

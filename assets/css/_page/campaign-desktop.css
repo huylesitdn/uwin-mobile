@@ -1,0 +1,70 @@
+.campaign-desktop {
+  max-width: 1920px !important; }
+  .campaign-desktop .btn-warning:hover {
+    color: #fff !important; }
+  .campaign-desktop .btn-outline-warning:hover {
+    color: #fff !important; }
+  .campaign-desktop .modal-backdrop.fade.show {
+    background: rgba(2, 11, 31, 0.6);
+    backdrop-filter: blur(10px);
+    opacity: 1; }
+  .campaign-desktop .modal.alert .modal-dialog {
+    max-width: 450px;
+    margin: auto; }
+    .campaign-desktop .modal.alert .modal-dialog .modal-content {
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      border: none; }
+      .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-header {
+        border-bottom: none; }
+        .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-header .btn-close {
+          background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
+      .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body {
+        padding: 60px;
+        background: #000C26;
+        border-radius: 20px; }
+        .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body .campaign-1_megajackpot__content {
+          padding: 0 !important; }
+        .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body .title {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: #FDBB2C;
+          margin-bottom: 20px; }
+        .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body .text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #FFFFFF; }
+          .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body .text span {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #FDBB2C; }
+        .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body .action {
+          margin-top: 30px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          gap: 10px; }
+          .campaign-desktop .modal.alert .modal-dialog .modal-content .modal-body .action .btn {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center; }
+  @media (min-width: 1400px) {
+    .campaign-desktop .container,
+    .campaign-desktop .container-lg,
+    .campaign-desktop .container-md,
+    .campaign-desktop .container-sm,
+    .campaign-desktop .container-xl,
+    .campaign-desktop .container-xxl {
+      max-width: 1200px; } }

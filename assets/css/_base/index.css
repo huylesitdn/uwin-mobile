@@ -12,7 +12,6 @@
   --bs-danger-rgb: 255, 0, 0;
   --bs-body-color: #fff; }
 
-html,
 body {
   font-size: var(--default-font-size);
   line-height: 16px;

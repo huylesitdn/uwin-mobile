@@ -698,6 +698,7 @@
       "item7": "Group match - <span>Round 7</span>",
       "item8": "Group match - <span>Round 8</span>",
       "item9": "Group match - <span>Round 9</span>",
+      "item10": "Group match - <span>Round 10</span>",
       "": "",
       "": ""    
     },
@@ -709,7 +710,7 @@
       "Winner": "Winner:",
       "Correct_Score": "Correct Score:",
       "wrong": "wrong",
-      "": "",
+      "Prediction_answers": "Prediction answers",
       "": ""    
     },
     "home_page": {

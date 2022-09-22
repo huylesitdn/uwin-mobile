@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Campaign_1 Desktop'})
+  <body class="campaign-desktop">
+    
+    <!-- Content -->
+    <section class="main campaign-1-desktop">
+      <!-- @@include('../../components/base/navbar-top.html', {title: '', back_url: '/', icon_back_white: true}) -->
+      
+      <div class="campaign-1-desktop__content container">
+
+         <div class="campaign-1-desktop__content__top">
+            <div class="campaign-1-desktop__content__top__title" data-aos="fade-in">
+               <h2 data-i18n="campaign_1.home_page.Millions_Prize_pool"></h2>
+               <div data-i18n="campaign_1.home_page.free_prediction"></div>
+            </div>
+            <div class="campaign-1-desktop__content__top__mega-jackpot" data-aos="fade-up">
+               <span class="campaign-1-desktop__content__top__mega-jackpot__You_won" data-i18n="campaign_1.home_page.MEGA_Jackpot"></span>
+               <div class="d-flex align-items-center justify-content-between w-75 pt-2">
+                  <div class="campaign-1-desktop__content__top__mega-jackpot__currency">
+                     MYR <span>1,000,000</span>
+                  </div>
+                  <div class="campaign-1-desktop__content__top__mega-jackpot__currency-1">
+                     ≈ <span>USDT 224,719</span>
+                  </div>
+                  <div class="campaign-1-desktop__content__top__mega-jackpot__action">
+                     <button data-bs-toggle="modal" data-bs-target="#megajackpotModal" class="btn btn-outline-warning" data-i18n="campaign_1.home_page.Increase_Jackpot"></button>
+                  </div>
+                  <img class="campaign-1-desktop__content__top__mega-jackpot__icon" src="assets/images/campaign-1/mega-jackpot-icon.svg" alt="" />
+               </div>
+            </div>
+
+            <div class="campaign-1-desktop__content__balance row">
+               <div class="col-6">
+                  <div class="campaign-1-desktop__content__balance__item">
+                     <p data-i18n="campaign_1.home_page.Balance"></p>
+                     <div>
+                        3 <span data-i18n="campaign_1.home_page.tickets"></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="campaign-1-desktop__content__balance__item">
+                     <p data-i18n="campaign_1.home_page.Event_duration"></p>
+                     <div>Nov 21 - Dec 18</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="campaign-1-desktop__content__group-match">
+               <div class="campaign-1-desktop__content__group-match__subtitle" data-aos="fade-up">
+                  <img class="" src="assets/images/campaign-1/currently-open-predictions.svg" alt="" />
+                  <span data-i18n="campaign_1.home_page.Currently_open_predictions" ></span>
+               </div>
+               <div class="d-flex align-items-center justify-content-between">
+                  <div class="campaign-1-desktop__content__group-match__title" data-aos="fade-up" data-i18n="campaign_1.home_page.Group_Match_Round_1"></div>
+                  <div class="campaign-1-desktop__content__group-match__time" data-aos="fade-up">
+                     <img class="" src="assets/images/campaign-1/time.svg" alt="" />
+                     <span>2d : 24h: 59m : 59s</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="campaign-1-desktop__content__match row" data-aos="fade-up">
+               <div class="col-6">
+                  <div class="campaign-1-desktop__content__match__item row" data-aos="fade-up">
+                     <div class="campaign-1-desktop__content__match__item__name col-5">
+                        <img src="assets/icons/match/Senegal.svg" alt="" />
+                        &nbsp; Senegal
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__vs col-2" data-i18n="campaign_1.home_page.vs"></div>
+                     <div class="campaign-1-desktop__content__match__item__name col-5 text-end">
+                        Netherlands &nbsp;
+                        <img src="assets/icons/match/Netherlands.svg" alt="" />
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voited-result col-12">
+                        <div class="percent warning">80%</div>
+                        <div class="progress">
+                           <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="percent">20%</div>
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voted col-12" data-i18n="campaign_1.home_page.Voted"></div>
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="campaign-1-desktop__content__match__item row" data-aos="fade-up">
+                     <div class="campaign-1-desktop__content__match__item__name col-5">
+                        <img src="assets/icons/match/Qatar.svg" alt="" />
+                        &nbsp; Qatar
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__vs col-2" data-i18n="campaign_1.home_page.vs"></div>
+                     <div class="campaign-1-desktop__content__match__item__name col-5 text-end">
+                        Ecuador &nbsp;
+                        <img src="assets/icons/match/Ecuador.svg" alt="" />
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voited-result col-12">
+                        <div class="percent">10%</div>
+                        <div class="progress row-reverse">
+                           <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="percent warning">90%</div>
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voted col-12" data-i18n="campaign_1.home_page.Voted"></div>
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="campaign-1-desktop__content__match__item row mb-0" data-aos="fade-up">
+                     <div class="campaign-1-desktop__content__match__item__name col-5">
+                        <img src="assets/icons/match/England.svg" alt="" />
+                        &nbsp; England
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__vs col-2" data-i18n="campaign_1.home_page.vs"></div>
+                     <div class="campaign-1-desktop__content__match__item__name col-5 text-end">
+                        Iran &nbsp;
+                        <img src="assets/icons/match/Iran.svg" alt="" />
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voited-result col-12">
+                        <div class="percent warning">60%</div>
+                        <div class="progress">
+                           <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="percent">40%</div>
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voted col-12" data-i18n="campaign_1.home_page.Voted"></div>
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="campaign-1-desktop__content__match__item row mb-0" data-aos="fade-up">
+                     <div class="campaign-1-desktop__content__match__item__name col-5">
+                        <img src="assets/icons/match/USA.svg" alt="" />
+                        &nbsp; USA
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__vs col-2" data-i18n="campaign_1.home_page.vs"></div>
+                     <div class="campaign-1-desktop__content__match__item__name col-5 text-end">
+                        Wales &nbsp;
+                        <img src="assets/icons/match/Wales.svg" alt="" />
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voited-result col-12">
+                        <div class="percent">0%</div>
+                        <div class="progress">
+                           <div class="progress-bar border-none" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="percent warning">100%</div>
+                     </div>
+                     <div class="campaign-1-desktop__content__match__item__voted col-12" data-i18n="campaign_1.home_page.Voted"></div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="campaign-1-desktop__content__Predict_ALL_NOW" data-aos="fade-up">
+               <button data-bs-toggle="modal" data-bs-target="#ticketsModal" class="btn btn-warning" data-i18n="campaign_1.home_page.Predict_ALL_NOW"></button>
+            </div>
+
+            <div class="campaign-1-desktop__content__ticket-required" data-aos="fade-up">
+               <img class="me-2" src="assets/images/campaign-1/ticket.svg" alt="" />
+               <span>1</span>
+               <span data-i18n="campaign_1.home_page.ticket"></span>
+               <span data-i18n="campaign_1.home_page.required"></span>
+            </div>
+
+            <div class="accordion" data-aos="fade-up">
+               <div class="accordion-item" data-aos="fade-up">
+                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                     <img class="img-close" src="assets/images/campaign-1/prediction-results-close.svg" alt="" />
+                     <img class="img-open" src="assets/images/campaign-1/prediction-results-open.svg" alt="" />
+                     <span data-i18n="campaign_1.home_page.Prediction_Results"></span>
+                   </button>
+                 </h2>
+                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                     <div class="accordion-body prediction-results row">
+                        <div class="col-6">
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item10"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item9"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item8"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item7"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item6"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                        </div>
+                        <div class="col-6">
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item5"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item4"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item3"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item2"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                           <a href="/campaign-1-desktop/submission.html" class="__item">
+                              <div data-i18n="campaign_1.results_page.item1"></div>
+                              <img src="assets/icons/right-yellow.svg" alt="" />
+                           </a>
+                        </div>
+                        <!-- <a href="/campaign-1-desktop/results.html" class="btn btn-link __see-all" data-i18n="campaign_1.home_page.See_all_results"></a> -->
+                     </div>
+                 </div>
+               </div>
+
+               <div class="accordion-item" data-aos="fade-up">
+                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                     <img class="img-close" src="assets/images/campaign-1/how-to-play-close.svg" alt="" />
+                     <img class="img-open" src="assets/images/campaign-1/how-to-play-open.svg" alt="" />
+                     <span data-i18n="campaign_1.home_page.How_to_Play"></span>
+                   </button>
+                 </h2>
+                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                     <div class="accordion-body ">
+                        <ul>
+                           <li data-i18n="campaign_1.home_page.How_to_Play1"></li>
+                           <li data-i18n="campaign_1.home_page.How_to_Play2"></li>
+                           <li data-i18n="campaign_1.home_page.How_to_Play3"></li>
+                           <li data-i18n="campaign_1.home_page.How_to_Play4"></li>
+                           <li data-i18n="campaign_1.home_page.How_to_Play5"></li>
+                        </ul>
+                     </div>
+                 </div>
+               </div>
+
+               <div class="accordion-item" data-aos="fade-up">
+                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                     <img class="img-close" src="assets/images/campaign-1/prediction-prizes-close.svg" alt="" />
+                     <img class="img-open" src="assets/images/campaign-1/prediction-prizes-open.svg" alt="" />
+                     <span data-i18n="campaign_1.home_page.Prediction_Prizes"></span>
+                   </button>
+                 </h2>
+                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                     <div class="accordion-body">
+                        <div class="prediction-prizes row">
+                           <div class="prediction-prizes__item col-4">
+                              <div class="prediction-prizes__item__title">4-6</div>
+                              <div class="prediction-prizes__item__correct" data-i18n="campaign_1.home_page.correct"></div>
+                              <div class="prediction-prizes__item__subtitle">RM30</div>
+                           </div>
+                           <div class="prediction-prizes__item col-4">
+                              <div class="prediction-prizes__item__title">47</div>
+                              <div class="prediction-prizes__item__correct" data-i18n="campaign_1.home_page.correct"></div>
+                              <div class="prediction-prizes__item__subtitle">RM100</div>
+                           </div>
+                           <div class="prediction-prizes__item col-4">
+                              <div class="prediction-prizes__item__title">8</div>
+                              <div class="prediction-prizes__item__correct" data-i18n="campaign_1.home_page.correct"></div>
+                              <div class="prediction-prizes__item__subtitle">RM300</div>
+                           </div>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+
+               <div class="accordion-item" data-aos="fade-up">
+                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                     <img class="img-close" src="assets/images/campaign-1/mega-jackpot-close.svg" alt="" />
+                     <img class="img-open" src="assets/images/campaign-1/mega-jackpot-open.svg" alt="" />
+                     <span data-i18n="campaign_1.home_page.Mega_jackpot"></span>
+                   </button>
+                 </h2>
+                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                     <div class="accordion-body">
+                        <ul>
+                           <li>
+                              <span data-i18n="campaign_1.home_page.Mega_jackpot1"></span>
+                              <ul>
+                                 <li data-i18n="campaign_1.home_page.Mega_jackpot11"></li>
+                                 <li data-i18n="campaign_1.home_page.Mega_jackpot12"></li>
+                              </ul>
+                           </li>
+                           <li data-i18n="campaign_1.home_page.Mega_jackpot2"></li>
+                           <li data-i18n="campaign_1.home_page.Mega_jackpot3"></li>
+                        </ul>
+                     </div>
+                 </div>
+               </div>
+
+               <div class="accordion-item" data-aos="fade-up">
+                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                     <img class="img-close" src="assets/images/campaign-1/terms-close.svg" alt="" />
+                     <img class="img-open" src="assets/images/campaign-1/terms-open.svg" alt="" />
+                     <span data-i18n="campaign_1.home_page.Terms_Conditions"></span>
+                   </button>
+                 </h2>
+                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                     <div class="accordion-body">
+                        <p data-i18n="campaign_1.home_page.Terms_Conditions1"></p>
+                        <p data-i18n="campaign_1.home_page.Terms_Conditions2"></p>
+                     </div>
+                 </div>
+               </div>
+             </div>
+
+
+
+         </div>
+        
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../../components/campaing-1-desktop/megajackpot-modal.html')
+      @@include('../../components/campaing-1-desktop/tickets-modal.html')
+      <!-- MODAL -->
+
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>
