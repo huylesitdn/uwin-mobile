@@ -6,16 +6,10 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%; }
-  .campaign-1-desktop .navbar.fixed-top {
-    background: transparent;
-    box-shadow: none;
-    position: inherit; }
-    .campaign-1-desktop .navbar.fixed-top #back_url img {
-      height: 10px; }
   .campaign-1-desktop__content .accordion {
     display: flex;
     flex-direction: column;
-    gap: 20px; }
+    gap: 40px; }
     .campaign-1-desktop__content .accordion .accordion-item {
       background: #131C39;
       border-radius: 10px;

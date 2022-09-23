@@ -1,0 +1,505 @@
+.campaign-2-desktop {
+  font-family: 'Inter', sans-serif;
+  background: #000C26;
+  margin-top: 0;
+
+  background-image: url(../images/campaign-1/top-bg2-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+
+  &__content {
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .accordion-item {
+        background: #131C39;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .accordion-header {
+          .accordion-button {
+            background: #131C39;
+            border-radius: 10px;
+            padding: 30px;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            box-shadow: none;
+            transition: all 0.3s;
+
+            &:hover {
+              // opacity: 0.6;
+              color: #FDBA2B;
+            }
+
+            img {
+
+              &.img-open {
+                margin: -8px 0 -10px -10px;
+              }
+
+              &.img-close {
+                display: none;
+                margin-right: 10px;
+              }
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            &::after {
+              background-size: contain;
+              background-position: center;
+              width: 20px;
+              height: 20px;
+              background-image: url(../images/campaign-1/minus.svg);
+            }
+
+            &.collapsed {
+              img {
+
+                &.img-open {
+                  display: none;
+                }
+
+                &.img-close {
+                  display: initial;
+                }
+              }
+
+              &::after {
+                background-size: contain;
+                background-position: center;
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/campaign-1/plus.svg);
+              }
+            }
+          }
+        }
+
+        .accordion-collapse {
+          .accordion-body {
+            padding: 10px 30px 30px 30px;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #94A3D3;
+
+            .title {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 13px;
+              line-height: 18px;
+              color: #FFFFFF;
+              margin-bottom: 15px;
+
+              span {
+                color: rgba(91, 155, 251, 1);
+              }
+            }
+
+            &.prediction-results {
+              padding: 0;
+              padding-top: 15px;
+
+              .__see-all {
+                min-height: 40px;
+                display: flex;
+                place-content: center;
+                place-items: center;
+                border-top: 1px solid #000C26;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 14px;
+                text-align: center;
+                color: #FDBA2B;
+                margin-top: 10px;
+                text-decoration: none;
+              }
+
+              .__item {
+                display: flex;
+                place-items: center;
+                place-content: space-between;
+                gap: 15px;
+
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 22px;
+                color: #FFFFFF;
+                padding: 0 15px 15px;
+
+                span {
+                  color: #FDBA2B;
+                }
+              }
+            }
+
+            .prediction-prizes {
+              padding-top: 15px;
+              padding-bottom: 30px;
+
+              &__item {
+                position: relative;
+
+                &:nth-child(even) {
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0;
+                    bottom: 0;
+                    background-image: url(../images/campaign-1/prediction-prizes-line.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 2px;
+                    height: 100%;
+                  }
+
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0px;
+                    top: 0;
+                    bottom: 0;
+                    background-image: url(../images/campaign-1/prediction-prizes-line.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 2px;
+                    height: 100%;
+                  }
+                }
+
+                &__title {
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 24px;
+                  line-height: 22px;
+                  text-align: center;
+                  color: #FFFFFF;
+                }
+
+                &__correct {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 22px;
+                  text-align: center;
+                  color: #6877A6;
+                  margin: 7px 0 10px 0;
+                }
+
+                &__subtitle {
+                  font-weight: 800;
+                  font-size: 14px;
+                  line-height: 16px;
+                  text-align: center;
+                  color: #5B9BFB;
+                }
+              }
+            }
+
+            ul {
+              padding-left: 20px;
+              list-style: none;
+
+              li {
+                margin-bottom: 20px;
+
+                &::before {
+                  content: "\2022";
+                  color: #5B9BFB;
+                  font-weight: bold;
+                  font-size: 20px;
+                  display: inline-block;
+                  width: 1em;
+                  margin-left: -1em;
+                }
+
+                ul {
+                  list-style: decimal;
+                  margin-top: 10px;
+
+                  &.list-none {
+                    list-style: none;
+                  }
+
+                  li {
+                    &::before {
+                      content: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .table-responsive {
+      background: rgba(19, 28, 57, 0.5);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 30px;
+      height: 100%;
+
+      .table {
+        margin-bottom: 0;
+
+        &>:not(:first-child) {
+          border-top: 1px solid #28304D;
+        }
+
+        thead {
+          tr {
+            th {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              color: #6877A6;
+              border-bottom: 1px solid #28304D;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              font-weight: 600;
+              font-size: 13px;
+              line-height: 18px;
+              color: #FFFFFF;
+              border-bottom: 1px solid #28304D;
+            }
+
+            &:last-child {
+              td {
+                border-bottom: 0;
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__group-match {
+      &__subtitle {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+
+        span {
+          color: #FDBA2B;
+        }
+      }
+
+      &__title {
+        margin-bottom: 15px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 14px;
+        color: #FFFFFF;
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+
+        .total-prize {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+
+          background: rgba(253, 186, 43, 0.5);
+          border-radius: 3px;
+          padding: 4px 8px;
+
+          img {
+            margin-right: 5px;
+          }
+
+          span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          }
+
+          &.master {
+            background: rgba(210, 210, 210, 0.5);
+          }
+        }
+      }
+
+      img {
+        margin-right: 15px;
+      }
+    }
+
+    &__balance {
+      margin-bottom: 40px;
+
+      &__item {
+        background: #131C39;
+        border-radius: 10px;
+        padding: 30px;
+
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 14px;
+        color: #FFFFFF;
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #6877A6;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__top {
+
+      &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 170px;
+
+        h2 {
+          font-weight: 800;
+          font-size: 80px;
+          line-height: 90px;
+          color: #FDBA2B;
+          text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
+          text-transform: initial;
+          margin-bottom: 15px;
+          padding-top: 110px;
+        }
+      }
+
+      &__mega-jackpot {
+        background: #131C39;
+        border-radius: 10px;
+        padding: 0 60px;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+        min-height: 170px;
+
+        &__icon {
+          position: absolute;
+          right: -20px;
+          top: -40px;
+        }
+
+        &__You_won {
+          background: #FDBA2B;
+          box-shadow: 0px 4px 20px rgba(253, 186, 43, 0.3);
+          padding: 3px 15px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #000C26;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          min-height: 23px;
+          width: fit-content;
+          margin-bottom: 25px;
+        }
+
+        &__currency {
+          font-style: normal;
+          font-style: normal;
+          font-weight: 200;
+          font-size: 40px;
+          line-height: 36px;
+          color: #FFFFFF;
+
+          text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
+
+          span {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 36px;
+            color: #FDBA2B;
+            text-shadow: 0px 2px 15px rgba(253, 186, 43, 0.6);
+          }
+        }
+
+        &__currency-1 {
+          font-weight: 200;
+          font-size: 30px;
+          line-height: 36px;
+          color: #FFFFFF;
+          text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
+
+          span {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFFFFF;
+            text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
+          }
+        }
+
+        &__action {
+          // padding-bottom: 20px;
+
+          .btn {
+            border: 1px solid #FDBA2B;
+            border-radius: 5px;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FDBA2B;
+            width: 100%;
+            min-height: 48px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+          }
+        }
+      }
+    }
+
+  }
+}

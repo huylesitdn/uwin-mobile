@@ -28,7 +28,8 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        box-shadow: none; }
         .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button img.img-open {
           margin: -8px 0 -10px -10px; }
         .campaign-1__content .accordion .accordion-item .accordion-header .accordion-button img.img-close {

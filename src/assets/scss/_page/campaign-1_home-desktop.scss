@@ -7,25 +7,13 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-
-  .navbar {
-    &.fixed-top {
-      background: transparent;
-      box-shadow: none;
-      position: inherit;
-
-      #back_url img {
-        height: 10px;
-      }
-    }
-  }
-
+  
   &__content {
 
     .accordion {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 40px;
 
       .accordion-item {
         background: #131C39;
