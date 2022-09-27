@@ -560,6 +560,16 @@
             display: flex;
             place-content: center;
             place-items: center;
+
+            &-outline {
+              &-warning {
+                &:hover {
+                  // color: #fff !important;
+                  background-color: #2b2d34 !important;
+                  box-shadow: none !important;
+                }
+              }
+            }
           }
         }
       }

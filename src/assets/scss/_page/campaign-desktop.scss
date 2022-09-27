@@ -1,17 +1,23 @@
 .campaign-desktop {
   max-width: 1920px !important;
 
+  @media only screen and (max-width: 376px) {
+    // min-height: 255px;
+  }
+
   .btn {
     &-warning {
       &:hover {
-        color: #fff !important;
+        // color: #fff !important;
+        background-color: #2b2d34 !important;
       }
     }
 
     &-outline {
       &-warning {
         &:hover {
-          color: #fff !important;
+          // color: #fff !important;
+          background-color: #2b2d34 !important;
         }
       }
     }

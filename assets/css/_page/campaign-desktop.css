@@ -1,9 +1,9 @@
 .campaign-desktop {
   max-width: 1920px !important; }
   .campaign-desktop .btn-warning:hover {
-    color: #fff !important; }
+    background-color: #2b2d34 !important; }
   .campaign-desktop .btn-outline-warning:hover {
-    color: #fff !important; }
+    background-color: #2b2d34 !important; }
   .campaign-desktop .modal-backdrop.fade.show {
     background: rgba(2, 11, 31, 0.6);
     backdrop-filter: blur(10px);

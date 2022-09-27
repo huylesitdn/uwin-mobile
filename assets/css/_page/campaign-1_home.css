@@ -387,3 +387,6 @@
         display: flex;
         place-content: center;
         place-items: center; }
+        .campaign-1__content__top__mega-jackpot__action .btn-outline-warning:hover {
+          background-color: #2b2d34 !important;
+          box-shadow: none !important; }

@@ -4941,6 +4941,9 @@ a {
         display: flex;
         place-content: center;
         place-items: center; }
+        .campaign-1__content__top__mega-jackpot__action .btn-outline-warning:hover {
+          background-color: #2b2d34 !important;
+          box-shadow: none !important; }
 
 .campaign-1_submission {
   font-family: 'Inter', sans-serif;
@@ -5286,10 +5289,15 @@ a {
         font-size: 13px;
         line-height: 18px;
         color: #FFFFFF;
-        border-bottom: 1px solid #28304D; }
+        border-bottom: 1px solid #28304D;
+        vertical-align: middle; }
+        .campaign-2__content .table-responsive .table tbody tr td .btn:focus {
+          box-shadow: none !important; }
       .campaign-2__content .table-responsive .table tbody tr:last-child td {
         border-bottom: 0;
         padding-bottom: 0; }
+      .campaign-2__content .table-responsive .table tbody tr.See_all_board_link[aria-expanded="true"] {
+        display: none; }
   .campaign-2__content__group-match__subtitle {
     font-style: normal;
     font-weight: 800;
@@ -5307,7 +5315,9 @@ a {
     color: #FFFFFF;
     display: flex;
     place-content: space-between;
-    place-items: center; }
+    place-items: start;
+    flex-direction: column;
+    gap: 15px; }
     .campaign-2__content__group-match__title .total-prize {
       font-style: normal;
       font-weight: 700;
@@ -5429,6 +5439,13 @@ a {
         line-height: 36px;
         color: #FFFFFF;
         text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6); }
+    .campaign-2__content__top__mega-jackpot__date {
+      text-align: left;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #6877A6; }
     .campaign-2__content__top__mega-jackpot__action {
       padding-bottom: 20px; }
       .campaign-2__content__top__mega-jackpot__action .btn {
@@ -5447,13 +5464,16 @@ a {
         display: flex;
         place-content: center;
         place-items: center; }
+        .campaign-2__content__top__mega-jackpot__action .btn-outline-warning:hover {
+          background-color: #2b2d34 !important;
+          box-shadow: none !important; }
 
 .campaign-desktop {
   max-width: 1920px !important; }
   .campaign-desktop .btn-warning:hover {
-    color: #fff !important; }
+    background-color: #2b2d34 !important; }
   .campaign-desktop .btn-outline-warning:hover {
-    color: #fff !important; }
+    background-color: #2b2d34 !important; }
   .campaign-desktop .modal-backdrop.fade.show {
     background: rgba(2, 11, 31, 0.6);
     backdrop-filter: blur(10px);
@@ -6446,9 +6466,13 @@ a {
         line-height: 18px;
         color: #FFFFFF;
         border-bottom: 1px solid #28304D; }
+        .campaign-2-desktop__content .table-responsive .table tbody tr td .btn:focus {
+          box-shadow: none !important; }
       .campaign-2-desktop__content .table-responsive .table tbody tr:last-child td {
         border-bottom: 0;
         padding-bottom: 0; }
+      .campaign-2-desktop__content .table-responsive .table tbody tr.See_all_board_link[aria-expanded="true"] {
+        display: none; }
   .campaign-2-desktop__content__group-match__subtitle {
     font-style: normal;
     font-weight: 800;
@@ -6582,6 +6606,14 @@ a {
         line-height: 36px;
         color: #FFFFFF;
         text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6); }
+    .campaign-2-desktop__content__top__mega-jackpot__date {
+      text-align: left;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #6877A6;
+      text-shadow: none; }
     .campaign-2-desktop__content__top__mega-jackpot__action .btn {
       border: 1px solid #FDBA2B;
       border-radius: 5px;

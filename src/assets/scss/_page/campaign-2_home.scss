@@ -290,12 +290,25 @@
               line-height: 18px;
               color: #FFFFFF;
               border-bottom: 1px solid #28304D;
+              vertical-align: middle;
+
+              .btn {
+                &:focus {
+                  box-shadow: none !important;
+                }
+              }
             }
 
             &:last-child {
               td {
                 border-bottom: 0;
                 padding-bottom: 0;
+              }
+            }
+
+            &.See_all_board_link {
+              &[aria-expanded="true"] {
+                display: none;
               }
             }
           }
@@ -325,7 +338,10 @@
         color: #FFFFFF;
         display: flex;
         place-content: space-between;
-        place-items: center;
+        // place-items: center;
+        place-items: start;
+        flex-direction: column;
+        gap: 15px;
 
         .total-prize {
           font-style: normal;
@@ -490,6 +506,15 @@
           }
         }
 
+        &__date {
+          text-align: left;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #6877A6;
+        }
+
         &__action {
           padding-bottom: 20px;
 
@@ -512,6 +537,16 @@
             display: flex;
             place-content: center;
             place-items: center;
+
+            &-outline {
+              &-warning {
+                &:hover {
+                  // color: #fff !important;
+                  background-color: #2b2d34 !important;
+                  box-shadow: none !important;
+                }
+              }
+            }
           }
         }
       }

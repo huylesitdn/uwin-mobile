@@ -285,12 +285,24 @@
               line-height: 18px;
               color: #FFFFFF;
               border-bottom: 1px solid #28304D;
+
+              .btn {
+                &:focus {
+                  box-shadow: none !important;
+                }
+              }
             }
 
             &:last-child {
               td {
                 border-bottom: 0;
                 padding-bottom: 0;
+              }
+            }
+
+            &.See_all_board_link {
+              &[aria-expanded="true"] {
+                display: none;
               }
             }
           }
@@ -476,6 +488,16 @@
             color: #FFFFFF;
             text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
           }
+        }
+
+        &__date {
+          text-align: left;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #6877A6;
+          text-shadow: none;
         }
 
         &__action {
