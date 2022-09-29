@@ -214,8 +214,7 @@
     color: #FFFFFF;
     display: flex;
     place-content: space-between;
-    place-items: start;
-    flex-direction: column;
+    place-items: center;
     gap: 15px; }
     .campaign-2__content__group-match__title .total-prize {
       font-style: normal;

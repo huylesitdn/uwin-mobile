@@ -338,9 +338,9 @@
         color: #FFFFFF;
         display: flex;
         place-content: space-between;
-        // place-items: center;
-        place-items: start;
-        flex-direction: column;
+        place-items: center;
+        // place-items: start;
+        // flex-direction: column;
         gap: 15px;
 
         .total-prize {
