@@ -103,9 +103,12 @@ var translator = new Translator({
   // filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-mobile/main/assets/i18n",
 });
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const langParams = urlParams.get('lang')
 const PREFERED_REGION = 'preferred_region';
 const _get_translator_config = translator.config.persistKey || "preferred_language";
-const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
+const _get_language = langParams || localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
 const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
 
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
