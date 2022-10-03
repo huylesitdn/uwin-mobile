@@ -91,6 +91,8 @@ const LANGUAGES = {
   ZH: "zh",
 };
 
+const LANGUAGES_ARRAY = [LANGUAGES.EN, LANGUAGES.ZH];
+
 var translator = new Translator({
   defaultLanguage: "en",
   detectLanguage: true,
@@ -113,7 +115,8 @@ const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
 
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
-  translator.translatePageTo(_get_language);
+  const current_language = LANGUAGES_ARRAY.includes(_get_language) ? _get_language : LANGUAGES.EN
+  translator.translatePageTo(current_language);
   changeLanguageColor();
   initialize();
 });
