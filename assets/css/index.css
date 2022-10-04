@@ -4334,7 +4334,7 @@ a {
     background: #000C26;
     box-shadow: none; }
     .campaign-1_megajackpot .navbar.fixed-top #back_url img {
-      height: 10px; }
+      height: 16px; }
   .campaign-1_megajackpot__content {
     padding: 70px 10%; }
     .campaign-1_megajackpot__content__title {
@@ -4382,7 +4382,7 @@ a {
     background: #000C26;
     box-shadow: none; }
     .campaign-1_results .navbar.fixed-top #back_url img {
-      height: 10px; }
+      height: 16px; }
   .campaign-1_results__content__title {
     font-weight: 600;
     font-size: 14px;
@@ -4410,7 +4410,7 @@ a {
     background: #000C26;
     box-shadow: none; }
     .campaign-1_results-group-match .navbar.fixed-top #back_url img {
-      height: 10px; }
+      height: 16px; }
   .campaign-1_results-group-match__content__title {
     font-weight: 600;
     font-size: 14px;
@@ -4565,7 +4565,7 @@ a {
     box-shadow: none;
     position: inherit; }
     .campaign-1 .navbar.fixed-top #back_url img {
-      height: 10px; }
+      height: 16px; }
   .campaign-1__content .accordion {
     display: flex;
     flex-direction: column;
@@ -4952,7 +4952,7 @@ a {
     background: #000C26;
     box-shadow: none; }
     .campaign-1_submission .navbar.fixed-top #back_url img {
-      height: 10px; }
+      height: 16px; }
   .campaign-1_submission__content__action {
     margin-top: 15px;
     text-align: center; }
@@ -5112,7 +5112,7 @@ a {
     box-shadow: none;
     position: inherit; }
     .campaign-2 .navbar.fixed-top #back_url img {
-      height: 10px; }
+      height: 16px; }
   .campaign-2__content .accordion {
     display: flex;
     flex-direction: column;
