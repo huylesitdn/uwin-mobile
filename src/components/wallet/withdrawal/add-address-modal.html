@@ -1,0 +1,40 @@
+<!-- Modal -->
+<div
+  class="modal fade alert"
+  id="addAddressModal"
+  tabindex="-1"
+  aria-labelledby="addAddressModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static" data-bs-keyboard="false"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="text-end">
+        <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="addAddressForm" class="form">
+          <div class="title" data-i18n="deposit_page.Add_Address"></div>
+          <div class="form__container mb-3">
+            <label class="form-label" data-i18n="deposit_page.Cryptocurrency"></label>
+            <select class="form-select" name="cryptocurrency">
+              <option value="USDT">USDT</option>
+              <option value="SGD">SGD</option>
+            </select>
+          </div>
+          <div class="form__container mb-3">
+            <label class="form-label" data-i18n="deposit_page.Network"></label>
+            <input type="text" class="form-control" name="network"  />
+          </div>
+          <div class="form__container mb-3">
+            <label class="form-label" data-i18n="deposit_page.Bank_Account_Humber"></label>
+            <input type="text" class="form-control" name="bank-account-humber"  />
+          </div>
+          <div class="action">
+            <button type="button" class="btn btn-warning btn-confirm w-50" data-bs-dismiss="modal" data-i18n="Save"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -86,13 +86,15 @@ a {
 .toast#copiedToast {
   width: 100%;
   position: fixed;
-  top: 80px;
+  top: 50%;
   left: 0;
   right: 0;
   display: flex;
   place-content: center;
   place-items: center;
-  background: transparent; }
+  background: transparent;
+  box-shadow: none !important;
+  border: none !important; }
   .toast#copiedToast:not(.show) {
     display: none !important; }
   .toast#copiedToast .toast-body {

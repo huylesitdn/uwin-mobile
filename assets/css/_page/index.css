@@ -2926,6 +2926,19 @@
           color: #000000;
           min-height: 30px;
           width: 100%; }
+    .deposit-page__content #mainContent > .tab-pane .form__info {
+      height: 40px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      padding: 10px;
+      margin-bottom: 32px; }
     .deposit-page__content #mainContent > .tab-pane .form__reminder {
       border-top: 1px solid rgba(255, 255, 255, 0.13);
       padding: 6px 0;

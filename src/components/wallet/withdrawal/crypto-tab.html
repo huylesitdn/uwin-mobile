@@ -1,0 +1,38 @@
+<form id="withdrawalCryptoForm" class="form pb-5" data-aos="fade-up">
+  <div class="form__info">
+    <img class="me-2" src="assets/icons/crypto-icon.svg" />
+    <span data-i18n="deposit_page.Current_exchange_rate"></span>
+  </div>
+  <div class="form__container">
+    <div class="d-flex align-items-center justify-content-between">
+      <label class="form-label" data-i18n="deposit_page.Address"></label>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#addAddressModal" class="text-warning text-decoration-underline" data-i18n="deposit_page.Add_New_Address"></a>
+    </div>
+    <select class="form-select select-address" name="select_address">
+      <option></option>
+      <option value="Address1">Address1</option>
+      <option value="Address2">Address2</option>
+    </select>
+    <div id="selectAddressDropdown"></div>
+  </div>
+  <div class="form__container">
+    <label class="form-label" data-i18n="deposit_page.Amount"></label>
+    <div class="input-group p-0">
+      <input type="text" class="form-control" name="amount_SGD" data-i18n="deposit_page.Enter_amount" data-i18n-attr="placeholder" />
+      <span class="input-group-currency" data-i18n="deposit_page.SGD"></span>
+    </div>
+  </div>
+  <div class="form__container">
+    <div class="input-group p-0">
+      <input type="text" class="form-control" name="amount_USDT" data-i18n="deposit_page.Enter_amount" data-i18n-attr="placeholder" />
+      <span class="input-group-currency" data-i18n="deposit_page.USDT"></span>
+    </div>
+  </div>
+
+  <div class="form__action">
+    <button type="submit" class="btn btn-warning" data-i18n="deposit_page.Withdraw"></button>
+    <!-- <button type="button" class="btn btn-link" data-i18n="Reset" data-bs-toggle="modal" data-bs-target="#depositFailModal"></button> -->
+    <button type="button" class="btn btn-outline-warning btn-reset-form" data-i18n="Reset" data-form="depositPaymentGatewayForm"></button>
+  </div>
+
+</form>

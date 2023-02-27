@@ -500,6 +500,7 @@
     "": ""
   },
   "deposit_page": {
+    "Bank_Transfer": "Bank Transfer",
     "Main_Wallet_Balance": "Main Wallet Balance",
     "Show_Game_Balance": "Show Game Balance",
     "Payment_Gateway": "Payment<br/>Gateway (FPX)",
@@ -613,6 +614,14 @@
     "game_balance_title8": "SABA Sports & E-sport",
     "game_balance_title9": "4D Lottery",
     "Under_Maintenance": "Under<br/>Maintenance",
+    "Add_New_Address": "+ Add New Address",
+    "Amount": "Amount",
+    "SGD": "SGD",
+    "USDT": "USDT",
+    "Current_exchange_rate": "Current exchange rate: 1 USDT = SGD 4.22",
+    "Cryptocurrency": "Cryptocurrency",
+    "Bank_Account_Humber": "Address",
+    "Add_Address": "Add Address",
     "": "",
     "": "",
     "": "",
