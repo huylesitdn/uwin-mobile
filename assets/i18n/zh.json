@@ -70,6 +70,9 @@
     "Congratulation": "Congratulation!",
     "Congratulation_des": "You are eligible to claim your welcome<br/>credit <span>SGD10</span> now.",
     "Deposit_Claim": "Deposit & Claim",
+    "Register_Claim": "Register & Claim",
+    "Congratulation_without_login": "<span>SGD10</span><br/> Welcome Credit",
+    "Congratulation_des_without_login": "For new member only*<br/>Required first deposit to claim*",
     "": "",
     "": ""
   },
