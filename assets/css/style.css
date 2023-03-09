@@ -529,3 +529,35 @@ html[lang="zh"] .register_link {
 @media only screen and (max-width: 380px) {
   .dropdown-menu .btn {
     min-width: 50px !important; } }
+
+.footer-info {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.7); }
+  .footer-info .title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px; }
+  .footer-info div.collapse:not(.show) {
+    height: 55px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; }
+  .footer-info div.collapsing {
+    min-height: 55px !important; }
+  .footer-info a {
+    display: block;
+    text-align: center;
+    color: #FDBB2C;
+    padding: 15px 0; }
+  .footer-info a.collapsed .show {
+    display: initial; }
+  .footer-info a.collapsed .hide {
+    display: none; }
+  .footer-info a:not(.collapsed) .show {
+    display: none; }
+  .footer-info a:not(.collapsed) .hide {
+    display: initial; }
