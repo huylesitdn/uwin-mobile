@@ -102,6 +102,33 @@ a {
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 4px; }
 
+.btn-newbie {
+  position: fixed !important;
+  right: 10px;
+  bottom: 20%;
+  padding: 0;
+  min-width: auto;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+  position: relative; }
+  .btn-newbie:focus {
+    box-shadow: none; }
+  .btn-newbie img {
+    max-width: 50px; }
+  .btn-newbie::after {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 4px;
+    bottom: 4px;
+    content: '';
+    animation: pulseNewbieBtn 1.5s infinite;
+    -webkit-animation: pulseNewbieBtn 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(253, 187, 44, 0.5);
+    border-radius: 10px; }
+
 .modal.slide-up {
   top: auto;
   bottom: 0;
@@ -251,19 +278,19 @@ a {
       .modal.slide-up-notification.fade .modal-dialog .modal-content .btn {
         width: 100%; }
 
-.modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content {
+.modal.alert#vpnModal .modal-dialog .modal-content, .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content {
   padding: 25px; }
-  .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-header {
+  .modal.alert#vpnModal .modal-dialog .modal-content .modal-header, .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-header {
     border-bottom: 0;
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0; }
-    .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-header button {
+    .modal.alert#vpnModal .modal-dialog .modal-content .modal-header button, .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-header button {
       background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
       opacity: 1; }
-  .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-body {
+  .modal.alert#vpnModal .modal-dialog .modal-content .modal-body, .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-body {
     padding: 0; }
-    .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-body .title {
+    .modal.alert#vpnModal .modal-dialog .modal-content .modal-body .title, .modal.alert#pleaseLoginFirstModal .modal-dialog .modal-content .modal-body .title {
       font-weight: 700;
       font-size: 18px;
       line-height: 25px;
@@ -422,3 +449,34 @@ a {
     box-shadow: 0 0 0 10px rgba(253, 187, 44, 0); }
   100% {
     box-shadow: 0 0 0 0 rgba(253, 187, 44, 0); } }
+
+@keyframes pulseNewbieBtn {
+  0% { }
+  70% {
+    box-shadow: 0 0 0 20px rgba(253, 187, 44, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 187, 44, 0); } }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }

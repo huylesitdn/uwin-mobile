@@ -3,22 +3,6 @@
     padding-left: 0;
     padding-right: 0;
 
-    .btn-newbie {
-      position: fixed;
-      right: 10px;
-      bottom: 20%;
-      padding: 0;
-      min-width: auto;
-
-      &:focus {
-        box-shadow: none;
-      }
-
-      img {
-        max-width: 50px;
-      }
-    }
-
     &__commitment {
       &__content {
         display: flex;
