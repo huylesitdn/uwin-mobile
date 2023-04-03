@@ -117,17 +117,6 @@ a {
     box-shadow: none; }
   .btn-newbie img {
     max-width: 50px; }
-  .btn-newbie::after {
-    position: absolute;
-    left: 2px;
-    right: 2px;
-    top: 4px;
-    bottom: 4px;
-    content: '';
-    animation: pulseNewbieBtn 1.5s infinite;
-    -webkit-animation: pulseNewbieBtn 1.5s infinite;
-    box-shadow: 0 0 0 0 rgba(253, 187, 44, 0.5);
-    border-radius: 10px; }
 
 .modal.slide-up {
   top: auto;
