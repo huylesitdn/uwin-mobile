@@ -470,7 +470,7 @@
   "Secure_Private_Gaming_Environment": "安全和私密的游戏环境",
   "Android_Install": "Android 下载",
   "Ios_Install": "Ios 下载",
-  "coming_soon_img": "<img src=\"assets/images/download-app/即将推出-cn.svg\" />",
+  "coming_soon_img": "<img src=\"assets/images/download-app/comingsoon-zh.svg\" />",
   "login_page": {
     "LOGIN": "登入",
     "SIGN_UP": "注册",
@@ -870,6 +870,11 @@
   "vpn_modal_title": "Game is available with<br/>FREE VPN",
   "vpn_modal_title_description": "Please kindly contact our LiveChat for further<br/> guidance and assistance.",
   "Open_Chat": "Open Chat",
+  "download_app_banner_1": "assets/images/download-app/zh-home.jpg",
+  "download_app_banner_2": "assets/images/download-app/zh-casino.jpg",
+  "download_app_banner_3": "assets/images/download-app/zh-payment.jpg",
+  "download_app_banner_4": "assets/images/download-app/zh-promotion.jpg",
+  "download_app_banner_5": "assets/images/download-app/zh-slots.jpg",
   "": "",
   "": "",
   "": ""

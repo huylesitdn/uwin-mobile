@@ -960,6 +960,18 @@ function copyFunction(id) {
 
 function initialize () {
 
+  // change text of current_text
+  switch (_get_language) {
+    case LANGUAGES.EN:
+      $('.btn-language').html('中')
+      break;
+    case LANGUAGES.ZH:
+      $('.btn-language').html('EN')
+      break;
+    default:
+      break;
+  }
+
   const forgetPasswordModalElm = $("#forgetPasswordModal");
   if (forgetPasswordModalElm.length > 0) {
     var forgetPasswordModal = new bootstrap.Modal(forgetPasswordModalElm, {});

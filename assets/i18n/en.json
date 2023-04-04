@@ -864,6 +864,11 @@
   "vpn_modal_title": "Game is available with<br/>FREE VPN",
   "vpn_modal_title_description": "Please kindly contact our LiveChat for further<br/> guidance and assistance.",
   "Open_Chat": "Open Chat",
+  "download_app_banner_1": "assets/images/download-app/en-home.jpg",
+  "download_app_banner_2": "assets/images/download-app/en-casino.jpg",
+  "download_app_banner_3": "assets/images/download-app/en-payment.jpg",
+  "download_app_banner_4": "assets/images/download-app/en-promotion.jpg",
+  "download_app_banner_5": "assets/images/download-app/en-slots.jpg",
   "": "",
   "": ""
 }
