@@ -101,8 +101,8 @@ var translator = new Translator({
   registerGlobally: "__",
   persist: true,
   persistKey: "preferred_language",
-  // filesLocation: "assets/i18n",
-  filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-mobile/main/assets/i18n",
+  filesLocation: "assets/i18n",
+  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-mobile/main/assets/i18n",
 });
 
 const queryString = window.location.search;
