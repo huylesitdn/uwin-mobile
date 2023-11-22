@@ -606,6 +606,7 @@
 }
 
 
+#firstTimeRevampModal,
 #newbieModal {
   .modal-dialog {
     max-width: 350px;
@@ -673,6 +674,18 @@
           place-items: center;
         }
       }
+    }
+  }
+}
+
+#firstTimeRevampModal {
+  .modal-body {
+    padding: 0 20px;
+    .title {
+      color: #FDBB2C !important;
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.7) !important;
     }
   }
 }

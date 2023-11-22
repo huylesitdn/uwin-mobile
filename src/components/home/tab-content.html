@@ -1,0 +1,32 @@
+<div data-aos="fade-up">
+  <div class="tab-content">
+    <div class="tab-pane fade @@if (context.active === 0) {show active}" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      @@include('./home-content.html')
+    </div>
+    <div class="tab-pane fade @@if (context.active === 1) {show active}" id="nav-slot" role="tabpanel" aria-labelledby="nav-slot-tab">
+      @@include('../category/content/slot.html')
+    </div>
+    <div class="tab-pane fade @@if (context.active === 2) {show active}" id="nav-casino" role="tabpanel" aria-labelledby="nav-casino-tab">
+      @@include('../category/content/casino.html')
+    </div>
+    <div class="tab-pane fade @@if (context.active === 3) {show active}" id="nav-e-sport" role="tabpanel" aria-labelledby="nav-e-sport-tab">
+      @@include('../category/content/e-sport.html')
+    </div>
+    <div class="tab-pane fade @@if (context.active === 4) {show active}" id="nav-arcade" role="tabpanel" aria-labelledby="nav-arcade-tab">
+      @@include('../category/content/arcade.html')
+    </div>
+    <div class="tab-pane fade @@if (context.active === 5) {show active}" id="nav-4d" role="tabpanel" aria-labelledby="nav-4d-tab">
+      @@include('../category/content/4d/index.html')
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-newbie" data-bs-toggle="modal" data-bs-target="#newbieModal">
+  <img src="assets/images/newbie-icon.png" alt="" />
+</button>
+
+<!-- NEWBIE MODAL -->
+@@include('../vpn-modal.html')
+@@include('../newbie-modal.html')
+<!-- NEWBIE MODAL -->

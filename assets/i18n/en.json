@@ -872,6 +872,12 @@
   "download_app_banner_3": "assets/images/download-app/en-payment.jpg",
   "download_app_banner_4": "assets/images/download-app/en-promotion.jpg",
   "download_app_banner_5": "assets/images/download-app/en-slots.jpg",
+  "firstTimeRevampModal": {
+    "title": "Welcom to the Upgraded Uwin33!",
+    "description": "We're excited to share out Revamped Website and enhanced features with you! Improved to provide a better user experience!",
+    "action": "Explore Now",
+    "": ""
+  },
   "": "",
   "": ""
 }
