@@ -476,6 +476,10 @@
         background: transparent !important;
         box-shadow: none !important;
         margin-top: 30px;
+
+        .home__content__feature {
+          display: initial;
+        }
       }
 
       &__navbar {

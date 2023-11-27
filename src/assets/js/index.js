@@ -1513,3 +1513,11 @@ if (firstTimeRevampModalElm.length > 0) {
   var firstTimeRevampModal = new bootstrap.Modal(firstTimeRevampModalElm, {});
   firstTimeRevampModal.show()
 }
+
+
+$('#category-tab .category-page__content__top__navbar__item').on('click', function() {
+  const category_tabnav = $('#category-tabnav');
+  if (category_tabnav && category_tabnav.hasClass('home')) {
+    category_tabnav.removeClass('home');
+  }
+})
