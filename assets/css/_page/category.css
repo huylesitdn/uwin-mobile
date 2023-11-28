@@ -336,7 +336,7 @@
     box-shadow: none !important;
     margin-top: 30px; }
     .category-page__content__top.home .home__content__feature {
-      display: initial; }
+      display: block; }
   .category-page__content__top__navbar {
     display: flex;
     place-content: space-between;
